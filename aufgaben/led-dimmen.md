@@ -47,10 +47,7 @@ Arduino Pin 9 ----[220Ω]----[LED]---- GND
 ### Schritt 2: Code verstehen
 
 **Was ist PWM?**
-- PWM = Pulse Width Modulation (Pulsweitenmodulation)
-- LED blinkt sehr schnell ein und aus (zu schnell zum Sehen)
-- Längere "Ein"-Zeit = heller
-- Kürzere "Ein"-Zeit = dunkler
+PWM steht für „Pulsweitenmodulation“. Dabei wird ein Pin sehr schnell ein- und ausgeschaltet. Je länger der Pin „an“ ist, desto heller leuchtet z.B. eine LED. Das Auge sieht kein Flackern, sondern eine stufenlose Helligkeit. Der Arduino kann mit `analogWrite()` solche PWM-Signale erzeugen. So lässt sich die Helligkeit regeln, obwohl der Pin eigentlich nur „an“ oder „aus“ kennt.
 
 **PWM-Werte:**
 - `0` = komplett aus (0% Einschaltzeit)
@@ -102,12 +99,6 @@ void loop()
 }
 ```
 
-### Schritt 4: Hochladen und testen
-
-1. **Speichern:** `Ctrl+S`
-2. **Kompilieren:** Klick auf ✓ (Build) in der Statusleiste
-3. **Hochladen:** Klick auf → (Upload) in der Statusleiste
-4. **Beobachten:** Die LED sollte sanft heller und dunkler werden!
 
 ## 🔍 Code-Erklärung
 

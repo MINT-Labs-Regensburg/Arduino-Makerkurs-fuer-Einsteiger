@@ -1,10 +1,13 @@
+
 # Aufgabe: LED mit Taster steuern
 
 ## 🎯 Ziel
 Eine LED mit einem Taster ein- und ausschalten (Toggle-Funktion)
 
 ## 📚 Was du lernst
+- Digitale Ausgänge mit `digitalWrite()` setzen
 - Digitale Eingaben mit `digitalRead()` einlesen
+- Vorwiderstand verstehen
 - Pull-Down-Widerstände verstehen
 - Taster-Entprellung (Debouncing)
 - Zustandsspeicherung mit Variablen
@@ -19,100 +22,101 @@ Eine LED mit einem Taster ein- und ausschalten (Toggle-Funktion)
 - Jumper-Kabel
 - 1× Breadboard
 
-## 🔌 Schaltplan
 
-```
-                    +5V
-                     |
-Arduino Pin 7 ----[Taster]----[10kΩ]---- GND
-                               Pull-Down
+## 🔌 Schaltplan LED
 
-Arduino Pin 9 ----[220Ω]----[LED]---- GND
-                 Widerstand  |
-                        (lang/+)
-```
+<img src="..\assets\LED_Schaltplan.png" alt="Schaltplan mit LED" width="350" />
 
-**Wichtig:**
-- **Taster:** Pin 7 zwischen Taster und +5V, 10kΩ Pull-Down zu GND
-- **LED:** Pin 9 über 220Ω Widerstand zur LED, dann zu GND
+LED über 220Ω Vorwiderstand an Output D7   
+
+
 
 ## 📝 Schritt-für-Schritt Anleitung
 
-### Schritt 1: Schaltung aufbauen
+### Schritt 1: LED ansteuern
+1. **Arduino vom USB trennen** (Sicherheit!)
+2. **LED ins Breadboard:**
+    - Langes Bein = Plus, kurzes = Minus
+    - 220Ω Widerstand vom langen Bein zu Pin **D7**
+    - Kurzes LED-Bein zu GND
+3. **Arduino wieder per USB verbinden**
 
-#### LED-Teil (wie vorher):
-1. LED ins Breadboard (langes Bein = Plus, kurzes = Minus)
-2. 220Ω Widerstand vom langen Bein zu Pin 9
-3. Kurzes LED-Bein zu GND
-
-#### Taster-Teil:
-1. **Taster ins Breadboard** (über die Mitte)
-2. **+5V** zu einem Taster-Pin
-3. **Pin 7** zum anderen Taster-Pin (gleiche Seite wie +5V)
-4. **10kΩ Widerstand** von Pin 7 zu GND (Pull-Down)
-
-**Warum Pull-Down-Widerstand?**
-- Ohne Widerstand "schwebt" der Pin (floating) → zufällige Werte!
-- Pull-Down zieht Pin auf GND → sauberes LOW-Signal
-- Taster gedrückt → Pin wird HIGH (+5V)
-
-### Schritt 2: Code - Einfache Version
+4. **Test-Code für LED:**
 
 ```cpp
-/*
- * LED mit Taster steuern - Einfache Version
- * 
- * Taster gedrückt = LED an
- * Taster losgelassen = LED aus
- */
-
 #include <Arduino.h>
 
-const int TASTER_PIN = 7;
-const int LED_PIN = 9;
+const int LED_PIN = 7;
 
-void setup()
-{
-    Serial.begin(115200);
-    Serial.println("Taster-LED gestartet (einfach)");
-    
-    pinMode(TASTER_PIN, INPUT);  // Taster als Eingang
-    pinMode(LED_PIN, OUTPUT);     // LED als Ausgang
+void setup() {
+    pinMode(LED_PIN, OUTPUT);
 }
 
-void loop()
-{
-    // Taster-Zustand lesen
-    int tasterZustand = digitalRead(TASTER_PIN);
-    
-    // LED entsprechend setzen
-    if (tasterZustand == HIGH) {
-        digitalWrite(LED_PIN, HIGH);  // LED an
-        Serial.println("Taster gedrückt - LED AN");
-    } else {
-        digitalWrite(LED_PIN, LOW);   // LED aus
-        Serial.println("Taster losgelassen - LED AUS");
-    }
-    
-    delay(100);  // Kurze Pause
+void loop() {
+    digitalWrite(LED_PIN, HIGH); // LED an
+    delay(500);
+    digitalWrite(LED_PIN, LOW);  // LED aus
+    delay(500);
 }
 ```
 
-**Problem:** LED geht aus, sobald Taster losgelassen wird!
+5. **LED sollte blinken!**
 
-### Schritt 3: Code - Toggle-Version (Ein/Aus wechseln)
+---
+
+### Schritt 2: Taster zusätzlich einbauen
+## 🔌 Schaltplan LED und Taster
+
+<img src="..\assets\LED_Taster_Schaltplan.png" alt="Schaltplan mit LED und Taster" width="350" />
+
+LED über 220Ω Vorwiderstand an Output D7   
+Taster mit 10kΩ Pullup Widerstand an Input2 D7 
+
+1. **Arduino wieder vom USB trennen**
+2. **Taster ins Breadboard:**
+    - Ein Taster-Pin zu **D2**
+    - Anderer Taster-Pin zu GND
+    - 10kΩ Widerstand von **D2** zu +5V (Pullup)
+3. **Arduino wieder per USB verbinden**
+
+
+### Schritt 3: LED leuchtet, wenn Taster gedrückt ist
+1. **Code für direkte Steuerung:**
 
 ```cpp
-/*
- * LED mit Taster steuern - Toggle-Version
- * 
- * Jeder Tastendruck wechselt LED zwischen AN und AUS
- */
-
 #include <Arduino.h>
 
-const int TASTER_PIN = 7;
-const int LED_PIN = 9;
+const int TASTER_PIN = 2;
+const int LED_PIN = 7;
+
+void setup() {
+    pinMode(TASTER_PIN, INPUT);
+    pinMode(LED_PIN, OUTPUT);
+}
+
+void loop() {
+    int tasterZustand = digitalRead(TASTER_PIN);
+    if (tasterZustand == HIGH) {
+        digitalWrite(LED_PIN, HIGH); // LED an
+    } else {
+        digitalWrite(LED_PIN, LOW);  // LED aus
+    }
+}
+```
+
+2. **Testen:** Die LED leuchtet nur, solange der Taster gedrückt wird.
+
+---
+
+### Schritt 4: Code schreiben (Toggle-Version)
+
+Öffne `src/main.cpp` und ersetze den Inhalt mit:
+
+```cpp
+#include <Arduino.h>
+
+const int TASTER_PIN = 2;
+const int LED_PIN = 7;
 
 bool ledZustand = false;           // LED-Status speichern
 bool letzterTasterZustand = LOW;   // Vorheriger Taster-Status
@@ -121,7 +125,6 @@ void setup()
 {
     Serial.begin(115200);
     Serial.println("Taster-LED gestartet (Toggle)");
-    
     pinMode(TASTER_PIN, INPUT);
     pinMode(LED_PIN, OUTPUT);
 }
@@ -130,143 +133,50 @@ void loop()
 {
     // Aktuellen Taster-Zustand lesen
     int tasterZustand = digitalRead(TASTER_PIN);
-    
     // Prüfen ob Taster GERADE gedrückt wurde (Flanke)
     if (tasterZustand == HIGH && letzterTasterZustand == LOW) {
         // Taster wurde gerade gedrückt!
         ledZustand = !ledZustand;  // LED-Status umkehren
-        
         digitalWrite(LED_PIN, ledZustand);
-        
         Serial.print("Toggle! LED ist jetzt: ");
         Serial.println(ledZustand ? "AN" : "AUS");
-        
         delay(50);  // Entprellung
     }
-    
     // Aktuellen Zustand für nächsten Durchlauf speichern
     letzterTasterZustand = tasterZustand;
-    
     delay(10);  // Kurze Pause
 }
 ```
 
-### Schritt 4: Code - Professionelle Version mit Entprellung
-
-```cpp
-/*
- * LED mit Taster steuern - Mit Entprellung
- * 
- * Saubere Erkennung von Tastendrücken ohne Prellen
- */
-
-#include <Arduino.h>
-
-const int TASTER_PIN = 7;
-const int LED_PIN = 9;
-const unsigned long ENTPRELLZEIT = 50;  // 50ms Entprellzeit
-
-bool ledZustand = false;
-bool letzterTasterZustand = LOW;
-unsigned long letzteAenderungZeit = 0;
-
-void setup()
-{
-    Serial.begin(115200);
-    Serial.println("Taster-LED mit Entprellung");
-    
-    pinMode(TASTER_PIN, INPUT);
-    pinMode(LED_PIN, OUTPUT);
-}
-
-void loop()
-{
-    int tasterZustand = digitalRead(TASTER_PIN);
-    unsigned long aktuelleZeit = millis();
-    
-    // Prüfen ob genug Zeit seit letzter Änderung vergangen ist
-    if ((aktuelleZeit - letzteAenderungZeit) > ENTPRELLZEIT) {
-        
-        // Prüfen ob Taster-Flanke (LOW → HIGH)
-        if (tasterZustand == HIGH && letzterTasterZustand == LOW) {
-            // Toggle LED
-            ledZustand = !ledZustand;
-            digitalWrite(LED_PIN, ledZustand);
-            
-            Serial.print("LED umgeschaltet: ");
-            Serial.println(ledZustand ? "AN" : "AUS");
-            
-            letzteAenderungZeit = aktuelleZeit;
-        }
-    }
-    
-    letzterTasterZustand = tasterZustand;
-}
-```
+### Schritt 3: Testen
+1. **Speichern:** `Ctrl+S`
+2. **Kompilieren:** Klick auf ✓ (Build) in der Statusleiste
+3. **Hochladen:** Klick auf → (Upload) in der Statusleiste
+4. **Taster drücken:** Die LED sollte bei jedem Druck umschalten!
 
 ## 🔍 Code-Erklärung
 
-### Wichtige Konzepte:
-
-#### 1. Pull-Down-Widerstand
-```cpp
-pinMode(TASTER_PIN, INPUT);  // Ohne internen Pull-Up
-```
-- Externer 10kΩ zu GND
-- Pin ist standardmäßig LOW
-- Taster gedrückt → Pin wird HIGH
-
-**Alternative: Interner Pull-Up** (Taster zu GND statt +5V):
-```cpp
-pinMode(TASTER_PIN, INPUT_PULLUP);  // Interner Pull-Up
-// Jetzt: Nicht gedrückt = HIGH, Gedrückt = LOW
-```
-
-#### 2. Flanken-Erkennung
 ```cpp
 if (tasterZustand == HIGH && letzterTasterZustand == LOW) {
     // Taster wurde GERADE gedrückt (steigende Flanke)
 }
 ```
 - Erkennt den Moment des Drückens
-- Nicht: "Taster ist gedrückt"
-- Sondern: "Taster wurde gerade gedrückt"
+- Nicht: "Taster ist gedrückt", sondern: "Taster wurde gerade gedrückt"
 
-#### 3. Toggle (Umschalten)
 ```cpp
 ledZustand = !ledZustand;  // Umkehren: true → false, false → true
 ```
-- `!` ist der NOT-Operator
-- Kehrt Boolean-Wert um
-
-#### 4. Entprellung (Debouncing)
-```cpp
-if ((aktuelleZeit - letzteAenderungZeit) > ENTPRELLZEIT) {
-```
-- Taster "prellt" mechanisch beim Drücken
-- Mehrere HIGH/LOW-Wechsel in kurzer Zeit
-- Lösung: Mindestzeit zwischen erkannten Änderungen
-
+- `!` ist der NOT-Operator, kehrt Boolean-Wert um
 
 ## ❓ Häufige Fehler
 
-### Taster funktioniert nicht / LED flackert
-- ❌ **Problem:** Kein Pull-Down-Widerstand
-- ✅ **Lösung:** 10kΩ von Pin zu GND oder `INPUT_PULLUP` verwenden
+- **Taster funktioniert nicht / LED flackert:** Kein Pull-Down-Widerstand? 10kΩ von Pin zu GND oder `INPUT_PULLUP` verwenden
+- **LED schaltet mehrfach bei einem Druck:** Taster prellt mechanisch → Entprellung mit `delay(50)` oder Zeitprüfung
+- **LED reagiert verzögert:** `delay()` blockiert Programm → `millis()` statt `delay()` verwenden
+- **Pin "schwebt" (random HIGH/LOW):** Floating Pin ohne Pull-Widerstand → Pull-Down (zu GND) oder Pull-Up (zu +5V) verwenden
 
-### LED schaltet mehrfach bei einem Druck
-- ❌ **Problem:** Taster prellt mechanisch
-- ✅ **Lösung:** Entprellung mit `delay(50)` oder Zeitprüfung
-
-### LED reagiert verzögert
-- ❌ **Problem:** `delay()` blockiert Programm
-- ✅ **Lösung:** `millis()` statt `delay()` verwenden
-
-### Pin "schwebt" (random HIGH/LOW)
-- ❌ **Problem:** Floating Pin ohne Pull-Widerstand
-- ✅ **Lösung:** Pull-Down (zu GND) oder Pull-Up (zu +5V) verwenden
-
-## 📚 Begriffe erklärt
+## ℹ️ Begriffe erklärt
 
 - **Pull-Down:** Widerstand von Pin zu GND → Pin standardmäßig LOW
 - **Pull-Up:** Widerstand von Pin zu +5V → Pin standardmäßig HIGH
@@ -275,8 +185,6 @@ if ((aktuelleZeit - letzteAenderungZeit) > ENTPRELLZEIT) {
 - **Flanke:** Übergang von LOW zu HIGH (steigend) oder HIGH zu LOW (fallend)
 - **Toggle:** Umschalten zwischen zwei Zuständen
 - **millis():** Millisekunden seit Arduino-Start (läuft ~50 Tage)
-
-## 🔌 Alternative Schaltungen
 
 ### Mit internem Pull-Up (ohne 10kΩ Widerstand)
 ```
