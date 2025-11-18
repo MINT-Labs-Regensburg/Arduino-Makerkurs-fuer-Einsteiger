@@ -27,7 +27,6 @@ Dann bist du hier richtig im **Maker Kurs für Einsteiger**
 
 Tauche ein in die spannende Welt der Mikrocontroller! Mit dem Arduino bringst du LEDs zum Leuchten und baust interaktive Schaltungen. In nur drei Stunden lernst du die Basics der Programmierung und Elektronik – und nimmst dein eigenes funktionierendes Gadget mit nach Hause!
 
-
 ---
 
 ## 📦 Dein Maker Kit kennenlernen
