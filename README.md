@@ -6,15 +6,17 @@
   - [1️⃣ Dein Maker Kit kennenlernen](#1️⃣-dein-maker-kit-kennenlernen)
     - [Aufgabe: Bringe eine LED zum Leuchten\*\*](#aufgabe-bringe-eine-led-zum-leuchten)
   - [2️⃣ Dein Start in die Arduino-Welt (ca. 45 Min.)](#2️⃣-dein-start-in-die-arduino-welt-ca-45-min)
-    - [📝 Dein erstes Arduino Programm. Lass die LED blinken](#-dein-erstes-arduino-programm-lass-die-led-blinken)
-    - [🔍 Code-Erklärung](#-code-erklärung)
+    - [- Was ist ein Arduino überhaupt?](#--was-ist-ein-arduino-überhaupt)
+    - [- Tour durch den Arduino Nano/UNO](#--tour-durch-den-arduino-nanouno)
+    - [- Die Arduino IDE – deine Programmier-Zentrale](#--die-arduino-ide--deine-programmier-zentrale)
+  - [3️⃣ Dein erstes Arduino Programm. Lass die LED blinken](#3️⃣-dein-erstes-arduino-programm-lass-die-led-blinken)
+      - [**🔍 Code-Erklärung**](#-code-erklärung)
+      - [Lade das Programm auf deinen Arduino hoch.](#lade-das-programm-auf-deinen-arduino-hoch)
     - [🧩 Zusatzaufgaben](#-zusatzaufgaben)
-  - [3️⃣ Eingaben \& Ausgaben meistern (ca. 60 Min.)](#3️⃣-eingaben--ausgaben-meistern-ca-60-min)
+  - [4️⃣ Eingaben \& Ausgaben meistern (ca. 60 Min.)](#4️⃣-eingaben--ausgaben-meistern-ca-60-min)
   - [4️⃣ Dein eigenes Projekt (ca. 60 Min.)](#4️⃣-dein-eigenes-projekt-ca-60-min)
-  - [5️⃣ Abschluss (ca. 15 Min.)](#5️⃣-abschluss-ca-15-min)
   - [💻 Die Software](#-die-software)
   - [📚 Kursmaterialien](#-kursmaterialien)
-- [🚀 Wie geht's weiter?](#-wie-gehts-weiter)
 - [Kontakt](#kontakt)
 
 ## 💡 Was dich erwartet
@@ -68,17 +70,19 @@ So gehts:
 - [5V-Schaltplan (PDF)](medien/LED_5Volt_Schaltplan.png) – So sieht der Stromkreis aus
 - [5V-Steckplatine (Bild)](medien/LED_5Volt_Steckplatine.png) – Beispiel für den Aufbau auf dem Breadboard
 
-
-
 ### 2️⃣ Dein Start in die Arduino-Welt (ca. 45 Min.)
-- Was ist ein Arduino überhaupt?
-- Tour durch den Arduino Nano/UNO
-- Die Arduino IDE – deine Programmier-Zentrale
+#### - Was ist ein Arduino überhaupt?
+#### - Tour durch den Arduino Nano/UNO
+- Inputs, Outputs, Digital, Analog
+- Pinout Arduino 
+#### - Die Arduino IDE – deine Programmier-Zentrale
+- Starte die Arduino IDE  
+- Der Editor. Die Code Eingabe
+- Laden das Programms auf deinen Arduino
 
-#### 📝 Dein erstes Arduino Programm. Lass die LED blinken
 
-1. **Starte die Arduino IDE**  
-2. **Gib folgenden Code ein**
+### 3️⃣ Dein erstes Arduino Programm. Lass die LED blinken
+Gib folgendes Programm ein
 ```cpp
 void setup() {
   pinMode(13, OUTPUT); // Pin 13 als Ausgang
@@ -91,16 +95,14 @@ void loop() {
   delay(500);             // 0,5 Sekunden warten
 }
 ```
-
-3. **Lade das Programm auf deinen Arduino hoch.**
-4. **Beobachte:** Die LED sollte nun blinken!
-
-#### 🔍 Code-Erklärung
+##### **🔍 Code-Erklärung**
 - `setup()`: Wird einmal beim Start ausgeführt. Hier wird der Pin als Ausgang gesetzt.
 - `pinMode()`: Legt fest, ob ein Pin als Eingang (`INPUT`) oder Ausgang (`OUTPUT`) verwendet wird. Hier wird Pin 13 als Ausgang für die LED definiert.
 - `loop()`: Läuft immer wieder. Schaltet die LED an/aus und wartet jeweils 0,5 Sekunden.
 - `digitalWrite()`: Schaltet den Pin auf HIGH (an) oder LOW (aus).
 - `delay()`: Wartet die angegebene Zeit in Millisekunden.
+
+##### Lade das Programm auf deinen Arduino hoch.
 
 #### 🧩 Zusatzaufgaben
 
@@ -117,8 +119,7 @@ void loop() {
   - Tipp: Nutze unterschiedliche `delay()`-Werte für kurz (z.B. 150 ms) und lang (z.B. 500 ms) und passende Pausen zwischen den Buchstaben.
 
 
-### 3️⃣ Eingaben & Ausgaben meistern (ca. 60 Min.)
-- LEDs richtig verkabeln (ohne dass was durchbrennt 😉)
+### 4️⃣ Eingaben & Ausgaben meistern (ca. 60 Min.)
 - Buttons einbauen – deine erste Interaktion!
 - Drehregler auslesen und LED-Helligkeit steuern
 - PWM-Magie: Stufenloses Dimmen
@@ -127,12 +128,7 @@ void loop() {
 Jetzt wird's richtig cool! Wähle eines dieser Projekte und baue es:
 - **🚦 Ampelsteuerung:** Programmiere eine funktionierende Mini-Ampel
 - **⚡ Reaktionsspiel:** LED blinkt auf – wer ist am schnellsten am Buzzer?
-- **🌈 RGB-Farbmischer:** Mixe mit drei Drehreglern deine Lieblingsfarben
-
-### 5️⃣ Abschluss (ca. 15 Min.)
-- Zeig, was du gebaut hast!
-- Fragen & Antworten
-- Wie geht's weiter? (Spoiler: Es gibt SO viel zu entdecken!)
+- **###🌈 RGB-Farbmischer:** Mixe mit drei Drehreglern deine Lieblingsfarben
 
 
 ### 💻 Die Software
@@ -148,16 +144,6 @@ In diesem Repository findest du:
 - **[Arduino Nano Pinout](medien/Arduino-Nano-Pinout.png)** – Übersicht aller Pins am Arduino Nano
 - **[Arduino UNO Pinout](medien/Arduino-UNO-pinout.jpg)** – Übersicht aller Pins am Arduino UNO
 
-## 🚀 Wie geht's weiter?
-
-Das ist erst der Anfang! Nach diesem Kurs kannst du weitermachen mit:
-- 🤖 Servomotoren für Roboter-Arme
-- 📺 LCD-Displays für coole Anzeigen
-- 🌡️ Sensoren (Temperatur, Abstand, Licht, Bewegung...)
-- 🎵 Sound-Module und Musik-Player
-- 🎮 Game-Controller bauen
-- 💡 Smarthome-Projekte
-- ...und was dir sonst noch einfällt!
 
 
 ## Kontakt
