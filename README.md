@@ -10,12 +10,12 @@
   - [💡 Dein erstes Arduino Programm: Lass die LED blinken](#-dein-erstes-arduino-programm-lass-die-led-blinken)
     - [Digital Output](#digital-output)
     - [Analog Output: LED dimmen](#analog-output-led-dimmen)
-  - [🛠️ Eingaben \& Ausgaben meistern](#️-eingaben--ausgaben-meistern)
+  - [🛠️ Eingaben - Digital und analog input](#️-eingaben---digital-und-analog-input)
     - [Digital Input](#digital-input)
     - [Analog input](#analog-input)
+      - [Aufgabe: Poti auslesen und LED ansteuern](#aufgabe-poti-auslesen-und-led-ansteuern)
     - [🎨 Dein eigenes Projekt](#-dein-eigenes-projekt)
   - [💻 Die Software](#-die-software)
-  - [📚 Kursmaterialien](#-kursmaterialien)
   - [📞 Kontakt](#-kontakt)
 
 ## 💡 Was dich erwartet
@@ -130,7 +130,7 @@ void loop() {
 
 ---
 
-## 🛠️ Eingaben & Ausgaben meistern
+## 🛠️ Eingaben - Digital und analog input
 ### Digital Input
 
 - Was ist ein **digitaler Input**?  
@@ -148,8 +148,13 @@ if (tasterStatus == HIGH) {
 - Wichtig: Vergiss nicht, vorher den Pin im `setup()` als Eingang zu definieren:
 ```cpp
 pinMode(2, INPUT);
+pinMode(2, INPUT_PULLUP);
 ```
 - **Aufgabe 1: Taste lesen** Mache ein Programm, das die LED einschaltet, solange der Taster gerdrückt ist
+  - Beachte, dass der Input einen Pullup (oder Pulldown) 10 kΩ Widerstand braucht. 
+  - [Schaltplan: Taster und LED am Arduino](medien/LED_Taster_Schaltplan.png)  
+    [Steckplatine: Taster und LED am Arduino](medien/LED_Taster_Steckplatine.png) 
+  - Der Widerstand kann weggelassen werden, wenn man stattdessen den internen Pullup Widerstand des Arduino benutzt. Dazu muss der Input mit `pinMode(PIN_NUMBER, INPUT_PULLUP)` initalisiert werden
 - **Aufgabe 2: Toggle-LED mit dem Taster (mit Entprellen)**
 Mache ein Programm, das die LED bei jedem Tastendruck umschaltet (Toggle). 
   - Nutze eine Variable, um den letzten Tasterzustand zu speichern
@@ -157,13 +162,24 @@ Mache ein Programm, das die LED bei jedem Tastendruck umschaltet (Toggle).
   - **Beispielcode:** Der vollständige Beispielcode ist in der Datei [`beispielcode/toggle_led_taster.ino`](beispielcode/toggle_led_taster.ino) zu finden.
 
 ### Analog input
-- Ein analoger Input ist ein Eingangspin am Arduino, der nicht nur AN oder AUS kennt, sondern viele Werte dazwischen. Damit kannst du z.B. einen Drehregler (Potentiometer) auslesen und bekommst Werte von 0 bis 1023. So kannst du z.B. die Helligkeit einer LED stufenlos steuern.
+- Ein **analoger** Input ist ein Eingangspin am Arduino, der nicht nur AN oder AUS kennt, sondern viele Werte dazwischen. Damit kannst du z.B. einen Drehregler (Potentiometer) auslesen und bekommst Werte von 0 bis 1023. So kannst du z.B. die Helligkeit einer LED an einem analog output stufenlos steuern.
 
 - So liest du einen analogen Input:
 ```cpp
 int sensorWert = analogRead(A0); // Liest den Wert vom analogen Pin A0 (0 bis 1023)
 ```
+Hinweis: analogRead benötigt **kein** pinMode Setting im setup.  
+
 Typische analoge Inputs sind Potentiometer, Lichtsensoren oder Temperatursensoren.
+#### Aufgabe: Poti auslesen und LED ansteuern
+
+- Baue einen Poti so auf, dass ein Anschluss an 5V, einer an GND und der mittlere an den analogen Pin A0 geht.
+- Lese den Wert des Potis mit `analogRead(A0)` aus und steuere damit die Helligkeit der LED mit `analogWrite(9, ...)`.
+- Tipp: Da `analogRead` Werte von 0 bis 1023 liefert, `analogWrite` aber nur 0 bis 255 erwartet, musst du den Wert umrechnen, z.B. mit `wert / 4`.
+ - [Schaltplan: Poti und LED am Arduino](medien/LED_Poti_Schaltplan.png)  
+    [Steckplatine: Poti und LED am Arduino](medien/LED_Poti_Steckplatine.png) 
+
+**Beispielcode:** Siehe [`beispielcode/poti_led.ino`](beispielcode/poti_led.ino)
 - **Drehregler** auslesen und LED-Helligkeit steuern
 - **PWM-Magie** Stufenloses Dimmen
 
@@ -172,7 +188,7 @@ Typische analoge Inputs sind Potentiometer, Lichtsensoren oder Temperatursensore
 Jetzt wird's richtig cool! Wähle eines dieser Projekte und baue es:
 - **Ampelsteuerung:** Programmiere eine funktionierende Mini-Ampel
 - **Reaktionsspiel:** LED blinkt auf – wer ist am schnellsten am Buzzer?
-- **###RGB-Farbmischer:** Mixe mit drei Drehreglern deine Lieblingsfarben
+- **RGB-Farbmischer:** Mixe mit drei Drehreglern deine Lieblingsfarben
 
 ---
 ## 💻 Die Software
@@ -180,14 +196,6 @@ Jetzt wird's richtig cool! Wähle eines dieser Projekte und baue es:
 - **Arduino IDE** – komplett kostenlos und open source!
 - Download: [https://www.arduino.cc/en/software](https://www.arduino.cc/en/software)
 ---
-## 📚 Kursmaterialien
-
-In diesem Repository findest du:
-
-- **[Arduino Cheatsheet (PDF)](medien/4rtech_arduino-cheatsheet-deutsch.pdf)** – Schnellübersicht aller wichtigen Befehle
-- **[Arduino UNO Pinout](medien/Arduino-UNO-pinout.jpg)** – Übersicht aller Pins am Arduino UNO
-- **[Arduino Nano Pinout](medien/Arduino-Nano-Pinout.png)** – Übersicht aller Pins am Arduino Nano
-
 
 
 ## 📞 Kontakt
