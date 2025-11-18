@@ -1,61 +1,42 @@
-**Mikrocontroller zum Anfassen – Deine ersten 3 Stunden als Maker!**
-- [💡 Was dich erwartet](#-was-dich-erwartet)
-- [👥 Für wen ist dieser Kurs?](#-für-wen-ist-dieser-kurs)
-- [🎯 Was du am Ende kannst](#-was-du-am-ende-kannst)
-- [🚀 Der Fahrplan](#-der-fahrplan)
-  - [1️⃣ Dein Maker Kit kennenlernen](#1️⃣-dein-maker-kit-kennenlernen)
-    - [Aufgabe: Bringe eine LED zum Leuchten\*\*](#aufgabe-bringe-eine-led-zum-leuchten)
-  - [2️⃣ Dein Start in die Arduino-Welt (ca. 45 Min.)](#2️⃣-dein-start-in-die-arduino-welt-ca-45-min)
+# Mikrocontroller zum Anfassen – Deine ersten 3 Stunden als Maker
+- [Mikrocontroller zum Anfassen – Deine ersten 3 Stunden als Maker](#mikrocontroller-zum-anfassen--deine-ersten-3-stunden-als-maker)
+  - [💡 Was dich erwartet](#-was-dich-erwartet)
+  - [📦 Dein Maker Kit kennenlernen](#-dein-maker-kit-kennenlernen)
+    - [Aufgabe: Wie fliesst der Strom? Bringe eine LED zum Leuchten](#aufgabe-wie-fliesst-der-strom-bringe-eine-led-zum-leuchten)
+  - [🚦 Dein Start in die Arduino-Welt](#-dein-start-in-die-arduino-welt)
     - [- Was ist ein Arduino überhaupt?](#--was-ist-ein-arduino-überhaupt)
     - [- Tour durch den Arduino Nano/UNO](#--tour-durch-den-arduino-nanouno)
     - [- Die Arduino IDE – deine Programmier-Zentrale](#--die-arduino-ide--deine-programmier-zentrale)
-  - [3️⃣ Dein erstes Arduino Programm. Lass die LED blinken](#3️⃣-dein-erstes-arduino-programm-lass-die-led-blinken)
-      - [**🔍 Code-Erklärung**](#-code-erklärung)
-      - [Lade das Programm auf deinen Arduino hoch.](#lade-das-programm-auf-deinen-arduino-hoch)
-    - [🧩 Zusatzaufgaben](#-zusatzaufgaben)
-  - [4️⃣ Eingaben \& Ausgaben meistern (ca. 60 Min.)](#4️⃣-eingaben--ausgaben-meistern-ca-60-min)
-  - [4️⃣ Dein eigenes Projekt (ca. 60 Min.)](#4️⃣-dein-eigenes-projekt-ca-60-min)
+  - [💡 Dein erstes Arduino Programm: Lass die LED blinken](#-dein-erstes-arduino-programm-lass-die-led-blinken)
+    - [Digital Output](#digital-output)
+    - [Analog Output: LED dimmen](#analog-output-led-dimmen)
+  - [🛠️ Eingaben \& Ausgaben meistern](#️-eingaben--ausgaben-meistern)
+    - [Digital Input](#digital-input)
+    - [Analog input](#analog-input)
+    - [🎨 Dein eigenes Projekt](#-dein-eigenes-projekt)
   - [💻 Die Software](#-die-software)
   - [📚 Kursmaterialien](#-kursmaterialien)
-- [Kontakt](#kontakt)
+  - [📞 Kontakt](#-kontakt)
 
 ## 💡 Was dich erwartet
+Du bist 10 Jahre alt oder älter, und neugierig auf Microcontroller und hast Lust aufs Experimentieren?  
+Dann bist du hier richtig im **Maker Kurs für Einsteiger**
 
-Tauche ein in die spannende Welt der Mikrocontroller! Mit dem Arduino Nano bringst du LEDs zum Leuchten und baust interaktive Schaltungen. In nur drei Stunden lernst du die Basics der Programmierung und Elektronik – und nimmst dein eigenes funktionierendes Gadget mit nach Hause!
-
-
-
-## 👥 Für wen ist dieser Kurs?
-
-- **Alter:** Ab 10 Jahren
-- **Vorkenntnisse:** Null, nada, nichts – du startest bei Null!
-- **Mitbringen:** Nur deine Neugierde und Lust aufs Experimentieren
+Tauche ein in die spannende Welt der Mikrocontroller! Mit dem Arduino bringst du LEDs zum Leuchten und baust interaktive Schaltungen. In nur drei Stunden lernst du die Basics der Programmierung und Elektronik – und nimmst dein eigenes funktionierendes Gadget mit nach Hause!
 
 
-## 🎯 Was du am Ende kannst
-
-Nach diesem Kurs kannst du:
-- ✅ Die Arduino IDE bedienen und deinen Code auf das Board laden
-- ✅ Elektronische Schaltungen auf dem Breadboard bauen
-- ✅ LEDs zum Blinken, Leuchten und Dimmen bringen
-- ✅ Taster einsetzen
-
-
-## 🚀 Der Fahrplan
-
-
-### 1️⃣ Dein Maker Kit kennenlernen
+## 📦 Dein Maker Kit kennenlernen
 
 Zu Beginn des Kurses erhältst du ein Maker Kit. Öffne die Kiste. Was findest du?
-- Arduino (Nano oder Uno)
-- Steckbrett (Breadboard)
+- Arduino (UNO oder Nano)
+- Steckplatine (Breadboard)
 - LEDs
 - Widerstände
 - Jumper-Kabel
 - Taster 
 - was noch?
 
-#### Aufgabe: Bringe eine LED zum Leuchten**
+### Aufgabe: Wie fliesst der Strom? Bringe eine LED zum Leuchten
 1. Stecke eine LED ins Breadboard (langes Bein = Plus, kurzes = Minus).
 2. Verbinde das lange Bein über einen Widerstand (z.B. 220Ω) mit dem 5V-Pin des Arduino.  
 Warum brauchst du den Widerstand?
@@ -63,26 +44,38 @@ Warum brauchst du den Widerstand?
 4. Schließe den Arduino am Computer an. Die LED sollte jetzt leuchten
 
 Die Pinbelegung des Arduino findest du im Ordner `medien` als Bilddatei:  
+- [Arduino UNO Pinout](medien/Arduino-UNO-pinout.jpg)  
 - [Arduino Nano Pinout](medien/Arduino-Nano-pinout.png)  
-- [Arduino Uno Pinout](medien/Arduino-UNO-pinout.jpg)  
 
 So gehts:
-- [5V-Schaltplan (PDF)](medien/LED_5Volt_Schaltplan.png) – So sieht der Stromkreis aus
-- [5V-Steckplatine (Bild)](medien/LED_5Volt_Steckplatine.png) – Beispiel für den Aufbau auf dem Breadboard
+- [Schaltplan LED an 5 Volt](medien/LED_5Volt_Schaltplan.png) – So sieht der Stromkreis aus
+- [Steckplatine LED an 5 Volt](medien/LED_5Volt_Steckplatine.png) – Beispiel für den Aufbau auf dem Breadboard
 
-### 2️⃣ Dein Start in die Arduino-Welt (ca. 45 Min.)
-#### - Was ist ein Arduino überhaupt?
-#### - Tour durch den Arduino Nano/UNO
+---
+
+## 🚦 Dein Start in die Arduino-Welt
+### - Was ist ein Arduino überhaupt?
+### - Tour durch den Arduino Nano/UNO
 - Inputs, Outputs, Digital, Analog
 - Pinout Arduino 
-#### - Die Arduino IDE – deine Programmier-Zentrale
+### - Die Arduino IDE – deine Programmier-Zentrale
 - Starte die Arduino IDE  
-- Der Editor. Die Code Eingabe
+- Der Editor. Hier gibts du deine Befehle für den Arduino ein
 - Laden das Programms auf deinen Arduino
 
 
-### 3️⃣ Dein erstes Arduino Programm. Lass die LED blinken
-Gib folgendes Programm ein
+---
+
+## 💡 Dein erstes Arduino Programm: Lass die LED blinken
+### Digital Output
+
+- Schliesse die LED an einen digitalen Ausgang des Arduino an.  
+  Suche dazu einen digitalen Output in [Arduino UNO Pinout](medien/Arduino-UNO-pinout.jpg).  
+- So gehts:
+  - [Schaltplan LED an D7 ](medien/LED_Schaltplan.png) 
+  - [Steckplatine LED an D7 ](medien/LED_Steckplatine.png)
+- Starte die Arduino IDE
+- Gib folgenden Code ein:
 ```cpp
 void setup() {
   pinMode(13, OUTPUT); // Pin 13 als Ausgang
@@ -95,58 +88,109 @@ void loop() {
   delay(500);             // 0,5 Sekunden warten
 }
 ```
-##### **🔍 Code-Erklärung**
-- `setup()`: Wird einmal beim Start ausgeführt. Hier wird der Pin als Ausgang gesetzt.
-- `pinMode()`: Legt fest, ob ein Pin als Eingang (`INPUT`) oder Ausgang (`OUTPUT`) verwendet wird. Hier wird Pin 13 als Ausgang für die LED definiert.
-- `loop()`: Läuft immer wieder. Schaltet die LED an/aus und wartet jeweils 0,5 Sekunden.
-- `digitalWrite()`: Schaltet den Pin auf HIGH (an) oder LOW (aus).
-- `delay()`: Wartet die angegebene Zeit in Millisekunden.
+---
 
-##### Lade das Programm auf deinen Arduino hoch.
+- Code-Erklärung
+  - `setup()`: Wird in jedem Arduino scetch einmal beim Start ausgeführt. Hier wird der Pin als Ausgang gesetzt.
+  - `pinMode()`: Legt fest, ob ein Pin als Eingang (`INPUT`) oder Ausgang (`OUTPUT`) verwendet wird. Hier wird Pin 13 als Ausgang für die LED definiert.
+  - `loop()`: Läuft immer wieder. Schaltet die LED an/aus und wartet jeweils 0,5 Sekunden.
+  - `digitalWrite()`: Schaltet den Pin auf HIGH (an) oder LOW (aus).
+  - `delay()`: Wartet die angegebene Zeit in Millisekunden. Das sind tausendstel Sekunden (Der Arduino ist schnell!). delay(1000) wartet also eine Sekunde.
 
-#### 🧩 Zusatzaufgaben
+---
 
-1. **LED schneller oder langsamer blinken lassen:**
-
+- **Zusatzaufgabe 1: LED schneller oder langsamer blinken lassen:**
   - Wie lässt du die LED schneller oder langsamer blinken?
-  - Lass die auf dem Arduino eingebaute LED blinken. Findest du die eingebaute LED im Pinout?
+  - Lass auch mal die auf dem Arduino **eingebaute** LED blinken. Findest du die eingebaute LED im [Arduino UNO Pinout](medien/Arduino-UNO-pinout.jpg) ?
 
-2. **Morsecode SOS:**
+- **Zusatztaufgabe 2: Morsecode SOS:**
   - Schreibe ein Programm, das die LED das Morsezeichen SOS blinken lässt:
     - S = kurz kurz kurz (drei schnelle Blinks)
     - O = lang lang lang (drei lange Blinks)
     - S = kurz kurz kurz (drei schnelle Blinks)
   - Tipp: Nutze unterschiedliche `delay()`-Werte für kurz (z.B. 150 ms) und lang (z.B. 500 ms) und passende Pausen zwischen den Buchstaben.
+---
+### Analog Output: LED dimmen
+
+- Der Arduino kann an bestimmten Pins sogenannte **PWM-Signale** (Pulsweitenmodulation) ausgeben. Damit kannst du z.B. die Helligkeit einer LED stufenlos steuern – auch wenn der Arduino eigentlich nur AN oder AUS kennt.
+- Typische PWM-Pins sind mit einer `~` (Tilde) am Arduino beschriftet (z.B. 3, 5, 6, 9, 10, 11 beim UNO).
 
 
-### 4️⃣ Eingaben & Ausgaben meistern (ca. 60 Min.)
-- Buttons einbauen – deine erste Interaktion!
-- Drehregler auslesen und LED-Helligkeit steuern
-- PWM-Magie: Stufenloses Dimmen
+- `analogWrite(Pin, Wert)`: Wert von 0 (aus) bis 255 (volle Helligkeit) 
+- Beispiele, eine LED hell, halbhell, dunkel zu schalten mit  `analogWrite()`:
+```cpp
+    analogWrite(9, 255); // LED maximale Helligkeit
+    analogWrite(9, 128); // LED halbe Helligkeit
+    analogWrite(9, 0); // LED minimale Helligkeit = aus
+``` 
+- Auch hier darf nicht vergessen werden, den Port vorher als Ausgang zu schalten mit `pinMode(9, OUTPUT)`
+- **Aufgabe:** Baue die Schaltung auf und lasse die LED sanft heller und dunkler werden!
+  
+  **Beispielcode:** Siehe [`beispielcode/led_fading_poti.ino`](beispielcode/led_fading.ino)
 
-### 4️⃣ Dein eigenes Projekt (ca. 60 Min.)
+---
+
+## 🛠️ Eingaben & Ausgaben meistern
+### Digital Input
+
+- Was ist ein **digitaler Input**?  
+  Ein digitaler Input ist ein Eingangspin am Arduino, der nur zwei Zustände kennt: **AN** (HIGH, 5V) oder **AUS** (LOW, 0V). Typische digitale Eingaben sind Taster oder Schalter. Wenn du z.B. einen Taster an einen digitalen Pin anschließt, kann der Arduino erkennen, ob der Taster gedrückt ist (HIGH) oder nicht (LOW).
+
+- So liest du einen digitalen Input:
+```cpp
+int tasterStatus = digitalRead(2); // Liest den Zustand von Pin 2
+if (tasterStatus == HIGH) {
+  // Taster ist gedrückt
+} else {
+  // Taster ist nicht gedrückt
+}
+```
+- Wichtig: Vergiss nicht, vorher den Pin im `setup()` als Eingang zu definieren:
+```cpp
+pinMode(2, INPUT);
+```
+- **Aufgabe 1: Taste lesen** Mache ein Programm, das die LED einschaltet, solange der Taster gerdrückt ist
+- **Aufgabe 2: Toggle-LED mit dem Taster (mit Entprellen)**
+Mache ein Programm, das die LED bei jedem Tastendruck umschaltet (Toggle). 
+  - Nutze eine Variable, um den letzten Tasterzustand zu speichern
+  - entprelle den Taster mit einer kleinen Wartezeit.  
+  - **Beispielcode:** Der vollständige Beispielcode ist in der Datei [`beispielcode/toggle_led_taster.ino`](beispielcode/toggle_led_taster.ino) zu finden.
+
+### Analog input
+- Ein analoger Input ist ein Eingangspin am Arduino, der nicht nur AN oder AUS kennt, sondern viele Werte dazwischen. Damit kannst du z.B. einen Drehregler (Potentiometer) auslesen und bekommst Werte von 0 bis 1023. So kannst du z.B. die Helligkeit einer LED stufenlos steuern.
+
+- So liest du einen analogen Input:
+```cpp
+int sensorWert = analogRead(A0); // Liest den Wert vom analogen Pin A0 (0 bis 1023)
+```
+Typische analoge Inputs sind Potentiometer, Lichtsensoren oder Temperatursensoren.
+- **Drehregler** auslesen und LED-Helligkeit steuern
+- **PWM-Magie** Stufenloses Dimmen
+
+---
+### 🎨 Dein eigenes Projekt
 Jetzt wird's richtig cool! Wähle eines dieser Projekte und baue es:
-- **🚦 Ampelsteuerung:** Programmiere eine funktionierende Mini-Ampel
-- **⚡ Reaktionsspiel:** LED blinkt auf – wer ist am schnellsten am Buzzer?
-- **###🌈 RGB-Farbmischer:** Mixe mit drei Drehreglern deine Lieblingsfarben
+- **Ampelsteuerung:** Programmiere eine funktionierende Mini-Ampel
+- **Reaktionsspiel:** LED blinkt auf – wer ist am schnellsten am Buzzer?
+- **###RGB-Farbmischer:** Mixe mit drei Drehreglern deine Lieblingsfarben
 
-
-### 💻 Die Software
+---
+## 💻 Die Software
 
 - **Arduino IDE** – komplett kostenlos und open source!
 - Download: [https://www.arduino.cc/en/software](https://www.arduino.cc/en/software)
-
-### 📚 Kursmaterialien
+---
+## 📚 Kursmaterialien
 
 In diesem Repository findest du:
 
 - **[Arduino Cheatsheet (PDF)](medien/4rtech_arduino-cheatsheet-deutsch.pdf)** – Schnellübersicht aller wichtigen Befehle
-- **[Arduino Nano Pinout](medien/Arduino-Nano-Pinout.png)** – Übersicht aller Pins am Arduino Nano
 - **[Arduino UNO Pinout](medien/Arduino-UNO-pinout.jpg)** – Übersicht aller Pins am Arduino UNO
+- **[Arduino Nano Pinout](medien/Arduino-Nano-Pinout.png)** – Übersicht aller Pins am Arduino Nano
 
 
 
-## Kontakt
+## 📞 Kontakt
 
 Bei Fragen zum Kurs oder Material:  
 **MINT-Labs Regensburg**  
