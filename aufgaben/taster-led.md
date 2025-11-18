@@ -1,3 +1,4 @@
+### Programmierung des Arduino: Lasse die LED blinken
 
 # Aufgabe: LED mit Taster steuern
 
@@ -23,25 +24,36 @@ Eine LED mit einem Taster ein- und ausschalten (Toggle-Funktion)
 - 1× Breadboard
 
 
-## 🔌 Schaltplan LED
-
-<img src="..\assets\LED_Schaltplan.png" alt="Schaltplan mit LED" width="350" />
-
-LED über 220Ω Vorwiderstand an Output D7   
-
-
-
 ## 📝 Schritt-für-Schritt Anleitung
 
 ### Schritt 1: LED ansteuern
+### 🔌 Schaltplan LED
+
+<img src="..\medien\LED_Schaltplan.png" alt="Schaltplan mit LED" width="350" />
+
+
+> **Wichtig:** Der Vorwiderstand schützt die LED und den Arduino vor zu hohem Strom!
+
+
+
 1. **Arduino vom USB trennen** (Sicherheit!)
 2. **LED ins Breadboard:**
     - Langes Bein = Plus, kurzes = Minus
     - 220Ω Widerstand vom langen Bein zu Pin **D7**
     - Kurzes LED-Bein zu GND
-3. **Arduino wieder per USB verbinden**
 
-4. **Test-Code für LED:**
+---
+
+### Programmierung des Arduino: Lasse die LED blinken
+
+Schreibe ein Programm, das die LED an Pin D7 blinken lässt. 
+
+**Dazu ist erforderlich:**
+- `pinMode()` – Pin als Ausgang konfigurieren
+- `digitalWrite()` – LED ein/aus schalten
+- `delay()` – Pausen zwischen den Zuständen
+- Endlosschleife (`loop()`-Funktion)
+
 
 ```cpp
 #include <Arduino.h>
@@ -60,109 +72,56 @@ void loop() {
 }
 ```
 
-5. **LED sollte blinken!**
 
 ---
+
+### Zusatzaufgabe
+
+1. **LED 10 mal blinken lassen:**
+    - Lasse die LED 10 mal blinken. Warte 2 Sekunden, dann wieder 10 mal blinken
+
+2. **Morsecode SOS:**
+    - Schreibe ein Programm, das die LED das Morsezeichen SOS blinken lässt:
+        - S = kurz kurz kurz (drei schnelle Blinks)
+        - O = lang lang lang (drei lange Blinks)
+        - S = kurz kurz kurz (drei schnelle Blinks)
+    - Tipp: Nutze unterschiedliche `delay()`-Werte für kurz (z.B. 150 ms) und lang (z.B. 500 ms) und passende Pausen zwischen den Buchstaben.
+
+---
+
+
 
 ### Schritt 2: Taster zusätzlich einbauen
 ## 🔌 Schaltplan LED und Taster
 
-<img src="..\assets\LED_Taster_Schaltplan.png" alt="Schaltplan mit LED und Taster" width="350" />
+<img src="..\medien\LED_Taster_Schaltplan.png" alt="Schaltplan mit LED und Taster" width="350" />
 
 LED über 220Ω Vorwiderstand an Output D7   
 Taster mit 10kΩ Pullup Widerstand an Input2 D7 
 
-1. **Arduino wieder vom USB trennen**
-2. **Taster ins Breadboard:**
-    - Ein Taster-Pin zu **D2**
-    - Anderer Taster-Pin zu GND
-    - 10kΩ Widerstand von **D2** zu +5V (Pullup)
-3. **Arduino wieder per USB verbinden**
 
 
-### Schritt 3: LED leuchtet, wenn Taster gedrückt ist
-1. **Code für direkte Steuerung:**
-
-```cpp
-#include <Arduino.h>
-
-const int TASTER_PIN = 2;
-const int LED_PIN = 7;
-
-void setup() {
-    pinMode(TASTER_PIN, INPUT);
-    pinMode(LED_PIN, OUTPUT);
-}
-
-void loop() {
-    int tasterZustand = digitalRead(TASTER_PIN);
-    if (tasterZustand == HIGH) {
-        digitalWrite(LED_PIN, HIGH); // LED an
-    } else {
-        digitalWrite(LED_PIN, LOW);  // LED aus
-    }
-}
-```
-
-2. **Testen:** Die LED leuchtet nur, solange der Taster gedrückt wird.
 
 ---
 
-### Schritt 4: Code schreiben (Toggle-Version)
-
-Öffne `src/main.cpp` und ersetze den Inhalt mit:
-
-```cpp
-#include <Arduino.h>
-
-const int TASTER_PIN = 2;
-const int LED_PIN = 7;
-
-bool ledZustand = false;           // LED-Status speichern
-bool letzterTasterZustand = LOW;   // Vorheriger Taster-Status
-
-void setup()
-{
-    Serial.begin(115200);
-    Serial.println("Taster-LED gestartet (Toggle)");
-    pinMode(TASTER_PIN, INPUT);
-    pinMode(LED_PIN, OUTPUT);
-}
-
-void loop()
-{
-    // Aktuellen Taster-Zustand lesen
-    int tasterZustand = digitalRead(TASTER_PIN);
-    // Prüfen ob Taster GERADE gedrückt wurde (Flanke)
-    if (tasterZustand == HIGH && letzterTasterZustand == LOW) {
-        // Taster wurde gerade gedrückt!
-        ledZustand = !ledZustand;  // LED-Status umkehren
-        digitalWrite(LED_PIN, ledZustand);
-        Serial.print("Toggle! LED ist jetzt: ");
-        Serial.println(ledZustand ? "AN" : "AUS");
-        delay(50);  // Entprellung
+### Schritt 3: LED leuchtet, wenn Taster gedrückt ist
+1. **Code für direkte Steuerung:**
+    
+    ```cpp
+    #include <Arduino.h>
+    const int TASTER_PIN = 2;
+    const int LED_PIN = 7;
+    void setup() {
     }
-    // Aktuellen Zustand für nächsten Durchlauf speichern
-    letzterTasterZustand = tasterZustand;
-    delay(10);  // Kurze Pause
-}
-```
+    void loop() {
+        int tasterZustand = digitalRead(TASTER_PIN);
+        if (tasterZustand == HIGH) {
+        } else {
+            digitalWrite(LED_PIN, LOW);  // LED aus
+        }
+---
 
-### Schritt 3: Testen
-1. **Speichern:** `Ctrl+S`
-2. **Kompilieren:** Klick auf ✓ (Build) in der Statusleiste
-3. **Hochladen:** Klick auf → (Upload) in der Statusleiste
-4. **Taster drücken:** Die LED sollte bei jedem Druck umschalten!
-
-## 🔍 Code-Erklärung
-
-```cpp
-if (tasterZustand == HIGH && letzterTasterZustand == LOW) {
-    // Taster wurde GERADE gedrückt (steigende Flanke)
-}
-```
-- Erkennt den Moment des Drückens
-- Nicht: "Taster ist gedrückt", sondern: "Taster wurde gerade gedrückt"
+### Schritt 4: Toggle-Funktion programmieren
 
 ```cpp
 ledZustand = !ledZustand;  // Umkehren: true → false, false → true
@@ -180,15 +139,7 @@ ledZustand = !ledZustand;  // Umkehren: true → false, false → true
 
 - **Pull-Down:** Widerstand von Pin zu GND → Pin standardmäßig LOW
 - **Pull-Up:** Widerstand von Pin zu +5V → Pin standardmäßig HIGH
-- **Floating Pin:** Pin ohne Pull-Widerstand → zufällige Werte
-- **Entprellung (Debouncing):** Filtern mechanischer Kontaktschwingungen
-- **Flanke:** Übergang von LOW zu HIGH (steigend) oder HIGH zu LOW (fallend)
-- **Toggle:** Umschalten zwischen zwei Zuständen
-- **millis():** Millisekunden seit Arduino-Start (läuft ~50 Tage)
-
-### Mit internem Pull-Up (ohne 10kΩ Widerstand)
 ```
-Arduino Pin 7 ----[Taster]---- GND
              |
          (intern Pull-Up)
              
