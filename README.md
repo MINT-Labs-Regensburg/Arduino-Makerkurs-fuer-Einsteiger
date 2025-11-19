@@ -139,10 +139,7 @@ void loop() {
 ### Aufgabe: Analog Output - LED dimmen
 
 - Der Arduino kann an bestimmten Pins sogenannte **PWM-Signale** (Pulsweitenmodulation) ausgeben. Damit kannst du z.B. die Helligkeit einer LED stufenlos steuern – auch wenn der Arduino eigentlich nur AN oder AUS kennt.
-- Typische PWM-Pins sind mit einer `~` (Tilde) am Arduino beschriftet (z.B. 3, 5, 6, 9, 10, 11 beim UNO).
-
-
-- `analogWrite(Pin, Wert)`: Wert von 0 (aus) bis 255 (volle Helligkeit) 
+- PWM-Pins sind mit einer `~` (Tilde) am Arduino beschriftet (z.B. 3, 5, 6, 9, 10, 11 beim UNO).
 - Beispiele, eine LED hell, halbhell, dunkel zu schalten mit  `analogWrite()`:
 ```cpp
     analogWrite(9, 255); // LED maximale Helligkeit
@@ -151,7 +148,6 @@ void loop() {
 ``` 
 - Auch hier darf nicht vergessen werden, den Port vorher als Ausgang zu schalten mit `pinMode(9, OUTPUT)` und einen Vorwiderstand mit 220 Ohm zu verwenden
 - **Aufgabe:** Baue die Schaltung auf und lasse die LED sanft heller und dunkler werden!
-  
   **Beispielcode:** Siehe [`beispielcode/led_fading.ino`](beispielcode/led_fading.ino)
 
 ---
@@ -212,10 +208,9 @@ Typische analoge Inputs sind Potentiometer, Lichtsensoren oder Temperatursensore
 - Baue einen Poti so auf, dass ein Anschluss an 5V, einer an GND und der mittlere an den analogen Pin A0 geht.
 - Lese den Wert des Potis mit `analogRead(A0)` aus und steuere damit die Helligkeit der LED mit `analogWrite(9, ...)`.
 - Tipp: Da `analogRead` Werte von 0 bis 1023 liefert, `analogWrite` aber nur 0 bis 255 erwartet, musst du den Wert umrechnen, z.B. mit `wert / 4`.
- - [Schaltplan: Poti und LED am Arduino](medien/LED_Poti_Schaltplan.png)  
-    [Steckplatine: Poti und LED am Arduino](medien/LED_Poti_Steckplatine.png) 
-
-**Beispielcode:** Siehe [`beispielcode/poti_led.ino`](beispielcode/poti_led.ino)
+- [Schaltplan: Poti und LED am Arduino](medien/LED_Poti_Schaltplan.png)  
+- [Steckplatine: Poti und LED am Arduino](medien/LED_Poti_Steckplatine.png) 
+- Beispielcode: Siehe [`beispielcode/poti_led.ino`](beispielcode/poti_led.ino)
 
 ---
 ---
