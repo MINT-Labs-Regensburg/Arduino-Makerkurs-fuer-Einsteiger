@@ -1,5 +1,5 @@
-# Mikrocontroller zum Anfassen – Dein Einstieg als Maker
-- [Mikrocontroller zum Anfassen – Dein Einstieg als Maker](#mikrocontroller-zum-anfassen--dein-einstieg-als-maker)
+# Arduino Makerkurs für Einsteiger – Mikrocontroller zum Anfassen
+- [Arduino Makerkurs für Einsteiger – Mikrocontroller zum Anfassen](#arduino-makerkurs-für-einsteiger--mikrocontroller-zum-anfassen)
   - [Was dich erwartet](#was-dich-erwartet)
   - [Dein Arduino Maker Kit kennenlernen](#dein-arduino-maker-kit-kennenlernen)
   - [Dein Start in die Arduino-Welt](#dein-start-in-die-arduino-welt)
