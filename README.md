@@ -186,6 +186,9 @@ pinMode(2, INPUT);
   - [Schaltplan: Taster und LED am Arduino](medien/LED_Taster_Schaltplan.png)  
     [Steckplatine: Taster und LED am Arduino](medien/LED_Taster_Steckplatine.png) 
   - Der 10 kΩ Pullup Widerstand kann weggelassen werden, wenn man stattdessen den internen Pullup Widerstand des Arduino benutzt. Dazu muss der Input mit `pinMode(PIN_NUMBER, INPUT_PULLUP)` initalisiert werden
+```cpp
+pinMode(2, INPUT_PULLUP);
+```
 - **Aufgabe 2: Toggle-LED mit dem Taster (mit Entprellen)**
 Mache ein Programm, das die LED bei jedem Tastendruck umschaltet (Toggle). 
   - Nutze eine Variable, um den letzten Tasterzustand zu speichern
