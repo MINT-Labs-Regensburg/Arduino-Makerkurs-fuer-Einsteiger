@@ -1,27 +1,26 @@
-# Mikrocontroller zum Anfassen – Dein Einstieg als Maker 🤖
-- [Mikrocontroller zum Anfassen – Dein Einstieg als Maker 🤖](#mikrocontroller-zum-anfassen--dein-einstieg-als-maker-)
-  - [💡 Was dich erwartet](#-was-dich-erwartet)
-  - [📦 Dein Maker Kit kennenlernen](#-dein-maker-kit-kennenlernen)
-    - [🧪 Aufgabe: Wie fliesst der Strom? Bringe eine LED zum Leuchten](#-aufgabe-wie-fliesst-der-strom-bringe-eine-led-zum-leuchten)
-  - [🚦 Dein Start in die Arduino-Welt](#-dein-start-in-die-arduino-welt)
-    - [ℹ️ Was ist ein Arduino überhaupt?](#ℹ️-was-ist-ein-arduino-überhaupt)
-    - [🧭 Tour durch den Arduino Nano/UNO](#-tour-durch-den-arduino-nanouno)
-    - [💻 Die Arduino IDE – deine Programmier-Zentrale](#-die-arduino-ide--deine-programmier-zentrale)
-  - [💡 Dein erstes Arduino Programm: Lass die LED blinken](#-dein-erstes-arduino-programm-lass-die-led-blinken)
-    - [💡 Digital Output](#-digital-output)
-    - [🌈 Aufgabe: Analog Output - LED dimmen](#-aufgabe-analog-output---led-dimmen)
-  - [🛠️ Eingaben – Digital \& Analog Input](#️-eingaben--digital--analog-input)
-    - [🔘 Digital Input](#-digital-input)
-    - [🎚️ Analog Input](#️-analog-input)
-    - [🌀 Aufgabe: Poti auslesen und LED ansteuern](#-aufgabe-poti-auslesen-und-led-ansteuern)
-    - [🎨 Dein eigenes Projekt](#-dein-eigenes-projekt)
-  - [💻 Die Software](#-die-software)
+# Mikrocontroller zum Anfassen – Dein Einstieg als Maker
+- [Mikrocontroller zum Anfassen – Dein Einstieg als Maker](#mikrocontroller-zum-anfassen--dein-einstieg-als-maker)
+  - [Was dich erwartet](#was-dich-erwartet)
+  - [Dein Maker Kit kennenlernen](#dein-maker-kit-kennenlernen)
+    - [Aufgabe: Wie fliesst der Strom? Bringe eine LED zum Leuchten](#aufgabe-wie-fliesst-der-strom-bringe-eine-led-zum-leuchten)
+  - [Dein Start in die Arduino-Welt](#dein-start-in-die-arduino-welt)
+    - [Was ist ein Arduino überhaupt?](#was-ist-ein-arduino-überhaupt)
+    - [Tour durch den Arduino Nano/UNO](#tour-durch-den-arduino-nanouno)
+    - [Die Arduino IDE – deine Programmier-Zentrale](#die-arduino-ide--deine-programmier-zentrale)
+  - [Dein erstes Arduino Programm: Lass die LED blinken](#dein-erstes-arduino-programm-lass-die-led-blinken)
+    - [Digital Output](#digital-output)
+    - [Aufgabe: Analog Output - LED dimmen](#aufgabe-analog-output---led-dimmen)
+  - [Eingaben – Digital \& Analog Input](#eingaben--digital--analog-input)
+    - [Digital Input](#digital-input)
+    - [Analog Input](#analog-input)
+    - [Aufgabe: Poti auslesen und LED ansteuern](#aufgabe-poti-auslesen-und-led-ansteuern)
+    - [Dein eigenes Projekt](#dein-eigenes-projekt)
+  - [Die Software](#die-software)
   - [📞 Kontakt](#-kontakt)
-  - [**Viel Erfolg und Spaß beim Arduino-Kurs!** 🔧⚡](#viel-erfolg-und-spaß-beim-arduino-kurs-)
 
 ---
 
-## 💡 Was dich erwartet
+## Was dich erwartet
 Du bist 10 Jahre alt oder älter, und neugierig auf Microcontroller und hast Lust aufs Experimentieren?  
 Dann bist du hier richtig im **Maker Kurs für Einsteiger**
 
@@ -29,7 +28,7 @@ Tauche ein in die spannende Welt der Mikrocontroller! Mit dem Arduino bringst du
 
 ---
 
-## 📦 Dein Maker Kit kennenlernen
+## Dein Maker Kit kennenlernen
 
 Zu Beginn des Kurses erhältst du ein Maker Kit. Öffne die Kiste. Was findest du?
 - Arduino (UNO oder Nano)
@@ -40,7 +39,7 @@ Zu Beginn des Kurses erhältst du ein Maker Kit. Öffne die Kiste. Was findest d
 - Taster 
 - was noch?
 
-### 🧪 Aufgabe: Wie fliesst der Strom? Bringe eine LED zum Leuchten
+### Aufgabe: Wie fliesst der Strom? Bringe eine LED zum Leuchten
 1. Stecke eine LED ins Breadboard (langes Bein = Plus, kurzes = Minus).
 2. Verbinde das lange Bein über einen Widerstand (z.B. 220Ω) mit dem 5V-Pin des Arduino.  
 Warum brauchst du den Widerstand?
@@ -58,12 +57,12 @@ So gehts:
 
 ---
 
-## 🚦 Dein Start in die Arduino-Welt
-### ℹ️ Was ist ein Arduino überhaupt?
-### 🧭 Tour durch den Arduino Nano/UNO
+## Dein Start in die Arduino-Welt
+### Was ist ein Arduino überhaupt?
+### Tour durch den Arduino Nano/UNO
 - Inputs, Outputs, Digital, Analog
 - Pinout Arduino 
-### 💻 Die Arduino IDE – deine Programmier-Zentrale
+### Die Arduino IDE – deine Programmier-Zentrale
 - Starte die Arduino IDE  
 - Der Editor. Hier gibts du deine Befehle für den Arduino ein
 - Laden das Programms auf deinen Arduino
@@ -73,8 +72,8 @@ So gehts:
 
 ---
 
-## 💡 Dein erstes Arduino Programm: Lass die LED blinken
-### 💡 Digital Output
+## Dein erstes Arduino Programm: Lass die LED blinken
+### Digital Output
 
 - Schliesse die LED an einen digitalen Ausgang des Arduino an.  
   Suche dazu einen digitalen Output in [Arduino UNO Pinout](medien/Arduino-UNO-pinout.jpg).  
@@ -117,7 +116,7 @@ void loop() {
     - S = kurz kurz kurz (drei schnelle Blinks)
   - Tipp: Nutze unterschiedliche `delay()`-Werte für kurz (z.B. 150 ms) und lang (z.B. 500 ms) und passende Pausen zwischen den Buchstaben.
 ---
-### 🌈 Aufgabe: Analog Output - LED dimmen
+### Aufgabe: Analog Output - LED dimmen
 
 - Der Arduino kann an bestimmten Pins sogenannte **PWM-Signale** (Pulsweitenmodulation) ausgeben. Damit kannst du z.B. die Helligkeit einer LED stufenlos steuern – auch wenn der Arduino eigentlich nur AN oder AUS kennt.
 - Typische PWM-Pins sind mit einer `~` (Tilde) am Arduino beschriftet (z.B. 3, 5, 6, 9, 10, 11 beim UNO).
@@ -139,8 +138,8 @@ void loop() {
 
 ---
 
-## 🛠️ Eingaben – Digital & Analog Input
-### 🔘 Digital Input
+## Eingaben – Digital & Analog Input
+### Digital Input
 
 - Was ist ein **digitaler Input**?  
   Ein digitaler Input ist ein Eingangspin am Arduino, der nur zwei Zustände kennt: **AN** (HIGH, 5V) oder **AUS** (LOW, 0V). Typische digitale Eingaben sind Taster oder Schalter. Wenn du z.B. einen Taster an einen digitalen Pin anschließt, kann der Arduino erkennen, ob der Taster gedrückt ist (HIGH) oder nicht (LOW).
@@ -170,7 +169,7 @@ Mache ein Programm, das die LED bei jedem Tastendruck umschaltet (Toggle).
   - entprelle den Taster mit einer kleinen Wartezeit.  
   - **Beispielcode:** Der vollständige Beispielcode ist in der Datei [`beispielcode/toggle_led_taster.ino`](beispielcode/toggle_led_taster.ino) zu finden.
 
-### 🎚️ Analog Input
+### Analog Input
 - Ein **analoger** Input ist ein Eingangspin am Arduino, der nicht nur AN oder AUS kennt, sondern viele Werte dazwischen. Damit kannst du z.B. einen Drehregler (Potentiometer) auslesen und bekommst Werte von 0 bis 1023. So kannst du z.B. die Helligkeit einer LED an einem analog output stufenlos steuern.
 
 - So liest du einen analogen Input:
@@ -180,7 +179,7 @@ int sensorWert = analogRead(A0); // Liest den Wert vom analogen Pin A0 (0 bis 10
 Hinweis: analogRead benötigt **kein** pinMode Setting im setup.  
 
 Typische analoge Inputs sind Potentiometer, Lichtsensoren oder Temperatursensoren.
-### 🌀 Aufgabe: Poti auslesen und LED ansteuern
+### Aufgabe: Poti auslesen und LED ansteuern
 
 - Baue einen Poti so auf, dass ein Anschluss an 5V, einer an GND und der mittlere an den analogen Pin A0 geht.
 - Lese den Wert des Potis mit `analogRead(A0)` aus und steuere damit die Helligkeit der LED mit `analogWrite(9, ...)`.
@@ -195,7 +194,7 @@ Typische analoge Inputs sind Potentiometer, Lichtsensoren oder Temperatursensore
 ---
 ---
 
-### 🎨 Dein eigenes Projekt
+### Dein eigenes Projekt
 Jetzt wird's richtig cool! Wähle eines dieser Projekte und baue es:
 - **Ampelsteuerung:** Programmiere eine funktionierende Mini-Ampel
 - **Reaktionsspiel:** LED blinkt auf – wer ist am schnellsten am Buzzer?
@@ -204,7 +203,7 @@ Jetzt wird's richtig cool! Wähle eines dieser Projekte und baue es:
 ---
 ---
 
-## 💻 Die Software
+## Die Software
 
 - **Arduino IDE** – komplett kostenlos und open source!
 - Download: [https://www.arduino.cc/en/software](https://www.arduino.cc/en/software)
@@ -219,7 +218,3 @@ Bei Fragen zum Kurs oder Material:
 **MINT-Labs Regensburg**  
 🌐 [https://www.mint-labs-regensburg.de/](https://www.mint-labs-regensburg.de/)
 
----
-
-**Viel Erfolg und Spaß beim Arduino-Kurs!** 🔧⚡
----
