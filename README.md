@@ -8,9 +8,9 @@
     - [Die Arduino IDE – deine Programmier-Zentrale](#die-arduino-ide--deine-programmier-zentrale)
   - [Dein erstes Programm: "Hello World" mit dem Arduino](#dein-erstes-programm-hello-world-mit-dem-arduino)
   - [Digital Ouput und Analog Output](#digital-ouput-und-analog-output)
-    - [Aufgabe: Lass eine LED blinken](#aufgabe-lass-eine-led-blinken)
+    - [Aufgabe: Digital Output - Lass eine LED blinken](#aufgabe-digital-output---lass-eine-led-blinken)
     - [Aufgabe: Analog Output - LED dimmen](#aufgabe-analog-output---led-dimmen)
-  - [Eingaben – Digital \& Analog Input](#eingaben--digital--analog-input)
+  - [Eingaben – Digital Input \& Analog Input](#eingaben--digital-input--analog-input)
     - [Digital Input](#digital-input)
     - [Analog Input](#analog-input)
     - [Aufgabe: Poti auslesen und LED ansteuern](#aufgabe-poti-auslesen-und-led-ansteuern)
@@ -94,7 +94,7 @@ void loop() {
 ---
 
 ## Digital Ouput und Analog Output
-### Aufgabe: Lass eine LED blinken
+### Aufgabe: Digital Output - Lass eine LED blinken
 
 - Wähle im [Pinout](medien/Arduino-UNO-pinout.jpg) den Digital Output Pin aus, den du verwenden möchtest
 - Stecke eine LED ins Breadboard (langes Bein = Plus, kurzes = Minus).
@@ -158,9 +158,8 @@ void loop() {
 
 ---
 
-## Eingaben – Digital & Analog Input
+## Eingaben – Digital Input & Analog Input
 ### Digital Input
-
 
 **Was ist ein digitaler Input?**
 Ein digitaler Input ist ein Eingangspin am Arduino, der nur zwei Zustände kennt: **AN** (HIGH, 5V) oder **AUS** (LOW, 0V). Typische digitale Eingaben sind Taster oder Schalter. Wenn du z.B. einen Taster an einen digitalen Pin anschließt, kann der Arduino erkennen, ob der Taster gedrückt ist (HIGH) oder nicht (LOW).
