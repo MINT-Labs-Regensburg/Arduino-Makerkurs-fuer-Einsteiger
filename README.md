@@ -1,5 +1,5 @@
-# Arduino Makerkurs für Einsteiger – Mikrocontroller zum Anfassen
-- [Arduino Makerkurs für Einsteiger – Mikrocontroller zum Anfassen](#arduino-makerkurs-für-einsteiger--mikrocontroller-zum-anfassen)
+# Arduino Makerkurs für Einsteiger – In 3 Stunden zum eigenen Mikrocontroller-Projekt
+- [Arduino Makerkurs für Einsteiger – In 3 Stunden zum eigenen Mikrocontroller-Projekt](#arduino-makerkurs-für-einsteiger--in-3-stunden-zum-eigenen-mikrocontroller-projekt)
   - [Was dich erwartet](#was-dich-erwartet)
   - [Dein Arduino Maker Kit kennenlernen](#dein-arduino-maker-kit-kennenlernen)
   - [Dein Start in die Arduino-Welt](#dein-start-in-die-arduino-welt)
