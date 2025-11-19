@@ -100,7 +100,7 @@ void loop() {
 - Verbinde das lange Bein über einen Widerstand (z.B. 220Ω) mit dem Digital Output des Arduino.  
 Warum brauchst du den Widerstand?
 - Das kurze Bein verbindest du mit GND (Masse) am Arduino.
-  - Schau dir im Schaltplan an, wie der Strom fliesst: `Arduino Output → Widerstand → LED → Arduino GND`
+- Schau dir im Schaltplan an, wie der Strom fliesst: `Arduino Output → Widerstand → LED → Arduino GND`
   - [Schaltplan LED an D7 ](medien/LED_Schaltplan.png) 
   - [Steckplatine LED an D7 ](medien/LED_Steckplatine.png)
 - Starte die Arduino IDE
@@ -146,8 +146,8 @@ void loop() {
     analogWrite(9, 0); // LED minimale Helligkeit = aus
 ``` 
 - Auch hier darf nicht vergessen werden, den Port vorher als Ausgang zu schalten mit `pinMode(9, OUTPUT)` und einen Vorwiderstand mit 220 Ohm zu verwenden
-- **Aufgabe:** Baue die Schaltung auf und lasse die LED sanft heller und dunkler werden!
-  **Beispielcode:** Siehe [`beispielcode/led_fading.ino`](beispielcode/led_fading.ino)
+- **Aufgabe:** Baue die Schaltung auf und lasse die LED sanft heller und dunkler werden! 
+  - [Siehe Beispielcode](beispielcode/led_fading.ino)
 
 ---
 
@@ -156,8 +156,7 @@ void loop() {
 ## Eingaben – Digital Input & Analog Input
 ### Digital Input
 
-**Was ist ein digitaler Input?**
-Ein digitaler Input ist ein Eingangspin am Arduino, der nur zwei Zustände kennt: **AN** (HIGH, 5V) oder **AUS** (LOW, 0V). Typische digitale Eingaben sind Taster oder Schalter. Wenn du z.B. einen Taster an einen digitalen Pin anschließt, kann der Arduino erkennen, ob der Taster gedrückt ist (HIGH) oder nicht (LOW).
+Ein **Digitaler Input** ist ein Eingangspin am Arduino, der nur zwei Zustände kennt: **AN** (HIGH, 5V) oder **AUS** (LOW, 0V). Typische digitale Eingaben sind Taster oder Schalter. Wenn du z.B. einen Taster an einen digitalen Pin anschließt, kann der Arduino erkennen, ob der Taster gedrückt ist (HIGH) oder nicht (LOW).
 
 **So liest du einen digitalen Input:**
 
@@ -177,14 +176,14 @@ if (tasterStatus == HIGH) {
 - `if (tasterStatus == HIGH)` &rarr; Prüft, ob der Taster gedrückt ist.
 - `else` &rarr; Wird ausgeführt, wenn der Taster nicht gedrückt ist.
 
-- Wichtig: Vergiss auch hier nicht, vorher den Pin 2 im `setup()` als INPUT zu definieren:
+- Hinweis: Vergiss auch hier nicht, vorher den Pin 2 im `setup()` als INPUT zu definieren:
 ```cpp
 pinMode(2, INPUT);
 ```
 - **Aufgabe 1: Taste lesen** Mache ein Programm, das die LED einschaltet, solange der Taster gerdrückt ist
   - Beachte, dass der Input einen Pullup (oder Pulldown) 10 kΩ Widerstand braucht. 
-  - [Schaltplan: Taster und LED am Arduino](medien/LED_Taster_Schaltplan.png)  
-    [Steckplatine: Taster und LED am Arduino](medien/LED_Taster_Steckplatine.png) 
+    - [Schaltplan: Taster und LED am Arduino](medien/LED_Taster_Schaltplan.png)  
+    - [Steckplatine: Taster und LED am Arduino](medien/LED_Taster_Steckplatine.png) 
   - Der 10 kΩ Pullup Widerstand kann weggelassen werden, wenn man stattdessen den internen Pullup Widerstand des Arduino benutzt. Dazu muss der Input mit `pinMode(PIN_NUMBER, INPUT_PULLUP)` initalisiert werden
 ```cpp
 pinMode(2, INPUT_PULLUP);
@@ -209,10 +208,11 @@ Typische analoge Inputs sind Potentiometer, Lichtsensoren oder Temperatursensore
 
 - Baue einen Poti so auf, dass ein Anschluss an 5V, einer an GND und der mittlere an den analogen Pin A0 geht.
 - Lese den Wert des Potis mit `analogRead(A0)` aus und steuere damit die Helligkeit der LED mit `analogWrite(9, ...)`.
+  - [Schaltplan: Poti und LED am Arduino](medien/LED_Poti_Schaltplan.png)  
+  - [Steckplatine: Poti und LED am Arduino](medien/LED_Poti_Steckplatine.png) 
 - Tipp: Da `analogRead` Werte von 0 bis 1023 liefert, `analogWrite` aber nur 0 bis 255 erwartet, musst du den Wert umrechnen, z.B. mit `wert / 4`.
-- [Schaltplan: Poti und LED am Arduino](medien/LED_Poti_Schaltplan.png)  
-- [Steckplatine: Poti und LED am Arduino](medien/LED_Poti_Steckplatine.png) 
-- Beispielcode: Siehe [`beispielcode/poti_led.ino`](beispielcode/poti_led.ino)
+  
+  - Beispielcode: Siehe [`beispielcode/poti_led.ino`](beispielcode/poti_led.ino)
 
 ---
 ---
