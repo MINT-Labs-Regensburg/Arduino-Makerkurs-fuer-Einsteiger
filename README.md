@@ -155,7 +155,7 @@ void loop() {
 ``` 
 - Auch hier darf nicht vergessen werden, den Port vorher als Ausgang zu schalten mit `pinMode(9, OUTPUT)` und einen Vorwiderstand mit 220 Ohm zu verwenden
 - **Aufgabe:** Baue die Schaltung auf und lasse die LED sanft heller und dunkler werden! 
-  - [Siehe Beispielcode](beispielcode/led_fading.ino)
+  - Siehe [beispielcode/led_fading.ino](beispielcode/led_fading.ino)
 
 ---
 
@@ -220,7 +220,7 @@ Typische analoge Inputs sind Potentiometer, Lichtsensoren oder Temperatursensore
   - [Steckplatine: Poti und LED am Arduino](medien/LED_Poti_Steckplatine.png) 
 - Tipp: Da `analogRead` Werte von 0 bis 1023 liefert, `analogWrite` aber nur 0 bis 255 erwartet, musst du den Wert umrechnen, z.B. mit `wert / 4`.
   
-  - Beispielcode: Siehe [`beispielcode/poti_led.ino`](beispielcode/poti_led.ino)
+  - Siehe [`beispielcode/poti_led.ino`](beispielcode/poti_led.ino)
 
 ---
 ---
