@@ -1,7 +1,10 @@
 # Arduino Makerkurs für Einsteiger – In 3 Stunden zum eigenen Mikrocontroller-Projekt
 
-<img src="medien/Arduino%20Uno%20mit%20LED%20und%20Potentiometer.png" alt="Arduino Uno mit LED und Potentiometer" width="420" />
+<img src="medien/Arduino Uno mit Potentiometer und LED.png" alt="Arduino Uno mit LED und Potentiometer" width="420" />  
+<br>
+</br>
 
+**Inhalt**
 - [Arduino Makerkurs für Einsteiger – In 3 Stunden zum eigenen Mikrocontroller-Projekt](#arduino-makerkurs-für-einsteiger--in-3-stunden-zum-eigenen-mikrocontroller-projekt)
   - [Was dich erwartet](#was-dich-erwartet)
   - [Dein Arduino Maker Kit kennenlernen](#dein-arduino-maker-kit-kennenlernen)
