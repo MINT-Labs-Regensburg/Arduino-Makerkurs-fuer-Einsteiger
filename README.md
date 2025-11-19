@@ -161,11 +161,14 @@ void loop() {
 ## Eingaben – Digital & Analog Input
 ### Digital Input
 
-- Was ist ein **digitaler Input**?  
-  Ein digitaler Input ist ein Eingangspin am Arduino, der nur zwei Zustände kennt: **AN** (HIGH, 5V) oder **AUS** (LOW, 0V). Typische digitale Eingaben sind Taster oder Schalter. Wenn du z.B. einen Taster an einen digitalen Pin anschließt, kann der Arduino erkennen, ob der Taster gedrückt ist (HIGH) oder nicht (LOW).
 
-- So liest du einen digitalen Input:
+**Was ist ein digitaler Input?**
+Ein digitaler Input ist ein Eingangspin am Arduino, der nur zwei Zustände kennt: **AN** (HIGH, 5V) oder **AUS** (LOW, 0V). Typische digitale Eingaben sind Taster oder Schalter. Wenn du z.B. einen Taster an einen digitalen Pin anschließt, kann der Arduino erkennen, ob der Taster gedrückt ist (HIGH) oder nicht (LOW).
+
+**So liest du einen digitalen Input:**
+
 ```cpp
+
 int tasterStatus = digitalRead(2); // Liest den Zustand von Pin 2
 if (tasterStatus == HIGH) {
   // Taster ist gedrückt
@@ -173,10 +176,16 @@ if (tasterStatus == HIGH) {
   // Taster ist nicht gedrückt
 }
 ```
-- Wichtig: Vergiss nicht, vorher den Pin im `setup()` als Eingang zu definieren:
+
+**Code-Erklärung:**
+
+- `int tasterStatus = digitalRead(2);` &rarr; Liest den Zustand des Tasters an Pin 2 (HIGH = gedrückt, LOW = nicht gedrückt).
+- `if (tasterStatus == HIGH)` &rarr; Prüft, ob der Taster gedrückt ist.
+- `else` &rarr; Wird ausgeführt, wenn der Taster nicht gedrückt ist.
+
+- Wichtig: Vergiss auch hier nicht, vorher den Pin 2 im `setup()` als INPUT zu definieren:
 ```cpp
 pinMode(2, INPUT);
-pinMode(2, INPUT_PULLUP);
 ```
 - **Aufgabe 1: Taste lesen** Mache ein Programm, das die LED einschaltet, solange der Taster gerdrückt ist
   - Beachte, dass der Input einen Pullup (oder Pulldown) 10 kΩ Widerstand braucht. 
