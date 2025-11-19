@@ -8,8 +8,8 @@
     - [Die Arduino IDE – deine Programmier-Zentrale](#die-arduino-ide--deine-programmier-zentrale)
   - [Dein erstes Programm: "Hello World" mit dem Arduino](#dein-erstes-programm-hello-world-mit-dem-arduino)
   - [Digital Ouput und Analog Output](#digital-ouput-und-analog-output)
-    - [Aufgabe: Digital Output - Lass eine LED blinken](#aufgabe-digital-output---lass-eine-led-blinken)
-    - [Aufgabe: Analog Output - LED dimmen](#aufgabe-analog-output---led-dimmen)
+    - [Digital Output - Aufgabe: Lass eine LED blinken](#digital-output---aufgabe-lass-eine-led-blinken)
+    - [Analog Output - Aufgabe: LED dimmen](#analog-output---aufgabe-led-dimmen)
   - [Eingaben – Digital Input \& Analog Input](#eingaben--digital-input--analog-input)
     - [Digital Input](#digital-input)
     - [Analog Input](#analog-input)
@@ -94,8 +94,7 @@ void loop() {
 ---
 
 ## Digital Ouput und Analog Output
-### Aufgabe: Digital Output - Lass eine LED blinken
-
+### Digital Output - Aufgabe: Lass eine LED blinken
 - Wähle im [Pinout](medien/Arduino-UNO-pinout.jpg) den Digital Output Pin aus, den du verwenden möchtest
 - Stecke eine LED ins Breadboard (langes Bein = Plus, kurzes = Minus).
 - Verbinde das lange Bein über einen Widerstand (z.B. 220Ω) mit dem Digital Output des Arduino.  
@@ -136,9 +135,9 @@ void loop() {
     - S = kurz kurz kurz (drei schnelle Blinks)
   - Tipp: Nutze unterschiedliche `delay()`-Werte für kurz (z.B. 150 ms) und lang (z.B. 500 ms) und passende Pausen zwischen den Buchstaben.
 ---
-### Aufgabe: Analog Output - LED dimmen
+### Analog Output - Aufgabe: LED dimmen
 
-- Der Arduino kann an bestimmten Pins sogenannte **PWM-Signale** (Pulsweitenmodulation) ausgeben. Damit kannst du z.B. die Helligkeit einer LED stufenlos steuern – auch wenn der Arduino eigentlich nur AN oder AUS kennt.
+- **Was ist ein Analoger Output:** Der Arduino kann an bestimmten Pins sogenannte **PWM-Signale** (Pulsweitenmodulation) ausgeben. Damit kannst du z.B. die Helligkeit einer LED stufenlos steuern – auch wenn der Arduino eigentlich nur AN oder AUS kennt.
 - PWM-Pins sind mit einer `~` (Tilde) am Arduino beschriftet (z.B. 3, 5, 6, 9, 10, 11 beim UNO).
 - Beispiele, eine LED hell, halbhell, dunkel zu schalten mit  `analogWrite()`:
 ```cpp
