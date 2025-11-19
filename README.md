@@ -1,4 +1,7 @@
 # Arduino Makerkurs für Einsteiger – In 3 Stunden zum eigenen Mikrocontroller-Projekt
+
+<img src="medien/Arduino%20Uno%20mit%20LED%20und%20Potentiometer.png" alt="Arduino Uno mit LED und Potentiometer" width="420" />
+
 - [Arduino Makerkurs für Einsteiger – In 3 Stunden zum eigenen Mikrocontroller-Projekt](#arduino-makerkurs-für-einsteiger--in-3-stunden-zum-eigenen-mikrocontroller-projekt)
   - [Was dich erwartet](#was-dich-erwartet)
   - [Dein Arduino Maker Kit kennenlernen](#dein-arduino-maker-kit-kennenlernen)
@@ -94,6 +97,8 @@ void loop() {
 ---
 
 ## Digital Output und Analog Output
+
+
 ### Digital Output - Aufgabe: Lass eine LED blinken
 - Wähle im [Pinout](medien/Arduino-UNO-pinout.jpg) den Digital Output Pin aus, den du verwenden möchtest
 - Stecke eine LED ins Breadboard (langes Bein = Plus, kurzes = Minus).
