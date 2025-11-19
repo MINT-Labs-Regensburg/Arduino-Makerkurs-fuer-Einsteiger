@@ -89,7 +89,7 @@ void loop() {
 
 
 - Code-Erklärung
-  - `setup()`: Wird in jedem Arduino Sketch einmal beim Start ausgeführt. Hier initialisierst du z.B. die serielle Kommunikation.
+  - `setup()`: Wird in jedem Arduino Sketch einmal beim Start ausgeführt. Hier initialisierst du z.B. die serielle Kommunikation mit serial.begin().
   - `Serial.begin(9600);`: Startet die serielle Kommunikation zwischen Arduino und Computer mit 9600 Baud. Notwendig, damit der Arduino Text an den Computer senden kann.
   - `loop()`: Läuft immer wieder. Hier steht der Hauptcode, der ständig ausgeführt wird.
   - `Serial.println("Hello, World!");`: Sendet den Text "Hello, World!" an den Computer. Jede Nachricht erscheint in einer neuen Zeile im Seriellen Monitor.
