@@ -8,12 +8,12 @@
     - [Die Arduino IDE – deine Programmier-Zentrale](#die-arduino-ide--deine-programmier-zentrale)
   - [Dein erstes Programm: "Hello World" mit dem Arduino](#dein-erstes-programm-hello-world-mit-dem-arduino)
   - [Digital Output und Analog Output](#digital-output-und-analog-output)
-    - [Digital Output: Lass eine LED blinken](#digital-output-lass-eine-led-blinken)
-    - [Analog Output: LED dimmen](#analog-output-led-dimmen)
+    - [Digital Output - Aufgabe: Lass eine LED blinken](#digital-output---aufgabe-lass-eine-led-blinken)
+    - [Analog Output - Aufgabe: LED dimmen](#analog-output---aufgabe-led-dimmen)
   - [Eingaben – Digital Input \& Analog Input](#eingaben--digital-input--analog-input)
     - [Digital Input](#digital-input)
     - [Analog Input](#analog-input)
-      - [Aufgabe: Poti auslesen und LED ansteuern](#aufgabe-poti-auslesen-und-led-ansteuern)
+    - [Aufgabe: Poti auslesen und LED ansteuern](#aufgabe-poti-auslesen-und-led-ansteuern)
   - [Dein eigenes Projekt](#dein-eigenes-projekt)
   - [Die Software](#die-software)
   - [📞 Kontakt](#-kontakt)
@@ -94,7 +94,7 @@ void loop() {
 ---
 
 ## Digital Output und Analog Output
-### Digital Output: Lass eine LED blinken
+### Digital Output - Aufgabe: Lass eine LED blinken
 - Wähle im [Pinout](medien/Arduino-UNO-pinout.jpg) den Digital Output Pin aus, den du verwenden möchtest
 - Stecke eine LED ins Breadboard (langes Bein = Plus, kurzes = Minus).
 - Verbinde das lange Bein über einen Widerstand (z.B. 220Ω) mit dem Digital Output des Arduino.  
@@ -135,7 +135,7 @@ void loop() {
     - S = kurz kurz kurz (drei schnelle Blinks)
   - Tipp: Nutze unterschiedliche `delay()`-Werte für kurz (z.B. 150 ms) und lang (z.B. 500 ms) und passende Pausen zwischen den Buchstaben.
 ---
-### Analog Output: LED dimmen
+### Analog Output - Aufgabe: LED dimmen
 
 - **Was ist ein Analoger Output:** Der Arduino kann an bestimmten Pins sogenannte **PWM-Signale** (Pulsweitenmodulation) ausgeben. Damit kannst du z.B. die Helligkeit einer LED stufenlos steuern – auch wenn der Arduino eigentlich nur AN oder AUS kennt.
 - PWM-Pins sind mit einer `~` (Tilde) am Arduino beschriftet (z.B. 3, 5, 6, 9, 10, 11 beim UNO).
@@ -205,7 +205,7 @@ int sensorWert = analogRead(A0); // Liest den Wert vom analogen Pin A0 (0 bis 10
 Hinweis: analogRead benötigt **kein** pinMode Setting im setup.  
 
 Typische analoge Inputs sind Potentiometer, Lichtsensoren oder Temperatursensoren.
-#### Aufgabe: Poti auslesen und LED ansteuern
+### Aufgabe: Poti auslesen und LED ansteuern
 
 - Baue einen Poti so auf, dass ein Anschluss an 5V, einer an GND und der mittlere an den analogen Pin A0 geht.
 - Lese den Wert des Potis mit `analogRead(A0)` aus und steuere damit die Helligkeit der LED mit `analogWrite(9, ...)`.
