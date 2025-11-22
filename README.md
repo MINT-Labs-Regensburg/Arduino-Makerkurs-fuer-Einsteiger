@@ -4,6 +4,13 @@
 <br>
 </br>
 
+## Was dich erwartet
+Du bist 10 Jahre alt oder älter, und neugierig auf Microcontroller und hast Lust aufs Experimentieren?  
+Dann bist du hier richtig im **Maker Kurs für Einsteiger**
+
+Tauche ein in die spannende Welt der Mikrocontroller! Mit dem Arduino bringst du LEDs zum Leuchten und baust interaktive Schaltungen. In nur drei Stunden lernst du die Basics der Programmierung und Elektronik – und nimmst dein eigenes funktionierendes Gadget mit nach Hause!
+
+---
 **Inhalt**
 - [Arduino Makerkurs für Einsteiger – In 3 Stunden zum eigenen Mikrocontroller-Projekt](#arduino-makerkurs-für-einsteiger--in-3-stunden-zum-eigenen-mikrocontroller-projekt)
   - [Was dich erwartet](#was-dich-erwartet)
@@ -26,17 +33,11 @@
 
 ---
 
-## Was dich erwartet
-Du bist 10 Jahre alt oder älter, und neugierig auf Microcontroller und hast Lust aufs Experimentieren?  
-Dann bist du hier richtig im **Maker Kurs für Einsteiger**
 
-Tauche ein in die spannende Welt der Mikrocontroller! Mit dem Arduino bringst du LEDs zum Leuchten und baust interaktive Schaltungen. In nur drei Stunden lernst du die Basics der Programmierung und Elektronik – und nimmst dein eigenes funktionierendes Gadget mit nach Hause!
-
----
 
 ## Dein Arduino Maker Kit kennenlernen
 
-Zu Beginn des Kurses erhältst du ein Maker Kit. Öffne die Kiste. Was findest du?
+Zu Im Kurs bekommst du ein Maker Kit. Öffne die Kiste. Was findest du?
 - Arduino (UNO oder Nano)
 - Steckplatine (Breadboard)
 - LEDs
@@ -58,6 +59,7 @@ Zu Beginn des Kurses erhältst du ein Maker Kit. Öffne die Kiste. Was findest d
 - Starte die Arduino IDE  
 - Der Editor. Hier gibts du deine Befehle für den Arduino ein
 - Laden das Programms auf deinen Arduino
+---
 ---
 
 ## Dein erstes Programm: "Hello World" mit dem Arduino
