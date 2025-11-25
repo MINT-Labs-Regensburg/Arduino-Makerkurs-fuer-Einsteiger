@@ -2,10 +2,10 @@
 /*
   LED sanft heller und dunkler werden lassen (Fading)
 
-  - Eine LED ist an einem PWM-Pin (z.B. 9) angeschlossen.
+    - Eine LED ist an einem PWM-Pin (z.B. 5) angeschlossen.
   - Die Helligkeit wird im Programm automatisch von dunkel zu hell und wieder zurück geregelt.
 */
-const int ledPin = 9; // LED an PWM-Pin 9
+const int ledPin = 5; // LED an PWM-Pin 5
 
 void setup()
 {

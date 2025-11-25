@@ -148,14 +148,14 @@ void loop() {
 ### Analog Output - Aufgabe: LED dimmen
 
 - **Was ist ein Analoger Output:** Der Arduino kann an bestimmten Pins sogenannte **PWM-Signale** (Pulsweitenmodulation) ausgeben. Damit kannst du z.B. die Helligkeit einer LED stufenlos steuern – auch wenn der Arduino eigentlich nur AN oder AUS kennt.
-- PWM-Pins sind mit einer `~` (Tilde) am Arduino beschriftet (z.B. 3, 5, 6, 9, 10, 11 beim UNO).
+- PWM-Pins sind mit einer `ANALOG` am Arduino beschriftet.
 - Beispiele, eine LED hell, halbhell, dunkel zu schalten mit  `analogWrite()`:
 ```cpp
-    analogWrite(9, 255); // LED maximale Helligkeit
-    analogWrite(9, 128); // LED halbe Helligkeit
-    analogWrite(9, 0); // LED minimale Helligkeit = aus
+    analogWrite(5, 255); // LED maximale Helligkeit
+    analogWrite(5, 128); // LED halbe Helligkeit
+    analogWrite(5, 0); // LED minimale Helligkeit = aus
 ``` 
-- Auch hier darf nicht vergessen werden, den Port vorher als Ausgang zu schalten mit `pinMode(9, OUTPUT)` und einen Vorwiderstand mit 220 Ohm zu verwenden
+- Auch hier darf nicht vergessen werden, den Port vorher als Ausgang zu schalten mit `pinMode(5, OUTPUT)` und einen Vorwiderstand mit 220 Ohm zu verwenden
 - **Aufgabe:** Baue die Schaltung auf und lasse die LED sanft heller und dunkler werden! 
   - Siehe [beispielcode/led_fading.ino](beispielcode/led_fading.ino)
 
