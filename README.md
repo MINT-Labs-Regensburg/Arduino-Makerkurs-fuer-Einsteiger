@@ -149,6 +149,7 @@ void loop() {
 
 - **Was ist ein Analoger Output:** Der Arduino kann an bestimmten Pins sogenannte **PWM-Signale** (Pulsweitenmodulation) ausgeben. Damit kannst du z.B. die Helligkeit einer LED stufenlos steuern – auch wenn der Arduino eigentlich nur AN oder AUS kennt.
 - PWM-Pins sind mit einer `~` (Tilde) am Arduino beschriftet (z.B. 3, 5, 6, 9, 10, 11 beim UNO).
+- Die Analog-Werte gehen bei Arduino UNO von 0 bis 255.
 - Beispiele, eine LED hell, halbhell, dunkel zu schalten mit  `analogWrite()`:
 ```cpp
     analogWrite(11, 255); // LED maximale Helligkeit

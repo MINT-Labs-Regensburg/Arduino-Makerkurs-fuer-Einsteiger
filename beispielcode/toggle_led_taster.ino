@@ -16,7 +16,7 @@ int ledStatus = LOW;           // Merkt sich den LED-Zustand
 
 void setup()
 {
-    pinMode(tasterPin, INPUT);
+    pinMode(tasterPin, INPUT_PULLUP);
     pinMode(ledPin, OUTPUT);
 }
 
