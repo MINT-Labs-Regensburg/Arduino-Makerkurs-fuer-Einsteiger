@@ -1,5 +1,7 @@
-// Morsecode SOS mit LED (Pin 13)
-const int LED_PIN = 13;
+#include <Arduino.h>
+
+// Morsecode SOS mit LED (GPIO2)
+const int LED_PIN = 12; // LED an GPIO12
 
 void setup()
 {
@@ -29,11 +31,13 @@ void loop()
     blinkKurz();
     blinkKurz();
     delay(300); // Pause zwischen Buchstaben
+
     // O: lang lang lang
     blinkLang();
     blinkLang();
     blinkLang();
     delay(300); // Pause zwischen Buchstaben
+
     // S: kurz kurz kurz
     blinkKurz();
     blinkKurz();

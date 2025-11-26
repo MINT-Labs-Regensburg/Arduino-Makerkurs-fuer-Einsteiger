@@ -1,10 +1,12 @@
-/*
-  LED sanft heller und dunkler werden lassen (Fading)
+#include <Arduino.h>
 
-    - Eine LED ist an einem PWM-Pin (z.B. 11) angeschlossen.
+/*
+  LED sanft heller und dunkler werden lassen (Fading) mit ESP32
+
+    - Eine LED ist an einem PWM-fähigen Pin (z.B. GPIO2) angeschlossen.
   - Die Helligkeit wird im Programm automatisch von dunkel zu hell und wieder zurück geregelt.
 */
-const int ledPin = 11; // LED an PWM-Pin 11
+const int ledPin = 12; // LED an GPIO12
 
 void setup()
 {

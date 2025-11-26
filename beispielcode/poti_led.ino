@@ -1,23 +1,29 @@
-/*
-  Potentiometer auslesen und LED-Helligkeit steuern
+#include <Arduino.h>
 
-  - Ein Potentiometer (Drehregler) ist an A0 angeschlossen.
-  - Eine LED ist an einem PWM-Pin (z.B. 9) angeschlossen.
-  - Der Wert des Potentiometers (0-1023) wird auf den PWM-Bereich (0-255) umgerechnet.
-  - Die LED wird entsprechend heller oder dunkler.
-*/
-const int potiPin = A0; // Potentiometer an A0
-const int ledPin = 9;   // LED an PWM-Pin 9
+/*
+ * Potentiometer auslesen und LED-Helligkeit steuern (ESP32)
+ *
+ * Schaltung:
+ * - Potentiometer (Drehregler) an GPIO33 (ADC, Wertebereich 0-4095)
+ * - LED an GPIO12 (PWM-fähig)
+ *
+ * Funktionsweise:
+ * - Der Wert des Potentiometers (0-4095) wird auf den PWM-Bereich (0-255) umgerechnet.
+ * - Die LED wird entsprechend heller oder dunkler.
+ */
+
+const int potiPin = 33; // Potentiometer an GPIO33 (ADC)
+const int ledPin = 12;  // LED an GPIO12 (PWM)
 
 void setup()
 {
-    pinMode(ledPin, OUTPUT);
+  pinMode(ledPin, OUTPUT); // LED als Ausgang
 }
 
 void loop()
 {
-    int sensorWert = analogRead(potiPin); // Wert von 0 bis 1023
-    int helligkeit = sensorWert / 4;      // Umrechnen auf 0-255
-    analogWrite(ledPin, helligkeit);      // LED-Helligkeit setzen
-    delay(10);                            // kleine Pause für sanftes Dimmen
+  int sensorWert = analogRead(potiPin); // Potentiometer auslesen (0-4095)
+  int helligkeit = sensorWert / 16;     // Umrechnen auf 0-255 (4096/256=16)
+  analogWrite(ledPin, helligkeit);      // LED-Helligkeit setzen
+  delay(10);                            // kleine Pause für sanftes Dimmen
 }
