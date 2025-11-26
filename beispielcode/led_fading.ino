@@ -1,4 +1,3 @@
-#include <Arduino.h>
 /*
   LED sanft heller und dunkler werden lassen (Fading)
 
@@ -9,21 +8,21 @@ const int ledPin = 11; // LED an PWM-Pin 11
 
 void setup()
 {
-    pinMode(ledPin, OUTPUT);
+  pinMode(ledPin, OUTPUT);
 }
 
 void loop()
 {
-    // LED heller werden lassen
-    for (int helligkeit = 0; helligkeit <= 255; helligkeit++)
-    {
-        analogWrite(ledPin, helligkeit);
-        delay(8); // Geschwindigkeit des Fadings
-    }
-    // LED dunkler werden lassen
-    for (int helligkeit = 255; helligkeit >= 0; helligkeit--)
-    {
-        analogWrite(ledPin, helligkeit);
-        delay(8);
-    }
+  // LED heller werden lassen
+  for (int helligkeit = 0; helligkeit <= 255; helligkeit++)
+  {
+    analogWrite(ledPin, helligkeit);
+    delay(8); // Geschwindigkeit des Fadings
+  }
+  // LED dunkler werden lassen
+  for (int helligkeit = 255; helligkeit >= 0; helligkeit--)
+  {
+    analogWrite(ledPin, helligkeit);
+    delay(8);
+  }
 }

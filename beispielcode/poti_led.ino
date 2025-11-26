@@ -6,7 +6,6 @@
   - Der Wert des Potentiometers (0-1023) wird auf den PWM-Bereich (0-255) umgerechnet.
   - Die LED wird entsprechend heller oder dunkler.
 */
-#include <Arduino.h>
 const int potiPin = A0; // Potentiometer an A0
 const int ledPin = 9;   // LED an PWM-Pin 9
 

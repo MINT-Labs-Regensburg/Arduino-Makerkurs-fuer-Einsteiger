@@ -6,7 +6,6 @@
     - Nur wenn der Taster von nicht gedrückt auf gedrückt wechselt, wird die LED umgeschaltet.
     - Die 'delay(50)' sorgt dafür, dass Prellen (mehrfaches Auslösen durch mechanische Kontakte) unterdrückt wird.
 */
-#include <Arduino.h>
 // Beispiel: Toggle-LED mit Taster und Entprellen
 const int tasterPin = 2;
 const int ledPin = 13;
