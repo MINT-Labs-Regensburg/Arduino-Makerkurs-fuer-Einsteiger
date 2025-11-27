@@ -30,6 +30,8 @@ Tauche ein in die spannende Welt der Mikrocontroller! Mit dem Arduino bringst du
   - [Dein eigenes Projekt](#dein-eigenes-projekt)
   - [Die Software](#die-software)
   - [📞 Kontakt](#-kontakt)
+  - [5461AS-1 4 Digit display](#5461as-1-4-digit-display)
+  - [Weiterführende Links](#weiterführende-links)
 
 ---
 
@@ -252,3 +254,10 @@ Bei Fragen zum Kurs oder Material:
 **MINT-Labs Regensburg**  
 🌐 [https://www.mint-labs-regensburg.de/](https://www.mint-labs-regensburg.de/)
 
+## 5461AS-1 4 Digit display
+
+---
+
+## Weiterführende Links
+
+- [4 Digit Segment 5461AS-1](https://www.electronicssimplified.in/feed/2062/)
