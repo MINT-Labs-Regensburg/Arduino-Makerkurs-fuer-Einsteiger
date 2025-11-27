@@ -9,7 +9,7 @@
  * - Die 'delay(50)' sorgt dafür, dass Prellen (mehrfaches Auslösen durch mechanische Kontakte) unterdrückt wird.
  *
  * Schaltung:
- * - Taster an GPIO33 (mit internem Pullup-Widerstand)
+ * - Taster an GPIO33. 
  * - LED an GPIO12
  */
 

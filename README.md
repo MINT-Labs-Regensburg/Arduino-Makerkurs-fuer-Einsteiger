@@ -1,6 +1,6 @@
-# ESP32 Makerkurs für Einsteiger – In 3 Stunden zum eigenen Mikrocontroller-Projekt
+# Arduino/ESP32 Makerkurs für Einsteiger – In 3 Stunden zum eigenen Mikrocontroller-Projekt
 
-<img src="medien/ESP32 DevKitC mit LED und Potentiometer.png" alt="ESP32 DevKitC mit LED und Potentiometer" width="420" />  
+<img src="medien/esp32-potentiometer-led-farbig.png" alt="ESP32 DevKitC mit LED und Potentiometer" width="420" />  
 <br>
 </br>
 
@@ -8,14 +8,14 @@
 Du bist 10 Jahre alt oder älter, und neugierig auf Microcontroller und hast Lust aufs Experimentieren?  
 Dann bist du hier richtig im **Maker Kurs für Einsteiger**
 
-Tauche ein in die spannende Welt der Mikrocontroller! Mit dem ESP32 bringst du LEDs zum Leuchten und baust interaktive Schaltungen. In nur drei Stunden lernst du die Basics der Programmierung und Elektronik – und nimmst dein eigenes funktionierendes Gadget mit nach Hause!
+Tauche ein in die spannende Welt der Mikrocontroller! Mit der Arduino IDE und dem ESP32 bringst du LEDs zum Leuchten und baust interaktive Schaltungen. In nur drei Stunden lernst du die Basics der Programmierung und Elektronik – und nimmst dein eigenes funktionierendes Gadget mit nach Hause!
 
 ---
 **Inhalt**
-- [ESP32 Makerkurs für Einsteiger – In 3 Stunden zum eigenen Mikrocontroller-Projekt](#esp32-makerkurs-für-einsteiger--in-3-stunden-zum-eigenen-mikrocontroller-projekt)
+- [Arduino/ESP32 Makerkurs für Einsteiger – In 3 Stunden zum eigenen Mikrocontroller-Projekt](#arduinoesp32-makerkurs-für-einsteiger--in-3-stunden-zum-eigenen-mikrocontroller-projekt)
   - [Was dich erwartet](#was-dich-erwartet)
   - [Dein ESP32 Maker Kit kennenlernen](#dein-esp32-maker-kit-kennenlernen)
-  - [Dein Start in die ESP32-Welt](#dein-start-in-die-esp32-welt)
+  - [Dein Start in die Arduino/ESP32-Welt](#dein-start-in-die-arduinoesp32-welt)
     - [Was ist ein ESP32 überhaupt?](#was-ist-ein-esp32-überhaupt)
     - [Tour durch das ESP32 DevKitC](#tour-durch-das-esp32-devkitc)
     - [Die Arduino IDE – deine Programmier-Zentrale](#die-arduino-ide--deine-programmier-zentrale)
@@ -30,6 +30,8 @@ Tauche ein in die spannende Welt der Mikrocontroller! Mit dem ESP32 bringst du L
   - [Dein eigenes Projekt](#dein-eigenes-projekt)
   - [Die Software](#die-software)
   - [📞 Kontakt](#-kontakt)
+  - [5461AS-1 4 Digit display](#5461as-1-4-digit-display)
+  - [Weiterführende Links](#weiterführende-links)
 
 ---
 
@@ -47,7 +49,7 @@ Tauche ein in die spannende Welt der Mikrocontroller! Mit dem ESP32 bringst du L
 
 ---
 
-## Dein Start in die ESP32-Welt
+## Dein Start in die Arduino/ESP32-Welt
 ### Was ist ein ESP32 überhaupt?
 ### Tour durch das ESP32 DevKitC
 - Inputs, Outputs, Digital, Analog
@@ -127,7 +129,7 @@ void loop() {
 ```
 **Code-Erklärung:**
 - `pinMode(12, OUTPUT);` &rarr; Setzt Pin 12 als digitalen Ausgang (für die LED).
-- `digitalWrite(12, HIGH);` &rarr; Schaltet den Ausgang auf 3.3 Volt (LED an).
+- `digitalWrite(12, HIGH);` &rarr; Schaltet den Ausgang auf 3,3 Volt (LED an).
 - `digitalWrite(12, LOW);` &rarr; Schaltet den Ausgang auf 0 Volt (LED aus).
 ---
 
@@ -146,7 +148,7 @@ void loop() {
 ### Analog Output - Aufgabe: LED dimmen
 
 - **Was ist ein Analoger Output:** Der ESP32 kann an bestimmten Pins sogenannte **PWM-Signale** (Pulsweitenmodulation) ausgeben. Damit kannst du z.B. die Helligkeit einer LED stufenlos steuern – auch wenn der Arduino eigentlich nur AN oder AUS kennt.
-- Die Analog-Werte gehen bei Arduino UNO von 0 bis 255.
+- Die Analog-Werte gehen von 0 bis 255.
 - Beispiele, eine LED hell, halbhell, dunkel zu schalten mit  `analogWrite()`:
 ```cpp
     analogWrite(12, 255); // LED maximale Helligkeit
@@ -164,7 +166,7 @@ void loop() {
 ## Eingaben – Digital Input & Analog Input
 ### Digital Input
 
-Ein **Digitaler Input** ist ein Eingangspin am ESP§", der nur zwei Zustände kennt: **AN** (HIGH, 5V) oder **AUS** (LOW, 0V). Typische digitale Eingaben sind Taster oder Schalter. Wenn du z.B. einen Taster an einen digitalen Pin anschließt, kann der Arduino erkennen, ob der Taster gedrückt ist (HIGH) oder nicht (LOW).
+Ein **Digitaler Input** ist ein Eingangspin am ESP32, der nur zwei Zustände kennt: **AN** (HIGH, 3,3V) oder **AUS** (LOW, 0V). Typische digitale Eingaben sind Taster oder Schalter. Wenn du z.B. einen Taster an einen digitalen Pin anschließt, kann der Arduino erkennen, ob der Taster gedrückt ist (HIGH) oder nicht (LOW).
 
 **So liest du einen digitalen Input:**
 
@@ -190,8 +192,8 @@ pinMode(33, INPUT);
 ```
 - **Aufgabe 1: Taste lesen** Mache ein Programm, das die LED einschaltet, solange der Taster gerdrückt ist
   - Beachte, dass der Input einen Pullup (oder Pulldown) 10 kΩ Widerstand braucht. 
-    - [Schaltplan: Taster und LED am Arduino](medien/LED_Taster_Schaltplan.png)  
-    - [Steckplatine: Taster und LED am Arduino](medien/LED_Taster_Steckplatine.png) 
+    - [Schaltplan: Taster und LED am Arduino](medien/LED_Taster_Schaltplan.png)  #TODO ESP32
+    - [Steckplatine: Taster und LED am Arduino](medien/LED_Taster_Steckplatine.png) #TODO ESP32
   - Der 10 kΩ Pullup Widerstand kann weggelassen werden, wenn man stattdessen den internen Pullup Widerstand des Arduino benutzt. Dazu muss der Input mit `pinMode(PIN_NUMBER, INPUT_PULLUP)` initalisiert werden
 ```cpp
 pinMode(33, INPUT_PULLUP);
@@ -207,17 +209,17 @@ Mache ein Programm, das die LED bei jedem Tastendruck umschaltet (Toggle).
 
 - So liest du einen analogen Input:
 ```cpp
-int sensorWert = analogRead(33); // Liest den Wert vom analogen Pin A0 (0 bis 1023)
+int sensorWert = analogRead(33); // Liest den Wert vom analogen Pin GPIO33 (0 bis 1023)
 ```
 Hinweis: analogRead benötigt **kein** pinMode Setting im setup.  
 
 Typische analoge Inputs sind Potentiometer, Lichtsensoren oder Temperatursensoren.
 ### Aufgabe: Poti auslesen und LED ansteuern
 
-- Baue einen Poti so auf, dass ein Anschluss an 5V, einer an GND und der mittlere an den analogen Pin GPIO33 geht.
+- Baue einen Poti so auf, dass ein Anschluss an 3,3 Volt, einer an GND und der mittlere an den analogen Pin GPIO33 geht.
 - Lese den Wert des Potis mit `analogRead(33)` aus und steuere damit die Helligkeit der LED mit `analogWrite(12, ...)`.
-  - [Schaltplan: Poti und LED am Arduino](medien/LED_Poti_Schaltplan.png)  
-  - [Steckplatine: Poti und LED am Arduino](medien/LED_Poti_Steckplatine.png) 
+  - [Schaltplan: Poti und LED am Arduino](medien/LED_Poti_Schaltplan.png)  #TODO ESP32
+  - [Steckplatine: Poti und LED am Arduino](medien/LED_Poti_Steckplatine.png) #TODO ESP32
 - Tipp: Da `analogRead` Werte von 0 bis 4095 liefert, `analogWrite` aber nur 0 bis 255 erwartet, musst du den Wert umrechnen, z.B. mit `wert / 16`.
   
   - Siehe [`beispielcode/poti_led.ino`](beispielcode/poti_led.ino)
@@ -249,3 +251,10 @@ Bei Fragen zum Kurs oder Material:
 **MINT-Labs Regensburg**  
 🌐 [https://www.mint-labs-regensburg.de/](https://www.mint-labs-regensburg.de/)
 
+## 5461AS-1 4 Digit display
+
+---
+
+## Weiterführende Links
+
+- [4 Digit Segment 5461AS-1](https://www.electronicssimplified.in/feed/2062/)
