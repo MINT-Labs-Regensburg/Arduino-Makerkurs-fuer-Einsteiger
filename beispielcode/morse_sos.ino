@@ -1,3 +1,4 @@
+#include<Arduino.h>
 // Morsecode SOS mit LED (Pin 13)
 const int LED_PIN = 13;
 

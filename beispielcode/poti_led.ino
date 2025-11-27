@@ -1,3 +1,4 @@
+#include <Arduino.h>
 /*
   Potentiometer auslesen und LED-Helligkeit steuern
 
