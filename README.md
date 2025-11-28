@@ -261,3 +261,9 @@ Bei Fragen zum Kurs oder Material:
 ## Weiterführende Links
 
 - [4 Digit Segment 5461AS-1](https://www.electronicssimplified.in/feed/2062/)
+- Schaltplan zum 4x7-Segment-Display findest du hier:  
+  [4x7segment_display_schem.png](medien/4x7segment_display_schem.png)
+- Steckplatinen-Ansicht:  
+  [4x7segment_display_bb.png](medien/4x7segment_display_bb.png)
+
+---
