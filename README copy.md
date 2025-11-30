@@ -37,7 +37,7 @@ Am Ende des Kurses kannst du:
 
 
 
-## 📅 Dein Start in die Maker Welt 
+## 📅 Einheit 1: Dein Start in die Maker Welt 
 
 ### Inhalte
 - Hardware Arduino kennenlernen
@@ -46,7 +46,7 @@ Am Ende des Kurses kannst du:
 ### Interaktive Aktivitäten
 
 **Challenge: "Lerne dein Makerkit kennen - was ist was?"**
-Im Kurs bekommst du ein Arduino Maker Kit. Öffne die Kiste. Was findest du?
+Zu Im Kurs bekommst du ein Arduino Maker Kit. Öffne die Kiste. Was findest du?
 - Arduino UNO
 - Steckplatine (Breadboard)
 - LEDs
@@ -57,8 +57,9 @@ Im Kurs bekommst du ein Arduino Maker Kit. Öffne die Kiste. Was findest du?
 
 ---
 
-## 📅 Was ist ein Microcontroller 
+## 📅 Einheit 2: Was ist ein Microcontroller 
 ### Inhalte
+- Arduino an den PC anschliessen
 - 5V, 3V3 und GND Power
 - Inputs, Outputs
 - Digital, Analog
@@ -77,18 +78,55 @@ Im Kurs bekommst du ein Arduino Maker Kit. Öffne die Kiste. Was findest du?
 - Und einen Analogen Input 
 ---
 
-## 📅 Programmiere den Arduino mit der Arduino IDE
+## 📅 Einheit 3: Die Arduino IDE – deine Programmier-Zentrale
+
+### Inhalte
+
+- Sketch
+- Editor
+- Serieller Port
+- Sketches überprüfen und Hochladen 
+- Monitor
 
 ### Interaktive Aktivitäten
 
-**Challenge_01: "Erstelle dein erstes Programm: 'Hello World'"**
-- Die Arduino IDE benutzen
-- Einen Sketch schreiben und hochladen
-- Die serielle Schnittstelle verwenden
-- Textausgabe im Seriellen Monitor anzeigen
+**Challenge: "Verbinde deinen Arduino mit der IDE"**
+- Schließe deinen Arduino per USB an den Computer an.
+- Öffne die Arduino IDE und wähle das richtige Board und den richtigen Port aus.
+---
+
+**Challenge: "Erstelle dein erstes Programm: 'Hello World'"**
+
+- Gib folgenden Code ein und lade ihn auf den Arduino:
+
+```cpp
+void setup() {
+  Serial.begin(9600); // Starte die serielle Kommunikation mit 9600 Baud
+}
+
+void loop() {
+  Serial.println("Hello, World!"); // Sende Text an den Computer
+  delay(1000); // Warte 1 Sekunde
+}
+```
 
 
-## 📅 Digital Output und Analog Output
+- Öffne in der Arduino IDE das **Serielle Monitor**-Fenster (Lupe oben rechts).  
+  Jetzt siehst du jede Sekunde die Nachricht "Hello, World!" vom Arduino.
+
+---
+
+
+- Code-Erklärung
+  - `setup()`: Wird in jedem Arduino Sketch einmal beim Start ausgeführt. Hier initialisierst du z.B. die serielle Kommunikation mit serial.begin().
+  - `Serial.begin(9600);`: Startet die serielle Kommunikation zwischen Arduino und Computer mit 9600 Baud. Notwendig, damit der Arduino Text an den Computer senden kann.
+  - `loop()`: Läuft immer wieder. Hier steht der Hauptcode, der ständig ausgeführt wird.
+  - `Serial.println("Hello, World!");`: Sendet den Text "Hello, World!" an den Computer. Jede Nachricht erscheint in einer neuen Zeile im Seriellen Monitor.
+  - `delay(1000);`: Wartet 1000 Millisekunden (1 Sekunde), bevor der nächste Durchlauf der Schleife beginnt.
+
+---
+
+## 📅 Einheit 4: Digital Output und Analog Output
 
 ### Inhalte
 
@@ -100,9 +138,28 @@ Im Kurs bekommst du ein Arduino Maker Kit. Öffne die Kiste. Was findest du?
 
 **Challenge: "Digital Output - Lass eine LED blinken"**
 
+- Wähle im [Pinout](Zusatzmaterial/Arduino-UNO-pinout.jpg) den Digital Output Pin aus, den du verwenden möchtest
+- Stecke eine LED ins Breadboard (langes Bein = Plus, kurzes = Minus).
+- Verbinde das lange Bein über einen Widerstand (z.B. 220Ω) mit dem Digital Output des Arduino.  
+Warum brauchst du den Widerstand?
+- Das kurze Bein verbindest du mit GND (Masse) am Arduino.
 - Schau dir im Schaltplan an, wie der Strom fliesst: `Arduino Output → Widerstand → LED → Arduino GND`
   - [Schaltplan LED an D7 ](Zusatzmaterial/LED_Schaltplan.png) 
   - [Steckplatine LED an D7 ](Zusatzmaterial/LED_Steckplatine.png)
+- Gib folgenden Code ein:
+```cpp
+void setup() {
+  pinMode(7, OUTPUT); // Pin D7 als Ausgang
+}
+
+void loop() {
+  digitalWrite(7, HIGH); // LED an
+  delay(500);            // 0,5 Sekunden warten
+  digitalWrite(7, LOW);  // LED aus
+  delay(500);            // 0,5 Sekunden warten
+}
+```
+
 
 - **Zusatzaufgabe 1: LED schneller oder langsamer blinken lassen:**
   - Wie lässt du die LED schneller oder langsamer blinken?

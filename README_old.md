@@ -1,6 +1,6 @@
 # Arduino Makerkurs für Einsteiger – In 3 Stunden zum eigenen Mikrocontroller-Projekt
 
-<img src="Zusatzmaterial/Arduino Uno mit Potentiometer und LED.png" alt="Arduino Uno mit LED und Potentiometer" width="420" />  
+<img src="medien/Arduino Uno mit Potentiometer und LED.png" alt="Arduino Uno mit LED und Potentiometer" width="420" />  
 <br>
 </br>
 
@@ -11,43 +11,36 @@ Dann bist du hier richtig im **Maker Kurs für Einsteiger**
 Tauche ein in die spannende Welt der Mikrocontroller! Mit dem Arduino bringst du LEDs zum Leuchten und baust interaktive Schaltungen. In nur drei Stunden lernst du die Basics der Programmierung und Elektronik – und nimmst dein eigenes funktionierendes Gadget mit nach Hause!
 
 ---
-
-## 📋 Kursübersicht
-
-**Gesamtdauer:** 3 Stunden   
-**Zielgruppe:** Jugendliche ab 10 Jahren ohne Programmiererfahrung  
-**Format:** Interaktiver Freizeitkurs - 100% praktisches Lernen  
-**Ziel:** Grundlagen Arduino Microcontroller. Grundlagen der Programmierung und der  Elektronik kennenlernen.
+**Inhalt**
+- [Arduino Makerkurs für Einsteiger – In 3 Stunden zum eigenen Mikrocontroller-Projekt](#arduino-makerkurs-für-einsteiger--in-3-stunden-zum-eigenen-mikrocontroller-projekt)
+  - [Was dich erwartet](#was-dich-erwartet)
+  - [Dein Arduino Maker Kit kennenlernen](#dein-arduino-maker-kit-kennenlernen)
+  - [Dein Start in die Arduino-Welt](#dein-start-in-die-arduino-welt)
+    - [Was ist ein Arduino überhaupt?](#was-ist-ein-arduino-überhaupt)
+    - [Tour durch den Arduino Nano/UNO](#tour-durch-den-arduino-nanouno)
+    - [Die Arduino IDE – deine Programmier-Zentrale](#die-arduino-ide--deine-programmier-zentrale)
+  - [Dein erstes Programm: "Hello World" mit dem Arduino](#dein-erstes-programm-hello-world-mit-dem-arduino)
+  - [Digital Output und Analog Output](#digital-output-und-analog-output)
+    - [Digital Output - Aufgabe: Lass eine LED blinken](#digital-output---aufgabe-lass-eine-led-blinken)
+    - [Analog Output - Aufgabe: LED dimmen](#analog-output---aufgabe-led-dimmen)
+  - [Eingaben – Digital Input \& Analog Input](#eingaben--digital-input--analog-input)
+    - [Digital Input](#digital-input)
+    - [Analog Input](#analog-input)
+    - [Aufgabe: Poti auslesen und LED ansteuern](#aufgabe-poti-auslesen-und-led-ansteuern)
+  - [Dein eigenes Projekt](#dein-eigenes-projekt)
+  - [Die Software](#die-software)
+  - [📞 Kontakt](#-kontakt)
+  - [5461AS-1 4 Digit display](#5461as-1-4-digit-display)
+  - [Weiterführende Links](#weiterführende-links)
 
 ---
 
-## 🎯 Lernziele
-
-Am Ende des Kurses kannst du:
-
-- einen Arduino anschließen und die Arduino IDE bedienen
-- einfache Programme (Sketches) schreiben und auf den Arduino laden
-- LEDs zum Leuchten bringen und blinken lassen
-- digitale und analoge Eingaben (z.B. Taster, Potentiometer) auslesen
-- die Helligkeit einer LED mit einem Potentiometer steuern
-- eigene kleine Schaltungen auf dem Breadboard aufbauen
-- selbstständig ein eigenes Mikrocontroller-Projekt umsetzen und erweitern
-
----
 
 
+## Dein Arduino Maker Kit kennenlernen
 
-## 📅 Dein Start in die Maker Welt 
-
-### Inhalte
-- Hardware Arduino kennenlernen
-- Elektronische Komponenten kennenlernen
-  
-### Interaktive Aktivitäten
-
-**Challenge: "Lerne dein Makerkit kennen - was ist was?"**
-Im Kurs bekommst du ein Arduino Maker Kit. Öffne die Kiste. Was findest du?
-- Arduino UNO
+Zu Im Kurs bekommst du ein Maker Kit. Öffne die Kiste. Was findest du?
+- Arduino (UNO oder Nano)
 - Steckplatine (Breadboard)
 - LEDs
 - Widerstände
@@ -57,56 +50,95 @@ Im Kurs bekommst du ein Arduino Maker Kit. Öffne die Kiste. Was findest du?
 
 ---
 
-## 📅 Was ist ein Microcontroller 
-### Inhalte
-- 5V, 3V3 und GND Power
-- Inputs, Outputs
-- Digital, Analog
-
-### Interaktive Aktivitäten
-
-**Challenge: "Identifiziere die Pins deines Arduino"**
-
-- Die Pinbelegung des Arduino, das "Pinout" findest du im Ordner `Zusatzmaterial` als Bilddatei:  
-  [Arduino UNO Pinout](Zusatzmaterial/Arduino-UNO-pinout.jpg)  
-  [Arduino Nano Pinout](Zusatzmaterial/Arduino-Nano-Pinout.png)  
-- Verbinde dein Breadboard mit 5V und GND
-- Wähle einen Digitalen Output für später aus
-- Und einen Analogen Output
-- Und einen Digitalen Input
-- Und einen Analogen Input 
+## Dein Start in die Arduino-Welt
+### Was ist ein Arduino überhaupt?
+### Tour durch den Arduino Nano/UNO
+- Inputs, Outputs, Digital, Analog
+- Pinout Arduino. Die Pinbelegung des Arduino findest du im Ordner `medien` als Bilddatei:  
+  [Arduino UNO Pinout](medien/Arduino-UNO-pinout.jpg)  
+  [Arduino Nano Pinout](medien/Arduino-Nano-Pinout.png)  
+### Die Arduino IDE – deine Programmier-Zentrale
+- Starte die Arduino IDE  
+- Der Editor. Hier gibts du deine Befehle für den Arduino ein
+- Laden das Programms auf deinen Arduino
+---
 ---
 
-## 📅 Programmiere den Arduino mit der Arduino IDE
+## Dein erstes Programm: "Hello World" mit dem Arduino
 
-### Interaktive Aktivitäten
+Das klassische "Hello World" in der Arduino-Welt ist das Senden einer Nachricht an den Computer über die serielle Schnittstelle.
 
-**Challenge_01: "Erstelle dein erstes Programm: 'Hello World'"**
-- Die Arduino IDE benutzen
-- Einen Sketch schreiben und hochladen
-- Die serielle Schnittstelle verwenden
-- Textausgabe im Seriellen Monitor anzeigen
+**So geht's:**
+
+- Schließe deinen Arduino per USB an den Computer an.
+- Öffne die Arduino IDE und wähle das richtige Board und den richtigen Port aus.
+- Gib folgenden Code ein und lade ihn auf den Arduino:
+
+```cpp
+void setup() {
+  Serial.begin(9600); // Starte die serielle Kommunikation mit 9600 Baud
+}
+
+void loop() {
+  Serial.println("Hello, World!"); // Sende Text an den Computer
+  delay(1000); // Warte 1 Sekunde
+}
+```
 
 
-## 📅 Digital Output und Analog Output
+- Öffne in der Arduino IDE das **Serielle Monitor**-Fenster (Lupe oben rechts).  
+  Jetzt siehst du jede Sekunde die Nachricht "Hello, World!" vom Arduino.
 
-### Inhalte
+---
 
-- LED mit Vorwiderstand
-- pinMode
-- digitalWrite
-- analogWrite
-- delay
 
-**Challenge: "Digital Output - Lass eine LED blinken"**
+- Code-Erklärung
+  - `setup()`: Wird in jedem Arduino Sketch einmal beim Start ausgeführt. Hier initialisierst du z.B. die serielle Kommunikation mit serial.begin().
+  - `Serial.begin(9600);`: Startet die serielle Kommunikation zwischen Arduino und Computer mit 9600 Baud. Notwendig, damit der Arduino Text an den Computer senden kann.
+  - `loop()`: Läuft immer wieder. Hier steht der Hauptcode, der ständig ausgeführt wird.
+  - `Serial.println("Hello, World!");`: Sendet den Text "Hello, World!" an den Computer. Jede Nachricht erscheint in einer neuen Zeile im Seriellen Monitor.
+  - `delay(1000);`: Wartet 1000 Millisekunden (1 Sekunde), bevor der nächste Durchlauf der Schleife beginnt.
 
+---
+
+---
+
+## Digital Output und Analog Output
+
+
+### Digital Output - Aufgabe: Lass eine LED blinken
+- Wähle im [Pinout](medien/Arduino-UNO-pinout.jpg) den Digital Output Pin aus, den du verwenden möchtest
+- Stecke eine LED ins Breadboard (langes Bein = Plus, kurzes = Minus).
+- Verbinde das lange Bein über einen Widerstand (z.B. 220Ω) mit dem Digital Output des Arduino.  
+Warum brauchst du den Widerstand?
+- Das kurze Bein verbindest du mit GND (Masse) am Arduino.
 - Schau dir im Schaltplan an, wie der Strom fliesst: `Arduino Output → Widerstand → LED → Arduino GND`
-  - [Schaltplan LED an D7 ](Zusatzmaterial/LED_Schaltplan.png) 
-  - [Steckplatine LED an D7 ](Zusatzmaterial/LED_Steckplatine.png)
+  - [Schaltplan LED an D7 ](medien/LED_Schaltplan.png) 
+  - [Steckplatine LED an D7 ](medien/LED_Steckplatine.png)
+- Starte die Arduino IDE
+- Gib folgenden Code ein:
+```cpp
+void setup() {
+  pinMode(7, OUTPUT); // Pin D7 als Ausgang
+}
+
+void loop() {
+  digitalWrite(7, HIGH); // LED an
+  delay(500);            // 0,5 Sekunden warten
+  digitalWrite(7, LOW);  // LED aus
+  delay(500);            // 0,5 Sekunden warten
+}
+```
+**Code-Erklärung:**
+- `pinMode(7, OUTPUT);` &rarr; Setzt Pin 7 als digitalen Ausgang (für die LED).
+- `digitalWrite(7, HIGH);` &rarr; Schaltet den Ausgang auf 5 Volt (LED an).
+- `digitalWrite(7, LOW);` &rarr; Schaltet den Ausgang auf 0 Volt (LED aus).
+---
+
 
 - **Zusatzaufgabe 1: LED schneller oder langsamer blinken lassen:**
   - Wie lässt du die LED schneller oder langsamer blinken?
-  - Lass auch mal die auf dem Arduino **eingebaute** LED blinken. Findest du die eingebaute LED im [Arduino UNO Pinout](Zusatzmaterial/Arduino-UNO-pinout.jpg) ?
+  - Lass auch mal die auf dem Arduino **eingebaute** LED blinken. Findest du die eingebaute LED im [Arduino UNO Pinout](medien/Arduino-UNO-pinout.jpg) ?
 
 - **Zusatztaufgabe 2: Morsecode SOS:**
   - Schreibe ein Programm, das die LED das Morsezeichen SOS blinken lässt:
@@ -163,8 +195,8 @@ pinMode(2, INPUT);
 ```
 - **Aufgabe 1: Taste lesen** Mache ein Programm, das die LED einschaltet, solange der Taster gerdrückt ist
   - Beachte, dass der Input einen Pullup (oder Pulldown) 10 kΩ Widerstand braucht. 
-    - [Schaltplan: Taster und LED am Arduino](Zusatzmaterial/LED_Taster_Schaltplan.png)  
-    - [Steckplatine: Taster und LED am Arduino](Zusatzmaterial/LED_Taster_Steckplatine.png) 
+    - [Schaltplan: Taster und LED am Arduino](medien/LED_Taster_Schaltplan.png)  
+    - [Steckplatine: Taster und LED am Arduino](medien/LED_Taster_Steckplatine.png) 
   - Der 10 kΩ Pullup Widerstand kann weggelassen werden, wenn man stattdessen den internen Pullup Widerstand des Arduino benutzt. Dazu muss der Input mit `pinMode(PIN_NUMBER, INPUT_PULLUP)` initalisiert werden
 ```cpp
 pinMode(2, INPUT_PULLUP);
@@ -189,8 +221,8 @@ Typische analoge Inputs sind Potentiometer, Lichtsensoren oder Temperatursensore
 
 - Baue einen Poti so auf, dass ein Anschluss an 5V, einer an GND und der mittlere an den analogen Pin A0 geht.
 - Lese den Wert des Potis mit `analogRead(A0)` aus und steuere damit die Helligkeit der LED mit `analogWrite(9, ...)`.
-  - [Schaltplan: Poti und LED am Arduino](Zusatzmaterial/LED_Poti_Schaltplan.png)  
-  - [Steckplatine: Poti und LED am Arduino](Zusatzmaterial/LED_Poti_Steckplatine.png) 
+  - [Schaltplan: Poti und LED am Arduino](medien/LED_Poti_Schaltplan.png)  
+  - [Steckplatine: Poti und LED am Arduino](medien/LED_Poti_Steckplatine.png) 
 - Tipp: Da `analogRead` Werte von 0 bis 1023 liefert, `analogWrite` aber nur 0 bis 255 erwartet, musst du den Wert umrechnen, z.B. mit `wert / 4`.
   
   - Siehe [`beispielcode/poti_led.ino`](beispielcode/poti_led.ino)
@@ -230,8 +262,8 @@ Bei Fragen zum Kurs oder Material:
 
 - [4 Digit Segment 5461AS-1](https://www.electronicssimplified.in/feed/2062/)
 - Schaltplan zum 4x7-Segment-Display findest du hier:  
-  [4x7segment_display_schem.png](Zusatzmaterial/4x7segment_display_schem.png)
+  [4x7segment_display_schem.png](medien/4x7segment_display_schem.png)
 - Steckplatinen-Ansicht:  
-  [4x7segment_display_bb.png](Zusatzmaterial/4x7segment_display_bb.png)
+  [4x7segment_display_bb.png](medien/4x7segment_display_bb.png)
 
 ---
