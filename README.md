@@ -1,6 +1,6 @@
 # Arduino Makerkurs für Einsteiger – In 3 Stunden zum eigenen Mikrocontroller-Projekt
 
-<img src="Zusatzmaterial/Arduino Uno mit Potentiometer und LED.png" alt="Arduino Uno mit LED und Potentiometer" width="420" />
+<img src="zusatzmaterial/Arduino Uno mit Potentiometer und LED.png" alt="Arduino Uno mit LED und Potentiometer" width="420" />
 
 ---
 
@@ -58,8 +58,8 @@ Der Arduino ist ein Mikrocontroller mit vielen Anschlüssen (Pins). Du lernst, w
 - Inputs, Outputs
 
 **Challenge: "Identifiziere die Pins deines Arduino"**
-- Die Pinbelegung des Arduino findest du im Ordner `Zusatzmaterial` als Bilddatei:  
-  [Arduino UNO Pinout](Zusatzmaterial/Arduino-UNO-pinout.jpg)  
+- Die Pinbelegung des Arduino findest du im Ordner `zusatzmaterial` als Bilddatei:  
+  [Arduino UNO Pinout](zusatzmaterial/Arduino-UNO-pinout.jpg)  
 - Verbinde dein Breadboard mit 5V und GND
 - Suche einen digitalen Output
 - Suche einen analogen Output
@@ -143,6 +143,6 @@ Bei Fragen zum Kurs oder Material:
 
 - [4 Digit Segment 5461AS-1](https://www.electronicssimplified.in/feed/2062/)
 - Schaltplan zum 4x7-Segment-Display findest du hier:  
-  [4x7segment_display_schem.png](Zusatzmaterial/4x7segment_display_schem.png)
+  [4x7segment_display_schem.png](zusatzmaterial/4x7segment_display_schem.png)
 - Steckplatinen-Ansicht:  
-  [4x7segment_display_bb.png](Zusatzmaterial/4x7segment_display_bb.png)
+  [4x7segment_display_bb.png](zusatzmaterial/4x7segment_display_bb.png)
