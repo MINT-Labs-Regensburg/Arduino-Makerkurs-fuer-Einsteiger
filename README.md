@@ -73,18 +73,15 @@ Der Arduino ist ein Microcontroller mit vielen Anschlüssen (Pins). Du lernst, w
 
 ## 📅 Programmiere den Arduino mit der Arduino IDE
 
-Jetzt geht es ans Programmieren! Du erstellst einen einfachen Sketch (Programm).  
-Du verwendest die Arduino IDE als Programmierzentrale. In der IDE gibts du deinen Code ein,  lädst den Code in den Arduino und startest das Programm. Das Programm schickt eine Nachricht an deinen Computer, die du im seriellen Monitor deiner IDE empfangen kannst.
-
-Öffne die Datei "challenge_01_hello_world_vorgabe.ino"
+Jetzt geht es ans Programmieren!  
+Du verwendest die Arduino IDE als Programmierzentrale. In der IDE erstellst einen einfachen Sketch (Programm),  lädst den Code in den Arduino und startest dein Programm. 
 
 **Challenge_01: "Erstelle dein erstes Programm: 'Hello World'"**
 
 
 ---
 ## 📅 Digital Output 
-Mit dem Arduino kannst du Komponenten ansteuern, zum Beispiel eine LED leuchten lassen. Dazu benutzt du du einen Digital output.
-
+Mit dem Arduino kannst du Komponenten ansteuern, zum Beispiel eine LED leuchten lassen. Dazu benutzt du einen Digital output.
 **Challenge 02: "Digital Output - Lass eine LED blinken"**
 
 Lass jetzt deine LED  in einen SOS Morsecode blinken
@@ -110,8 +107,8 @@ Der Arduino hat auch Eingangspins. Digital Inputs erkennen, ob am Eingang 0 V od
 Der Arduino hat auch "Analog Inputs". Das sind Eingangspins, die nicht nur AN oder AUS kennen, sondern viele Werte dazwischen.
 Mit einem Analog Input kannst du z.B. einen Drehregler (Potentiometer) auslesen und damit die Helligkeit einer LED an einem analog output stufenlos steuern.
 
-
 **Challenge 06: "Poti auslesen und LED ansteuern"**
+
 ---
 
 ## 📅 Dein eigenes Projekt
@@ -122,11 +119,6 @@ Jetzt wird's richtig cool! Wähle eines dieser Projekte und baue es:
 
 ---
 
-## 📅 Die Software
-
-- **Arduino IDE** – komplett kostenlos und open source!
-- Download: [https://www.arduino.cc/en/software](https://www.arduino.cc/en/software)
----
 
 ## 📞 Kontakt
 
