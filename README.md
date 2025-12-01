@@ -58,7 +58,7 @@ Der Arduino ist ein Mikrocontroller mit vielen Anschlüssen (Pins). Du lernst, w
 - Inputs, Outputs
 
 **Challenge: "Identifiziere die Pins deines Arduino"**
-- Die Pinbelegung des Arduino findest du im Ordner `zusatzmaterial` als Bilddatei:  
+- Die Pinbelegung des Arduino findest du im Ordner zusatzmaterial als Bilddatei:  
   [Arduino UNO Pinout](zusatzmaterial/Arduino-UNO-pinout.jpg)  
 - Verbinde dein Breadboard mit 5V und GND
 - Suche einen digitalen Output
