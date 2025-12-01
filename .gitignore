@@ -7,3 +7,5 @@ platformio.ini
 DOCS/
 beispielcode
 aufgaben
+.vscode
+.pio
