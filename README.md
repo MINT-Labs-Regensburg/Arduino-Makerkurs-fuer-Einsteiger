@@ -57,8 +57,8 @@ Der Arduino ist ein Mikrocontroller mit vielen Anschlüssen (Pins). Du lernst, w
 - Stromversorgungs-Pins: 5V, 3V3 und GND
 - Inputs, Outputs
 
-**Challenge: "Identifiziere die Pins deines Arduino"**
-- Die Pinbelegung des Arduino findest du im Ordner zusatzmaterial als Bilddatei:  
+**"Identifiziere die Pins deines Arduino"**
+- Die Pinbelegung des Arduino findest du im Ordner zusatzmaterial:  
   [Arduino UNO Pinout](zusatzmaterial/Arduino-UNO-pinout.jpg)  
 - Verbinde dein Breadboard mit 5V und GND
 - Suche einen digitalen Output
@@ -71,12 +71,12 @@ Der Arduino ist ein Mikrocontroller mit vielen Anschlüssen (Pins). Du lernst, w
 ## 📅 Programmiere den Arduino mit der Arduino IDE
 
 Jetzt geht es ans Programmieren!  
-Du verwendest die Arduino IDE als Programmierzentrale. In der IDE erstellst du einen einfachen Sketch (Programm), lädst den Code in den Arduino und startest dein Programm.
+Du verwendest die Arduino IDE als Programmierzentrale. In der IDE erstellst du einen einfachen Sketch (Programm), lädst den Code in den Arduino und startest deinen Sketch.
 
 **Challenge 01: "Erstelle dein erstes Programm: 'Hello World'"**
 
 
-**Hinweis:** Ein praktisches Arduino-Cheatsheet findest du als PDF im Ordner zusatzmaterial:  
+**Hinweis:** Ein praktisches Arduino-Cheatsheet findest du im Ordner zusatzmaterial:  
 [arduino-cheatsheet-deutsch.pdf](zusatzmaterial/arduino-cheatsheet-deutsch.pdf)
 
 ---
@@ -88,7 +88,6 @@ Mit dem Arduino kannst du Komponenten ansteuern, z.B. eine LED leuchten lassen. 
 **Challenge 02: "Digital Output – Lass eine LED blinken"**
 
 **Zusatzaufgabe für Fortgeschrittene:**  
-Lass jetzt deine LED im SOS-Morsecode blinken:
 
 **Challenge 03: "Lass die LED im Morsecode SOS blinken"**
 
@@ -109,7 +108,9 @@ Der Arduino hat auch Eingangspins. Digital Inputs erkennen, ob am Eingang 0 V od
 **Challenge 05: "Mit Taster LED schalten"**
 
 **Zusatzaufgabe für Fortgeschrittene:**  
-Schalte die LED mit dem Taster ein und aus – jedes Mal, wenn du den Taster drückst, wechselt die LED ihren Zustand (Toggle-Funktion).
+Schalte die LED abwechselnd ein und aus mit jedem Tastendruck.
+
+**Challenge 05_z: "Mit Taster LED toggeln"**
 
 ---
 
@@ -122,7 +123,7 @@ Mit einem Analog Input kannst du z.B. einen Drehregler (Potentiometer) auslesen 
 
 ---
 
-## 📅 Dein eigenes Projekt
+## 📅 Ideen für dein eigenes Projekt
 
 Jetzt wird's richtig cool! Wähle eines dieser Projekte und baue es:
 - **Ampelsteuerung:** Programmiere eine funktionierende Mini-Ampel

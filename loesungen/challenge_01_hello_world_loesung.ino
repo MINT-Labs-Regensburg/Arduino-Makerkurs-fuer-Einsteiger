@@ -1,48 +1,16 @@
 /*
-Challenge 05: "Taster lesen und LED schalten" - Zusatzaufgabe Toggle - MUSTERLÖSUNG
-===================================================================================
+Challenge 01: "Hello World" mit dem Arduino - MUSTERLÖSUNG
+==========================================================
+Ziel: Schreibe ein Programm, das jede Sekunde "Hello, World!" an den Computer sendet.
 */
 
-const int tasterPin = 2; // Digital Input
-const int ledPin = 7;    // Digital Output
-
-bool ledStatus = false;
-bool lastTasterState = LOW;
-
 void setup()
 {
-    pinMode(tasterPin, INPUT);
-    pinMode(ledPin, OUTPUT);
-    digitalWrite(ledPin, LOW);
+    Serial.begin(9600);
 }
 
 void loop()
 {
-    bool tasterState = digitalRead(tasterPin);
-
-    // Toggle nur bei Flanke von LOW nach HIGH
-    if (tasterState == HIGH && lastTasterState == LOW)
-    {
-        ledStatus = !ledStatus;
-        digitalWrite(ledPin, ledStatus ? HIGH : LOW);
-        delay(50); // Entprellen
-    }
-
-    lastTasterState = tasterState;
-}
-
-// Beispiel: Hello World mit LED
-const int ledPin = 13;
-
-void setup()
-{
-    pinMode(ledPin, OUTPUT);
-}
-
-void loop()
-{
-    digitalWrite(ledPin, HIGH); // LED an
-    delay(1000);
-    digitalWrite(ledPin, LOW); // LED aus
+    Serial.println("Hello, World!");
     delay(1000);
 }

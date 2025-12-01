@@ -1,32 +1,40 @@
 /*
-Challenge 05: "Taster lesen und LED schalten" - Zusatzaufgabe Toggle - MUSTERLÖSUNG
-===================================================================================
+Challenge 03: "Lass die LED im Morsecode SOS blinken" - MUSTERLÖSUNG
+====================================================================
 */
 
-const int tasterPin = 2; // Digital Input
-const int ledPin = 13;   // Digital Output
-
-bool ledStatus = false;
-bool lastTasterState = LOW;
+const int ledPin = 7; // Digital Output für externe LED
 
 void setup()
 {
-    pinMode(tasterPin, INPUT);
     pinMode(ledPin, OUTPUT);
-    digitalWrite(ledPin, LOW);
 }
 
 void loop()
 {
-    bool tasterState = digitalRead(tasterPin);
-
-    // Toggle nur bei Flanke von LOW nach HIGH
-    if (tasterState == HIGH && lastTasterState == LOW)
+    // S: kurz kurz kurz
+    for (int i = 0; i < 3; i++)
     {
-        ledStatus = !ledStatus;
-        digitalWrite(ledPin, ledStatus ? HIGH : LOW);
-        delay(50); // Entprellen
+        digitalWrite(ledPin, HIGH);
+        delay(200);
+        digitalWrite(ledPin, LOW);
+        delay(200);
     }
-
-    lastTasterState = tasterState;
+    // O: lang lang lang
+    for (int i = 0; i < 3; i++)
+    {
+        digitalWrite(ledPin, HIGH);
+        delay(600);
+        digitalWrite(ledPin, LOW);
+        delay(200);
+    }
+    // S: kurz kurz kurz
+    for (int i = 0; i < 3; i++)
+    {
+        digitalWrite(ledPin, HIGH);
+        delay(200);
+        digitalWrite(ledPin, LOW);
+        delay(200);
+    }
+    delay(1200); // Pause zwischen SOS
 }

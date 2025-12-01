@@ -1,10 +1,10 @@
 /*
-Challenge 05: "Taster lesen und LED schalten" - Zusatzaufgabe Toggle - MUSTERLÖSUNG
-===================================================================================
+Challenge 05_z: "LED mit Taster toggeln" - MUSTERLÖSUNG
+=======================================================
 */
 
 const int tasterPin = 2; // Digital Input
-const int ledPin = 7;    // Digital Output
+const int ledPin = 11;   // PWM Output (oder Digital Output)
 
 bool ledStatus = false;
 bool lastTasterState = LOW;
