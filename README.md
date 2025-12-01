@@ -75,6 +75,10 @@ Du verwendest die Arduino IDE als Programmierzentrale. In der IDE erstellst du e
 
 **Challenge 01: "Erstelle dein erstes Programm: 'Hello World'"**
 
+
+**Hinweis:** Ein praktisches Arduino-Cheatsheet findest du als PDF im Ordner zusatzmaterial:  
+[arduino-cheatsheet-deutsch.pdf](zusatzmaterial/arduino-cheatsheet-deutsch.pdf)
+
 ---
 
 ## 📅 Digital Output
@@ -137,7 +141,6 @@ Bei Fragen zum Kurs oder Material:
 
 ## 5461AS-1 4 Digit display
 
----
 
 ## Weiterführende Links
 
@@ -146,3 +149,4 @@ Bei Fragen zum Kurs oder Material:
   [4x7segment_display_schem.png](zusatzmaterial/4x7segment_display_schem.png)
 - Steckplatinen-Ansicht:  
   [4x7segment_display_bb.png](zusatzmaterial/4x7segment_display_bb.png)
+
