@@ -17,7 +17,7 @@ Tauche ein in die spannende Welt der Mikrocontroller! Mit dem Arduino bringst du
 **Gesamtdauer:** 3 Stunden   
 **Zielgruppe:** Jugendliche ab 10 Jahren ohne Programmiererfahrung  
 **Format:** Interaktiver Freizeitkurs - 100% praktisches Lernen  
-**Ziel:** Grundlagen Arduino Microcontroller. Grundlagen der Programmierung und der  Elektronik kennenlernen.
+
 
 ---
 
@@ -39,14 +39,10 @@ Am Ende des Kurses kannst du:
 
 ## 📅 Dein Start in die Maker Welt 
 
-### Inhalte
-- Hardware Arduino kennenlernen
-- Elektronische Komponenten kennenlernen
+Du bekommst ein Arduino Maker Kit. Es enthält neben dem Arduino eine Menge Elektronischer Bauelemente und Material zum Aufbau verschiedener Experimente. 
   
-### Interaktive Aktivitäten
-
 **Challenge: "Lerne dein Makerkit kennen - was ist was?"**
-Im Kurs bekommst du ein Arduino Maker Kit. Öffne die Kiste. Was findest du?
+Öffne die Kiste. Was findest du?
 - Arduino UNO
 - Steckplatine (Breadboard)
 - LEDs
@@ -58,12 +54,10 @@ Im Kurs bekommst du ein Arduino Maker Kit. Öffne die Kiste. Was findest du?
 ---
 
 ## 📅 Was ist ein Microcontroller 
-### Inhalte
-- 5V, 3V3 und GND Power
+Der Arduino ist ein Microcontroller mit vielen Anschlüssen (Pins). Du lernst, welche Arten von Pins es gibt und wie du sie identifizieren kannst.
+- Stromversorgunspins 5V, 3V3 und GND
 - Inputs, Outputs
-- Digital, Analog
 
-### Interaktive Aktivitäten
 
 **Challenge: "Identifiziere die Pins deines Arduino"**
 
@@ -71,149 +65,67 @@ Im Kurs bekommst du ein Arduino Maker Kit. Öffne die Kiste. Was findest du?
   [Arduino UNO Pinout](Zusatzmaterial/Arduino-UNO-pinout.jpg)  
   [Arduino Nano Pinout](Zusatzmaterial/Arduino-Nano-Pinout.png)  
 - Verbinde dein Breadboard mit 5V und GND
-- Wähle einen Digitalen Output für später aus
-- Und einen Analogen Output
-- Und einen Digitalen Input
-- Und einen Analogen Input 
+- Suche einen Digitalen Output
+- Suche einen Analogen Output
+- Suche einen Digitalen Input
+- Suche einen Analogen Input 
 ---
 
 ## 📅 Programmiere den Arduino mit der Arduino IDE
 
-### Interaktive Aktivitäten
+Jetzt geht es ans Programmieren! Du erstellst einen einfachen Sketch (Programm).  
+Du verwendest die Arduino IDE als Programmierzentrale. In der IDE gibts du deinen Code ein,  lädst den Code in den Arduino und startest das Programm. Das Programm schickt eine Nachricht an deinen Computer, die du im seriellen Monitor deiner IDE empfangen kannst.
+
+Öffne die Datei "challenge_01_hello_world_vorgabe.ino"
 
 **Challenge_01: "Erstelle dein erstes Programm: 'Hello World'"**
-- Die Arduino IDE benutzen
-- Einen Sketch schreiben und hochladen
-- Die serielle Schnittstelle verwenden
-- Textausgabe im Seriellen Monitor anzeigen
 
-
-## 📅 Digital Output und Analog Output
-
-### Inhalte
-
-- LED mit Vorwiderstand
-- pinMode
-- digitalWrite
-- analogWrite
-- delay
-
-**Challenge: "Digital Output - Lass eine LED blinken"**
-
-- Schau dir im Schaltplan an, wie der Strom fliesst: `Arduino Output → Widerstand → LED → Arduino GND`
-  - [Schaltplan LED an D7 ](Zusatzmaterial/LED_Schaltplan.png) 
-  - [Steckplatine LED an D7 ](Zusatzmaterial/LED_Steckplatine.png)
-
-- **Zusatzaufgabe 1: LED schneller oder langsamer blinken lassen:**
-  - Wie lässt du die LED schneller oder langsamer blinken?
-  - Lass auch mal die auf dem Arduino **eingebaute** LED blinken. Findest du die eingebaute LED im [Arduino UNO Pinout](Zusatzmaterial/Arduino-UNO-pinout.jpg) ?
-
-- **Zusatztaufgabe 2: Morsecode SOS:**
-  - Schreibe ein Programm, das die LED das Morsezeichen SOS blinken lässt:
-    - S = kurz kurz kurz (drei schnelle Blinks)
-    - O = lang lang lang (drei lange Blinks)
-    - S = kurz kurz kurz (drei schnelle Blinks)
-  - Tipp: Nutze unterschiedliche `delay()`-Werte für kurz (z.B. 150 ms) und lang (z.B. 500 ms) und passende Pausen zwischen den Buchstaben.
----
-### Analog Output - Aufgabe: LED dimmen
-
-- **Was ist ein Analoger Output:** Der Arduino kann an bestimmten Pins sogenannte **PWM-Signale** (Pulsweitenmodulation) ausgeben. Damit kannst du z.B. die Helligkeit einer LED stufenlos steuern – auch wenn der Arduino eigentlich nur AN oder AUS kennt.
-- PWM-Pins sind mit einer `~` (Tilde) am Arduino beschriftet (z.B. 3, 5, 6, 9, 10, 11 beim UNO).
-- Die Analog-Werte gehen bei Arduino UNO von 0 bis 255.
-- Beispiele, eine LED hell, halbhell, dunkel zu schalten mit  `analogWrite()`:
-```cpp
-    analogWrite(11, 255); // LED maximale Helligkeit
-    analogWrite(11, 128); // LED halbe Helligkeit
-    analogWrite(11, 0); // LED minimale Helligkeit = aus
-``` 
-- Auch hier darf nicht vergessen werden, den Port vorher als Ausgang zu schalten mit `pinMode(11, OUTPUT)` und einen Vorwiderstand mit 220 Ohm zu verwenden
-- **Aufgabe:** Baue die Schaltung auf und lasse die LED sanft heller und dunkler werden! 
-  - Siehe [beispielcode/led_fading.ino](beispielcode/led_fading.ino)
 
 ---
+## 📅 Digital Output 
+Mit dem Arduino kannst du Komponenten ansteuern, zum Beispiel eine LED leuchten lassen. Dazu benutzt du du einen Digital output.
+
+**Challenge 02: "Digital Output - Lass eine LED blinken"**
+
+Lass jetzt deine LED  in einen SOS Morsecode blinken
+
+**Challenge 03: "Lass die LED im Morsecode SOS blinken "**
+
 
 ---
-
-## Eingaben – Digital Input & Analog Input
-### Digital Input
-
-Ein **Digitaler Input** ist ein Eingangspin am Arduino, der nur zwei Zustände kennt: **AN** (HIGH, 5V) oder **AUS** (LOW, 0V). Typische digitale Eingaben sind Taster oder Schalter. Wenn du z.B. einen Taster an einen digitalen Pin anschließt, kann der Arduino erkennen, ob der Taster gedrückt ist (HIGH) oder nicht (LOW).
-
-**So liest du einen digitalen Input:**
-
-```cpp
-
-int tasterStatus = digitalRead(2); // Liest den Zustand von Pin 2
-if (tasterStatus == HIGH) {
-  // Taster ist gedrückt
-} else {
-  // Taster ist nicht gedrückt
-}
-```
-
-**Code-Erklärung:**
-
-- `int tasterStatus = digitalRead(2);` &rarr; Liest den Zustand des Tasters an Pin 2 (HIGH = gedrückt, LOW = nicht gedrückt).
-- `if (tasterStatus == HIGH)` &rarr; Prüft, ob der Taster gedrückt ist.
-- `else` &rarr; Wird ausgeführt, wenn der Taster nicht gedrückt ist.
-
-- Hinweis: Vergiss auch hier nicht, vorher den Pin 2 im `setup()` als INPUT zu definieren:
-```cpp
-pinMode(2, INPUT);
-```
-- **Aufgabe 1: Taste lesen** Mache ein Programm, das die LED einschaltet, solange der Taster gerdrückt ist
-  - Beachte, dass der Input einen Pullup (oder Pulldown) 10 kΩ Widerstand braucht. 
-    - [Schaltplan: Taster und LED am Arduino](Zusatzmaterial/LED_Taster_Schaltplan.png)  
-    - [Steckplatine: Taster und LED am Arduino](Zusatzmaterial/LED_Taster_Steckplatine.png) 
-  - Der 10 kΩ Pullup Widerstand kann weggelassen werden, wenn man stattdessen den internen Pullup Widerstand des Arduino benutzt. Dazu muss der Input mit `pinMode(PIN_NUMBER, INPUT_PULLUP)` initalisiert werden
-```cpp
-pinMode(2, INPUT_PULLUP);
-```
-- **Aufgabe 2: Toggle-LED mit dem Taster (mit Entprellen)**
-Mache ein Programm, das die LED bei jedem Tastendruck umschaltet (Toggle). 
-  - Nutze eine Variable, um den letzten Tasterzustand zu speichern
-  - entprelle den Taster mit einer kleinen Wartezeit.  
-  - **Beispielcode:** Der vollständige Beispielcode ist in der Datei [`beispielcode/toggle_led_taster.ino`](beispielcode/toggle_led_taster.ino) zu finden.
-
-### Analog Input
-- Ein **analoger** Input ist ein Eingangspin am Arduino, der nicht nur AN oder AUS kennt, sondern viele Werte dazwischen. Die Analog Inputs sind mit A0, A1, A2, A3, A4, A5 bezeichnet. Mit einem Analog Input kannst du z.B. einen Drehregler (Potentiometer) auslesen und bekommst Werte von 0 bis 1023. So kannst du z.B. die Helligkeit einer LED an einem analog output stufenlos steuern.
-
-- So liest du einen analogen Input:
-```cpp
-int sensorWert = analogRead(A0); // Liest den Wert vom analogen Pin A0 (0 bis 1023)
-```
-Hinweis: analogRead benötigt **kein** pinMode Setting im setup.  
-
-Typische analoge Inputs sind Potentiometer, Lichtsensoren oder Temperatursensoren.
-### Aufgabe: Poti auslesen und LED ansteuern
-
-- Baue einen Poti so auf, dass ein Anschluss an 5V, einer an GND und der mittlere an den analogen Pin A0 geht.
-- Lese den Wert des Potis mit `analogRead(A0)` aus und steuere damit die Helligkeit der LED mit `analogWrite(9, ...)`.
-  - [Schaltplan: Poti und LED am Arduino](Zusatzmaterial/LED_Poti_Schaltplan.png)  
-  - [Steckplatine: Poti und LED am Arduino](Zusatzmaterial/LED_Poti_Steckplatine.png) 
-- Tipp: Da `analogRead` Werte von 0 bis 1023 liefert, `analogWrite` aber nur 0 bis 255 erwartet, musst du den Wert umrechnen, z.B. mit `wert / 4`.
+## 📅 Analog Output
+Der Arduino hat nicht nur Ausgänge, die nur "AN (5 Volt) und AUS (0 Volt) können. Es gibt auch "Analog Outputs", sogenannte PWM outputs die viele Spannungen zwischen 0 und 5 Volt erzeugen können. Nutze einen Anlogen Output, um eine LED sanft hell und wieder dunkel weden zu lassen. (Dimmen) 
   
-  - Siehe [`beispielcode/poti_led.ino`](beispielcode/poti_led.ino)
+**Challenge 04: "LED Dimmen"**
 
 ---
+
+## 📅 Digital Input
+Der Arduino hat auch Eingangspins. Digital Inputs erkennen, ob am Eingang 0 V oder 5 Volt anliegen.
+
+**Challenge 05: "Mit Taster LED schalten"**
+
+---
+## 📅 Analog Input
+Der Arduino hat auch "Analog Inputs". Das sind Eingangspins, die nicht nur AN oder AUS kennen, sondern viele Werte dazwischen.
+Mit einem Analog Input kannst du z.B. einen Drehregler (Potentiometer) auslesen und damit die Helligkeit einer LED an einem analog output stufenlos steuern.
+
+
+**Challenge 06: "Poti auslesen und LED ansteuern"**
 ---
 
-## Dein eigenes Projekt
+## 📅 Dein eigenes Projekt
 Jetzt wird's richtig cool! Wähle eines dieser Projekte und baue es:
 - **Ampelsteuerung:** Programmiere eine funktionierende Mini-Ampel
 - **Reaktionsspiel:** LED blinkt auf – wer ist am schnellsten am Buzzer?
 - **RGB-Farbmischer:** Mixe mit drei Drehreglern deine Lieblingsfarben
 
 ---
----
 
-## Die Software
+## 📅 Die Software
 
 - **Arduino IDE** – komplett kostenlos und open source!
 - Download: [https://www.arduino.cc/en/software](https://www.arduino.cc/en/software)
----
-
-
 ---
 
 ## 📞 Kontakt
@@ -224,7 +136,6 @@ Bei Fragen zum Kurs oder Material:
 
 ## 5461AS-1 4 Digit display
 
----
 
 ## Weiterführende Links
 
@@ -233,5 +144,3 @@ Bei Fragen zum Kurs oder Material:
   [4x7segment_display_schem.png](Zusatzmaterial/4x7segment_display_schem.png)
 - Steckplatinen-Ansicht:  
   [4x7segment_display_bb.png](Zusatzmaterial/4x7segment_display_bb.png)
-
----
