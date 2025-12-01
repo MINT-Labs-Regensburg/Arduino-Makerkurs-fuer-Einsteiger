@@ -60,7 +60,6 @@ Der Arduino ist ein Mikrocontroller mit vielen Anschlüssen (Pins). Du lernst, w
 **Challenge: "Identifiziere die Pins deines Arduino"**
 - Die Pinbelegung des Arduino findest du im Ordner `Zusatzmaterial` als Bilddatei:  
   [Arduino UNO Pinout](Zusatzmaterial/Arduino-UNO-pinout.jpg)  
-  [Arduino Nano Pinout](Zusatzmaterial/Arduino-Nano-Pinout.png)
 - Verbinde dein Breadboard mit 5V und GND
 - Suche einen digitalen Output
 - Suche einen analogen Output
@@ -84,6 +83,7 @@ Mit dem Arduino kannst du Komponenten ansteuern, z.B. eine LED leuchten lassen. 
 
 **Challenge 02: "Digital Output – Lass eine LED blinken"**
 
+**Zusatzaufgabe für Fortgeschrittene:**  
 Lass jetzt deine LED im SOS-Morsecode blinken:
 
 **Challenge 03: "Lass die LED im Morsecode SOS blinken"**
@@ -103,6 +103,9 @@ Der Arduino hat nicht nur Ausgänge, die nur "AN" (5 Volt) und "AUS" (0 Volt) k�
 Der Arduino hat auch Eingangspins. Digital Inputs erkennen, ob am Eingang 0 V oder 5 V anliegen.
 
 **Challenge 05: "Mit Taster LED schalten"**
+
+**Zusatzaufgabe für Fortgeschrittene:**  
+Schalte die LED mit dem Taster ein und aus – jedes Mal, wenn du den Taster drückst, wechselt die LED ihren Zustand (Toggle-Funktion).
 
 ---
 

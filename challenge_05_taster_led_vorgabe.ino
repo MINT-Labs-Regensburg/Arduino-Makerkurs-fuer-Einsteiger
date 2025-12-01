@@ -14,10 +14,6 @@ Aufgaben:
 3. Schalte die LED ein, wenn der Taster gedrückt ist, und aus, wenn er nicht gedrückt ist.
 4. Teste dein Programm und beobachte die LED.
 
-Zusatzaufgabe: Toggle-Funktion
-------------------------------
-Schalte die LED ein, wenn der Taster gedrückt wird, und aus, wenn er erneut gedrückt wird.
-(Hinweis: Die LED wechselt bei jedem Tastendruck ihren Zustand.)
 
 Hinweis:
 - Vergiss nicht, pinMode(PIN, INPUT) für den Taster und pinMode(PIN, OUTPUT) für die LED im setup() zu setzen.
