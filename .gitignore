@@ -1,0 +1,13 @@
+.pio/
+.vscode/
+beispielcode/
+aufgaben/
+DOCS/
+zusatzmaterial/
+loesungen/
+*.db
+*.exe
+*.bak
+*.tmp
+*.DS_Store
+Thumbs.db
