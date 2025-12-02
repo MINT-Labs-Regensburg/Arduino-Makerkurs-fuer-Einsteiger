@@ -3,7 +3,7 @@ Challenge 03: "Lass die LED im Morsecode SOS blinken" - MUSTERLÖSUNG
 ====================================================================
 */
 
-const int ledPin = 7; // Digital Output für externe LED
+const int ledPin = 8; // Digital Output für externe LED
 
 void setup()
 {

@@ -4,7 +4,7 @@ Challenge 05: "Mit Taster LED schalten" - MUSTERLÖSUNG
 */
 
 const int tasterPin = 2; // Digital Input
-const int ledPin = 7;    // Digital Output
+const int ledPin = 8;    // Digital Output
 
 void setup()
 {
