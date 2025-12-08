@@ -19,7 +19,6 @@
   - [🌈 06 Analog Output](#-06-analog-output)
   - [🔲 07 Digital Input](#-07-digital-input)
   - [📈 08 Analog Input](#-08-analog-input)
-  - [🚦 09 Ideen für dein eigenes Projekt](#-09-ideen-für-dein-eigenes-projekt)
   - [📞 Kontakt](#-kontakt)
 
 ---
@@ -180,15 +179,6 @@ Mit einem Analog Input kannst du z.B. einen Drehregler (Potentiometer) auslesen 
 - [LED_Poti_Schaltplan.png](zusatzmaterial/LED_Poti_schem.png)
 - [LED_Poti_Steckplatine.png](zusatzmaterial/LED_Poti_bb.png)
 - [challenge_08_poti_led.ino](challenge_08_poti_led.ino)
-
----
-
-## 🚦 09 Ideen für dein eigenes Projekt
-
-Jetzt wird's richtig cool! Wähle eines dieser Projekte und baue es:
-- **Ampelsteuerung:** Programmiere eine funktionierende Mini-Ampel
-- **Reaktionsspiel:** LED blinkt auf – wer ist am schnellsten am Buzzer?
-- **RGB-Farbmischer:** Mixe mit drei Drehreglern deine Lieblingsfarben
 
 ---
 
