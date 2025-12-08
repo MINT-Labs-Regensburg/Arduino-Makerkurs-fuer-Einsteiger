@@ -86,7 +86,6 @@ Der Arduino ist ein Mikrocontroller mit vielen Anschlüssen (Pins). Du lernst, w
 **Challenge:"Identifiziere die Pins deines Arduino"**
 - Die Pinbelegung des Arduino findest du im Ordner zusatzmaterial:  
   [Arduino UNO Pinout](zusatzmaterial/Arduino-UNO-pinout.jpg)  
-- Verbinde dein Breadboard mit 5V und GND
 - Suche einen digitalen Output
 - Suche einen analogen Output
 - Suche einen digitalen Input
@@ -114,7 +113,10 @@ Jetzt wollen wir die LED ansteuern und sie blinken lassen. Dazu benutzten wir ei
 
 **Challenge 02: "Digital Output – Lass eine LED blinken"**
 
+- [LED_Schaltplan.png](zusatzmaterial/LED_schem.png)
+- [LED_Steckplatine.png](zusatzmaterial/LED_bb.png)
 - [challenge_02_led_blinken.ino](challenge_02_led_blinken.ino)
+
 
 **Zusatz Challenge 03 für Fortgeschrittene: "Lass die LED im Morsecode SOS blinken"**
 - [challenge_03_morsecode_sos.ino](challenge_03_morsecode_sos.ino)
@@ -126,6 +128,8 @@ Jetzt wollen wir die LED ansteuern und sie blinken lassen. Dazu benutzten wir ei
 Der Arduino hat nicht nur Ausgänge, die nur "AN" (5 Volt) und "AUS" (0 Volt) können. Es gibt auch "Analog Outputs", sogenannte PWM-Outputs, die viele Spannungen zwischen 0 und 5 Volt erzeugen können. Nutze einen analogen Output, um eine LED sanft hell und wieder dunkel werden zu lassen (Dimmen).
 
 **Challenge 04: "LED Dimmen"**
+- Wähle einen Ausgang, der Analog Output (PWM) kann (z.B. Pin 11, erkennbar an der ~).
+- [challenge_04_led_dimmen.ino](challenge_04_led_dimmen.ino)
 
 ---
 
@@ -135,10 +139,13 @@ Der Arduino hat auch Eingangspins. Digital Inputs erkennen, ob am Eingang 0 V od
 
 **Challenge 05: "Mit Taster LED schalten"**
 
-**Zusatzaufgabe für Fortgeschrittene:**  
-Schalte die LED abwechselnd ein und aus mit jedem Tastendruck.
+- [LED_Taster_Schaltplan.png](zusatzmaterial/LED_Taster_schem.png)
+- [LED_Taster_Steckplatine.png](zusatzmaterial/LED_Taster_bb.png)
+- [challenge_05_taster_led.ino](challenge_05_taster_led.ino)
 
-**Challenge 05_z: "Mit Taster LED toggeln"**
+**Zusatz Challenge 05_z: "Mit Taster LED toggeln"**
+- Schalte die LED abwechselnd ein und aus mit jedem Tastendruck.
+- [challenge_05_z_taster_toggle_led.ino](challenge_05_z_taster_toggle_led.ino)
 
 ---
 
@@ -148,6 +155,7 @@ Der Arduino hat auch "Analog Inputs". Das sind Eingangspins, die nicht nur AN od
 Mit einem Analog Input kannst du z.B. einen Drehregler (Potentiometer) auslesen und damit die Helligkeit einer LED an einem analog output stufenlos steuern.
 
 **Challenge 06: "Poti auslesen und LED ansteuern"**
+- [challenge_06_poti_led.ino](challenge_06_poti_led.ino)
 
 ---
 
