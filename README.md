@@ -1,4 +1,4 @@
-# <img src="zusatzmaterial/Arduino_IDE_logo.svg.png" alt="Arduino IDE Logo" width="38" style="vertical-align:middle;"> Arduino Makerkurs für Einsteiger – In 3 Stunden zum eigenen Mikrocontroller-Projekt
+# <img src="zusatzmaterial\arduino-logos-512px.png" alt="Arduino IDE Logo" width="38" style="vertical-align:middle;"> Arduino Makerkurs für Einsteiger – In 3 Stunden zum eigenen Mikrocontroller-Projekt
 
 <img src="zusatzmaterial/Arduino Uno mit Potentiometer und LED.png" alt="Arduino Uno mit LED und Potentiometer" width="420" />
 
