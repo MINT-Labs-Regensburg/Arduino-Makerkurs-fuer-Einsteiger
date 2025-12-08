@@ -21,6 +21,8 @@ Tauche ein in die spannende Welt der Mikrocontroller! Mit dem Arduino bringst du
 
 ---
 
+
+
 ## 🎯 Lernziele
 
 Am Ende des Kurses kannst du:
@@ -34,6 +36,7 @@ Am Ende des Kurses kannst du:
 - selbstständig ein eigenes Mikrocontroller-Projekt umsetzen und erweitern
 
 ---
+
 
 ## 📅 Dein Start in die Maker Welt
 
@@ -50,6 +53,30 @@ Du bekommst ein Arduino Maker Kit. Es enthält neben dem Arduino viele elektroni
 - was noch?
 
 ---
+## 📅 Was ist eine LED? Wie wird sie angeschlossen?
+
+Eine LED (Licht-Emittierende Diode) ist ein kleines Bauteil, das leuchtet, wenn Strom hindurchfließt.  
+Sie hat zwei Beine:  
+- Das **lange Bein** ist die **Anode** (+), hier kommt der Pluspol hin.
+- Das **kurze Bein** ist die **Kathode** (–), hier kommt der Minuspol (GND) hin.
+
+**Wichtig:**  
+Eine LED braucht immer einen Vorwiderstand (z.B. 220 Ω), damit sie nicht durch zu viel Strom kaputt geht.
+
+**Anschluss:**  
+- Das lange Bein der LED wird an 5 Volt angeschlossen. 5 Volt bekommst du z.B. über den Arduino Ausgang "5V" oder über eine Batterie.
+- Das kurze Bein kommt an GND (Masse) des Arduino.
+
+**Den prinzipiellen Schaltplan und Aufbau findest du in:**  
+- [LED5VBatterie_schem.png](zusatzmaterial/LED5VBatterie_schem.png)  
+- [LED5VBatterie_bb.png](zusatzmaterial/LED5VBatterie_bb.png)
+
+**Wenn du den Arduino und das Breadboard verwendest geht das so:**  
+- [LED5VArduino_schem.png](zusatzmaterial/LED5VArduino_schem.png)  
+- [LED5VArduino_bb.png](zusatzmaterial/LED5VArduino_bb.png)
+
+
+**Challenge: "Bringe eine LED zum Leuchten"**
 
 ## 📅 Was ist ein Microcontroller
 
@@ -57,7 +84,7 @@ Der Arduino ist ein Mikrocontroller mit vielen Anschlüssen (Pins). Du lernst, w
 - Stromversorgungs-Pins: 5V, 3V3 und GND
 - Inputs, Outputs
 
-**"Identifiziere die Pins deines Arduino"**
+**Challenge:"Identifiziere die Pins deines Arduino"**
 - Die Pinbelegung des Arduino findest du im Ordner zusatzmaterial:  
   [Arduino UNO Pinout](zusatzmaterial/Arduino-UNO-pinout.jpg)  
 - Verbinde dein Breadboard mit 5V und GND
