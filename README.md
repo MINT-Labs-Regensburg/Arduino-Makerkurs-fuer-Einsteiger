@@ -177,6 +177,8 @@ Der Arduino hat auch "Analog Inputs". Das sind Eingangspins, die nicht nur AN od
 Mit einem Analog Input kannst du z.B. einen Drehregler (Potentiometer) auslesen und damit die Helligkeit einer LED an einem analog output stufenlos steuern.
 
 **Challenge 08: "Poti auslesen und LED ansteuern"**
+- [LED_Poti_schem.png](zusatzmaterial/LED_Poti_schem.png)
+- [LED_Poti_bb.png](zusatzmaterial/LED_Poti_bb.png)
 - [challenge_08_poti_led.ino](challenge_08_poti_led.ino)
 
 ---
