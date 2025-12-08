@@ -1,9 +1,6 @@
 .pio/
 .vscode/
-beispielcode/
-aufgaben/
 DOCS/
-loesungen/
 *.db
 *.exe
 *.bak

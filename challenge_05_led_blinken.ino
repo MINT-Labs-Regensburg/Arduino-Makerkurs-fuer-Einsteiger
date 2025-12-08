@@ -28,6 +28,6 @@ Hinweis:
 
 
 Zusatzaufgabe:
-Lass auch mal die auf dem Arduino **eingebaute** LED blinken. 
-Findest du die eingebaute LED im Pinout unter 'Zusatzmaterial/Arduino-UNO-pinout.jpg'
+Lass auch mal die auf dem Arduino fest eingebaute LED blinken. 
+Findest du die eingebaute LED im Pinout unter 'zusatzmaterial/Arduino-UNO-pinout.jpg'
 */

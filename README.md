@@ -1,4 +1,4 @@
-# <img src="zusatzmaterial\arduino-logos-512px.png" alt="Arduino IDE Logo" width="38" style="vertical-align:middle;"> Arduino Makerkurs für Einsteiger – In 3 Stunden zum eigenen Mikrocontroller-Projekt
+# <img src="zusatzmaterial/arduino-logos-512px.png" alt="Arduino IDE Logo" width="38" style="vertical-align:middle;"> Arduino Makerkurs für Einsteiger – In 3 Stunden zum eigenen Mikrocontroller-Projekt
 
 <img src="zusatzmaterial/Arduino Uno mit Potentiometer und LED.png" alt="Arduino Uno mit LED und Potentiometer" width="420" />
 
@@ -23,8 +23,6 @@
 
 ---
 
-
-
 ## Was dich erwartet
 
 Du bist 10 Jahre alt oder älter, neugierig auf Mikrocontroller und hast Lust aufs Experimentieren?  
@@ -42,8 +40,6 @@ Tauche ein in die spannende Welt der Mikrocontroller! Mit dem Arduino bringst du
 
 ---
 
-
-
 ## 🎯 Lernziele
 
 Am Ende des Kurses kannst du:
@@ -54,14 +50,13 @@ Am Ende des Kurses kannst du:
 - digitale und analoge Eingaben (z.B. Taster, Potentiometer) auslesen
 - die Helligkeit einer LED mit einem Potentiometer steuern
 - eigene kleine Schaltungen auf dem Breadboard aufbauen
-- selbstständig ein eigenes Mikrocontroller-Projekt umsetzen und erweitern
 
 ---
-
 
 ## 🧰 01 Dein Start in die Maker Welt
 
 **🏆 Challenge 01: "Lerne dein Makerkit kennen – was ist was?"**  
+
 Du bekommst ein Arduino Maker Kit. Es enthält neben dem Arduino viele elektronische Bauelemente und Material für verschiedene Experimente.
 
 Öffne die Kiste. Was findest du?
@@ -107,6 +102,7 @@ Der Arduino ist ein Mikrocontroller mit vielen Anschlüssen (Pins). Du lernst, w
 **🏆 Challenge 03: "Identifiziere die Pins deines Arduino"**
 - Die Pinbelegung des Arduino findest du im Ordner zusatzmaterial:  
   [Arduino UNO Pinout](zusatzmaterial/Arduino-UNO-pinout.jpg)  
+- Suche die Powerpins
 - Suche einen digitalen Output
 - Suche einen analogen Output
 - Suche einen digitalen Input

@@ -17,6 +17,4 @@ Aufgaben:
 
 Hinweis:
 - Vergiss nicht, pinMode(9, OUTPUT) im setup() zu setzen.
-- Beispiel Schaltplan: Zusatzmaterial/LED_Poti_Schaltplan.png
-- Beispiel Steckplatinen-Aufbau: Zusatzmaterial/LED_Poti_Steckplatine.png
 */

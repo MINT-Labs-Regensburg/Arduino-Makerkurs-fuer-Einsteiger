@@ -19,6 +19,4 @@ Hinweis:
 - Vergiss nicht, pinMode(PIN, INPUT) für den Taster und pinMode(PIN, OUTPUT) für die LED im setup() zu setzen.
 - Nutze digitalRead() für den Taster und digitalWrite() für die LED.
 - Ein Pullup- oder Pulldown-Widerstand ist nötig, oder verwende INPUT_PULLUP.
-- Beispiel Schaltplan: Zusatzmaterial/LED_Taster_Schaltplan.png
-- Beispiel Steckplatinen-Aufbau: Zusatzmaterial/LED_Taster_Steckplatine.png
 */
