@@ -1,5 +1,5 @@
 /*
-Challenge: "Hello World" mit dem Arduino
+Challenge 04: "Hello World" mit dem Arduino
 ========================================
 Ziel: Schreibe ein Programm, das jede Sekunde "Hello, World!" an den Computer sendet.
 

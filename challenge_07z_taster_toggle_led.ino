@@ -1,5 +1,5 @@
 /*
-Challenge 05_z: "LED mit Taster toggeln"
+Challenge 07z: "LED mit Taster toggeln"
 ========================================
 Schalte die LED mit dem Taster ein und aus – jedes Mal, wenn du den Taster drückst, wechselt die LED ihren Zustand (Toggle-Funktion).
 

@@ -1,5 +1,5 @@
 /*
-Challenge 06: "Poti auslesen und LED analog steuern"
+Challenge 08: "Poti auslesen und LED analog steuern"
 ====================================================
 Baue eine Schaltung mit einem Potentiometer und einer LED. Die Helligkeit der LED soll sich stufenlos mit dem Poti regeln lassen.
 

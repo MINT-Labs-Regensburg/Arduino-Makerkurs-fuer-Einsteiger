@@ -1,5 +1,5 @@
 /*
-Challenge 05: "Taster lesen und LED schalten"
+Challenge 07: "Taster lesen und LED schalten"
 =============================================
 Baue eine Schaltung mit einem Taster und einer LED. Die LED soll leuchten, solange der Taster gedrückt ist.
 

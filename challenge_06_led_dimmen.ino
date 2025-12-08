@@ -1,5 +1,5 @@
 /*
-Challenge 04: "LED Dimmen"
+Challenge 06: "LED Dimmen"
 ==========================
 Baue eine Schaltung, bei der die LED sanft heller und dunkler wird (Fading).
 

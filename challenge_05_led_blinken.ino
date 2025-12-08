@@ -1,5 +1,5 @@
 /*
-Challenge: "Digital Output - Lass eine LED blinken"
+Challenge 05: "Digital Output - Lass eine LED blinken"
 ===================================================
 Wähle im Pinout den Digital Output Pin aus, den du verwenden möchtest.
 
