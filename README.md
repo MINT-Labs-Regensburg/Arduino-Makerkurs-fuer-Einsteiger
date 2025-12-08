@@ -64,8 +64,8 @@ Sie hat zwei Beine:
 Eine LED braucht immer einen Vorwiderstand (z.B. 220 Ω), damit sie nicht durch zu viel Strom kaputt geht.
 
 **So wird eine LED an eine Batterie angeschlossen:**  
-  [LED5VBatterie_schem.png](zusatzmaterial/LED5VBatterie_schem.png)  
-  [LED5VBatterie_bb.png](zusatzmaterial/LED5VBatterie_bb.png)
+- [LED5VBatterie_schem.png](zusatzmaterial/LED5VBatterie_schem.png)  
+- [LED5VBatterie_bb.png](zusatzmaterial/LED5VBatterie_bb.png)
 
 
 **Challenge: "Bringe eine LED zum Leuchten"**  
