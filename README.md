@@ -4,6 +4,28 @@
 
 ---
 
+## Inhaltsangabe
+
+- [Arduino Makerkurs für Einsteiger – In 3 Stunden zum eigenen Mikrocontroller-Projekt](#arduino-makerkurs-für-einsteiger--in-3-stunden-zum-eigenen-mikrocontroller-projekt)
+  - [Inhaltsangabe](#inhaltsangabe)
+  - [Was dich erwartet](#was-dich-erwartet)
+  - [📋 Kursübersicht](#-kursübersicht)
+  - [🎯 Lernziele](#-lernziele)
+  - [📅 01 Dein Start in die Maker Welt](#-01-dein-start-in-die-maker-welt)
+  - [📅 02 Was ist eine LED? Wie fliesst der Strom?](#-02-was-ist-eine-led-wie-fliesst-der-strom)
+  - [📅 03 Was ist ein Microcontroller](#-03-was-ist-ein-microcontroller)
+  - [📅 04 Programmiere den Arduino mit der Arduino IDE](#-04-programmiere-den-arduino-mit-der-arduino-ide)
+  - [📅 05 Digital Output](#-05-digital-output)
+  - [📅 06 Analog Output](#-06-analog-output)
+  - [📅 07 Digital Input](#-07-digital-input)
+  - [📅 08 Analog Input](#-08-analog-input)
+  - [📅 09 Ideen für dein eigenes Projekt](#-09-ideen-für-dein-eigenes-projekt)
+  - [📞 Kontakt](#-kontakt)
+
+---
+
+
+
 ## Was dich erwartet
 
 Du bist 10 Jahre alt oder älter, neugierig auf Mikrocontroller und hast Lust aufs Experimentieren?  
@@ -38,7 +60,7 @@ Am Ende des Kurses kannst du:
 ---
 
 
-## 📅 Dein Start in die Maker Welt
+## 📅 01 Dein Start in die Maker Welt
 
 Du bekommst ein Arduino Maker Kit. Es enthält neben dem Arduino viele elektronische Bauelemente und Material für verschiedene Experimente.
 
@@ -53,7 +75,7 @@ Du bekommst ein Arduino Maker Kit. Es enthält neben dem Arduino viele elektroni
 - was noch?
 
 ---
-## 📅 Was ist eine LED? Wie fliesst der Strom?
+## 📅 02 Was ist eine LED? Wie fliesst der Strom?
 
 Eine LED (Licht-Emittierende Diode) ist ein kleines Bauteil, das leuchtet, wenn Strom hindurchfließt.  
 Sie hat zwei Beine:  
@@ -77,7 +99,7 @@ Eine LED braucht immer einen Vorwiderstand (z.B. 220 Ω), damit sie nicht durch 
   - [LED5VArduino_bb.png](zusatzmaterial/LED5VArduino_bb.png)
 
 ---
-## 📅 Was ist ein Microcontroller
+## 📅 03 Was ist ein Microcontroller
 
 Der Arduino ist ein Mikrocontroller mit vielen Anschlüssen (Pins). Du lernst, welche Arten von Pins es gibt und wie du sie identifizierst:
 - Stromversorgungs-Pins: 5V, 3V3 (kennst du ja schon) und  
@@ -93,7 +115,7 @@ Der Arduino ist ein Mikrocontroller mit vielen Anschlüssen (Pins). Du lernst, w
 
 ---
 
-## 📅 Programmiere den Arduino mit der Arduino IDE
+## 📅 04 Programmiere den Arduino mit der Arduino IDE
 
 Jetzt geht es ans Programmieren!  
 Du verwendest die Arduino IDE als Programmierzentrale. In der IDE erstellst du einen einfachen Sketch (Programm), lädst den Code in den Arduino und startest deinen Sketch.
@@ -106,7 +128,7 @@ Du verwendest die Arduino IDE als Programmierzentrale. In der IDE erstellst du e
 
 ---
 
-## 📅 Digital Output
+## 📅 05 Digital Output
 
 Bisher haben wir den Arduino nur als "Batterieersatz" der 5 Volt liefert verwendet, um die LED zum Leuchten zu bringen.
 Jetzt wollen wir die LED ansteuern und sie blinken lassen. Dazu benutzten wir einen digitalen Output des Arduino.
@@ -123,7 +145,7 @@ Jetzt wollen wir die LED ansteuern und sie blinken lassen. Dazu benutzten wir ei
 
 ---
 
-## 📅 Analog Output
+## 📅 06 Analog Output
 
 Der Arduino hat nicht nur Ausgänge, die nur "AN" (5 Volt) und "AUS" (0 Volt) können. Es gibt auch "Analog Outputs", sogenannte PWM-Outputs, die viele Spannungen zwischen 0 und 5 Volt erzeugen können. Nutze einen analogen Output, um eine LED sanft hell und wieder dunkel werden zu lassen (Dimmen).
 
@@ -133,7 +155,7 @@ Der Arduino hat nicht nur Ausgänge, die nur "AN" (5 Volt) und "AUS" (0 Volt) k�
 
 ---
 
-## 📅 Digital Input
+## 📅 07 Digital Input
 
 Der Arduino hat auch Eingangspins. Digital Inputs erkennen, ob am Eingang 0 V oder 5 V anliegen.
 
@@ -149,7 +171,7 @@ Der Arduino hat auch Eingangspins. Digital Inputs erkennen, ob am Eingang 0 V od
 
 ---
 
-## 📅 Analog Input
+## 📅 08 Analog Input
 
 Der Arduino hat auch "Analog Inputs". Das sind Eingangspins, die nicht nur AN oder AUS kennen, sondern viele Werte dazwischen.  
 Mit einem Analog Input kannst du z.B. einen Drehregler (Potentiometer) auslesen und damit die Helligkeit einer LED an einem analog output stufenlos steuern.
@@ -159,7 +181,7 @@ Mit einem Analog Input kannst du z.B. einen Drehregler (Potentiometer) auslesen 
 
 ---
 
-## 📅 Ideen für dein eigenes Projekt
+## 📅 09 Ideen für dein eigenes Projekt
 
 Jetzt wird's richtig cool! Wähle eines dieser Projekte und baue es:
 - **Ampelsteuerung:** Programmiere eine funktionierende Mini-Ampel
