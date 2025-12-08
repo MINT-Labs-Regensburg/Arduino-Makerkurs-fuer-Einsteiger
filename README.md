@@ -53,7 +53,7 @@ Du bekommst ein Arduino Maker Kit. Es enthält neben dem Arduino viele elektroni
 - was noch?
 
 ---
-## 📅 Was ist eine LED? Wie wird sie angeschlossen?
+## 📅 Was ist eine LED? Wie fliesst der Strom?
 
 Eine LED (Licht-Emittierende Diode) ist ein kleines Bauteil, das leuchtet, wenn Strom hindurchfließt.  
 Sie hat zwei Beine:  
@@ -63,25 +63,24 @@ Sie hat zwei Beine:
 **Wichtig:**  
 Eine LED braucht immer einen Vorwiderstand (z.B. 220 Ω), damit sie nicht durch zu viel Strom kaputt geht.
 
-**Anschluss:**  
-- Das lange Bein der LED wird an 5 Volt angeschlossen. 5 Volt bekommst du z.B. über den Arduino Ausgang "5V" oder über eine Batterie.
-- Das kurze Bein kommt an GND (Masse) des Arduino.
-
-**Den prinzipiellen Schaltplan und Aufbau findest du in:**  
+**So wird eine LED an eine Batterie angeschlossen:**  
 - [LED5VBatterie_schem.png](zusatzmaterial/LED5VBatterie_schem.png)  
 - [LED5VBatterie_bb.png](zusatzmaterial/LED5VBatterie_bb.png)
 
-**Wenn du den Arduino und das Breadboard verwendest geht das so:**  
-- [LED5VArduino_schem.png](zusatzmaterial/LED5VArduino_schem.png)  
-- [LED5VArduino_bb.png](zusatzmaterial/LED5VArduino_bb.png)
 
+**Challenge: "Bringe eine LED zum Leuchten"**  
+- Wir verwenden den Arduino anstatt einer Batterie als 5Volt Stromquelle
+- Wir verwenden das Breadboard. Damit sparen wir und das umständliche Löten
+- Wir vewenden einen 220 Ω Vorwiderstand. Du erkennst ihn an der Markierung rot-rot-braun.
+- Das sieht dann so aus:  
+  - [LED5VArduino_schem.png](zusatzmaterial/LED5VArduino_schem.png)  
+  - [LED5VArduino_bb.png](zusatzmaterial/LED5VArduino_bb.png)
 
-**Challenge: "Bringe eine LED zum Leuchten"**
-
+---
 ## 📅 Was ist ein Microcontroller
 
 Der Arduino ist ein Mikrocontroller mit vielen Anschlüssen (Pins). Du lernst, welche Arten von Pins es gibt und wie du sie identifizierst:
-- Stromversorgungs-Pins: 5V, 3V3 und GND
+- Stromversorgungs-Pins: 5V, 3V3 (kennst du ja schon) und  
 - Inputs, Outputs
 
 **Challenge:"Identifiziere die Pins deines Arduino"**
@@ -101,7 +100,7 @@ Jetzt geht es ans Programmieren!
 Du verwendest die Arduino IDE als Programmierzentrale. In der IDE erstellst du einen einfachen Sketch (Programm), lädst den Code in den Arduino und startest deinen Sketch.
 
 **Challenge 01: "Erstelle dein erstes Programm: 'Hello World'"**
-
+- [challenge_01_hello_world.ino](challenge_01_hello_world.ino)
 
 **Hinweis:** Ein praktisches Arduino-Cheatsheet findest du im Ordner zusatzmaterial:  
 [arduino-cheatsheet-deutsch.pdf](zusatzmaterial/arduino-cheatsheet-deutsch.pdf)
@@ -110,13 +109,15 @@ Du verwendest die Arduino IDE als Programmierzentrale. In der IDE erstellst du e
 
 ## 📅 Digital Output
 
-Mit dem Arduino kannst du Komponenten ansteuern, z.B. eine LED leuchten lassen. Dazu benutzt du einen digitalen Output.
+Bisher haben wir den Arduino nur als "Batterieersatz" der 5 Volt liefert verwendet, um die LED zum Leuchten zu bringen.
+Jetzt wollen wir die LED ansteuern und sie blinken lassen. Dazu benutzten wir einen digitalen Output des Arduino.
 
 **Challenge 02: "Digital Output – Lass eine LED blinken"**
 
-**Zusatzaufgabe für Fortgeschrittene:**  
+- [challenge_02_led_blinken.ino](challenge_02_led_blinken.ino)
 
-**Challenge 03: "Lass die LED im Morsecode SOS blinken"**
+**Zusatz Challenge 03 für Fortgeschrittene: "Lass die LED im Morsecode SOS blinken"**
+- [challenge_03_morsecode_sos.ino](challenge_03_morsecode_sos.ino)
 
 ---
 
@@ -164,17 +165,3 @@ Jetzt wird's richtig cool! Wähle eines dieser Projekte und baue es:
 Bei Fragen zum Kurs oder Material:  
 **MINT-Labs Regensburg**  
 🌐 [https://www.mint-labs-regensburg.de/](https://www.mint-labs-regensburg.de/)
-
----
-
-## 5461AS-1 4 Digit display
-
-
-## Weiterführende Links
-
-- [4 Digit Segment 5461AS-1](https://www.electronicssimplified.in/feed/2062/)
-- Schaltplan zum 4x7-Segment-Display findest du hier:  
-  [4x7segment_display_schem.png](zusatzmaterial/4x7segment_display_schem.png)
-- Steckplatinen-Ansicht:  
-  [4x7segment_display_bb.png](zusatzmaterial/4x7segment_display_bb.png)
-
