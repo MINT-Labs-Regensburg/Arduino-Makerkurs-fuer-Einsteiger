@@ -86,8 +86,8 @@ Sie hat zwei Beine:
 Eine LED braucht immer einen Vorwiderstand (z.B. 220 Ω), damit sie nicht durch zu viel Strom kaputt geht.
 
 **So wird eine LED an eine Batterie angeschlossen:**  
-- [LED5VBatterie_schem.png](zusatzmaterial/LED5VBatterie_schem.png)  
-- [LED5VBatterie_bb.png](zusatzmaterial/LED5VBatterie_bb.png)
+- [LED5VBatterie_Schaltplan.png](zusatzmaterial/LED5VBatterie_schem.png)  
+- [LED5VBatterie_Steckplatine.png](zusatzmaterial/LED5VBatterie_bb.png)
 
 
 **Challenge 02: "Bringe eine LED zum Leuchten"**  
@@ -95,8 +95,8 @@ Eine LED braucht immer einen Vorwiderstand (z.B. 220 Ω), damit sie nicht durch 
 - Wir verwenden das Breadboard. Damit sparen wir und das umständliche Löten
 - Wir vewenden einen 220 Ω Vorwiderstand. Du erkennst ihn an der Markierung rot-rot-braun.
 - Das sieht dann so aus:  
-  - [LED5VArduino_schem.png](zusatzmaterial/LED5VArduino_schem.png)  
-  - [LED5VArduino_bb.png](zusatzmaterial/LED5VArduino_bb.png)
+  - [LED5VArduino_Schaltplan.png](zusatzmaterial/LED5VArduino_schem.png)  
+  - [LED5VArduino_Steckplatine.png](zusatzmaterial/LED5VArduino_bb.png)
 
 ---
 ## 🖥️ 03 Was ist ein Microcontroller
@@ -177,8 +177,8 @@ Der Arduino hat auch "Analog Inputs". Das sind Eingangspins, die nicht nur AN od
 Mit einem Analog Input kannst du z.B. einen Drehregler (Potentiometer) auslesen und damit die Helligkeit einer LED an einem analog output stufenlos steuern.
 
 **Challenge 08: "Poti auslesen und LED ansteuern"**
-- [LED_Poti_schem.png](zusatzmaterial/LED_Poti_schem.png)
-- [LED_Poti_bb.png](zusatzmaterial/LED_Poti_bb.png)
+- [LED_Poti_Schaltplan.png](zusatzmaterial/LED_Poti_schem.png)
+- [LED_Poti_Steckplatine.png](zusatzmaterial/LED_Poti_bb.png)
 - [challenge_08_poti_led.ino](challenge_08_poti_led.ino)
 
 ---
