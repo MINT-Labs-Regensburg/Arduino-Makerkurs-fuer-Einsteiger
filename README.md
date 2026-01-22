@@ -183,3 +183,6 @@ Mit einem Analog Input kannst du z.B. einen Drehregler (Potentiometer) auslesen 
 Bei Fragen zum Kurs oder Material:  
 **MINT-Labs Regensburg**  
 🌐 [https://www.mint-labs-regensburg.de/](https://www.mint-labs-regensburg.de/)
+
+
+## Mehr Projekte und Anleitungen findest du [hier](https://wiki.mint-labs.de/)
