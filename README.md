@@ -1,25 +1,5 @@
 # <img src="assets/arduino-logos-512px.png" alt="Arduino IDE Logo" width="38" style="vertical-align:middle;"> Arduino Makerkurs für Einsteiger – In 3 Stunden zum eigenen Mikrocontroller-Projekt
 
-<p>
-  <img src="assets/Arduino Uno mit Potentiometer und LED.png" alt="Arduino Uno mit LED und Potentiometer" width="220" />
-</p>
-
----
-
-## Inhaltsangabe
-
-- [ Arduino Makerkurs für Einsteiger – In 3 Stunden zum eigenen Mikrocontroller-Projekt](#-arduino-makerkurs-für-einsteiger--in-3-stunden-zum-eigenen-mikrocontroller-projekt)
-  - [Inhaltsangabe](#inhaltsangabe)
-  - [Was dich erwartet](#was-dich-erwartet)
-  - [🧰 01 Dein Start in die Maker Welt](#-01-dein-start-in-die-maker-welt)
-  - [💻 02 Die Arduino IDE. Programmiere eine blinkende LED](#-02-die-arduino-ide-programmiere-eine-blinkende-led)
-  - [🖥️ 03 Was kann der Arduino - Arduino Pinout](#️-03-was-kann-der-arduino---arduino-pinout)
-  - [🖥️ 04 Digital Output – Schliesse eine externe LED am Arduino an](#️-04-digital-output--schliesse-eine-externe-led-am-arduino-an)
-  - [Zusatzaufgaben wenn du schon fertig bist oder zu Hause weiter experimentieren willst](#zusatzaufgaben-wenn-du-schon-fertig-bist-oder-zu-hause-weiter-experimentieren-willst)
-  - [📞 Kontakt](#-kontakt)
-  - [Mehr Projekte und Anleitungen findest du hier](#mehr-projekte-und-anleitungen-findest-du-hier)
-
----
 
 ## Was dich erwartet
 
@@ -53,7 +33,8 @@ Du bekommst ein Arduino Maker Kit. Es enthält neben dem Arduino viele elektroni
 
 Jetzt geht es ans Programmieren! Du verwendest die Arduino IDE als Programmierzentrale. In der IDE öffnen wir den Blink‑Sketch, laden ihn auf den Arduino und beobachten die blinkende LED — so siehst du Upload und Ergebnis sofort.
 
-**🏆 Challenge 02: "Programmiere Blink auf dem Arduino"**  [challenge_02_ide_blink.ino](challenge_02_ide_blink.ino) 
+**🏆 Challenge 02: "Programmiere Blink auf dem Arduino"** 
+- [challenge_02_ide_blink.ino](challenge_02_ide_blink.ino) 
 
 
 
@@ -99,10 +80,10 @@ Wie das aussieht findest du hier:
   <em>Arduino mit LED und Vorwiderstand</em>
 </p>
 
-[04_LED_Schaltplan.png](zusatzmaterial/04_LED_schem.png)
 
+**🏆 Challenge 04: "Digital Output – Schliesse eine eigene LED am Arduino an und lass sie blinken"**
 
-**🏆 Challenge 04: "Digital Output – Schliesse eine eigene LED am Arduino an und lass sie blinken"** [challenge_04_led_blinken.ino](challenge_04_led_blinken.ino)
+- [challenge_04_led_blinken.ino](challenge_04_led_blinken.ino)
 
 **🏆 Zusatz Challenge 04z für Fortgeschrittene: "Lass die LED im Morsecode SOS blinken"**
 - [challenge_04z_morsecode_sos.ino](challenge_04z_morsecode_sos.ino)
@@ -125,7 +106,9 @@ Du kannst Messages von deinem Arduino an den Computer schicken. Dazu verwendest 
 
 **🏆 Challenge 06z: " Eine LED am Analogen Ausgang dimmen"**   
 Der Arduino hat auch analoge Ausgänge. Die kennen nicht nur ein und aus, sondern auch viele Schritte dazwischen.
-- **Analog Output (LED dimmen):** [challenge_06_led_dimmen.ino](challenge_06_led_dimmen.ino) – Nutze PWM-Ausgänge, um die Helligkeit einer LED zu steuern.
+- **Analog Output (LED dimmen):** 
+  
+- [challenge_06_led_dimmen.ino](challenge_06_led_dimmen.ino) – Nutze PWM-Ausgänge, um die Helligkeit einer LED zu steuern.
   
 ---
 
@@ -134,7 +117,9 @@ Der Arduino hat auch Eingänge. Damit kann er sehen, ob eine Spannung anliegt od
 
 
 
- - **Digital Input (Taster):** [challenge_07_taster_led.ino](challenge_07_taster_led.ino) – Baue einen Taster ein, um die LED zu schalten.
+ - **Digital Input (Taster):**
+  
+ -  [challenge_07_taster_led.ino](challenge_07_taster_led.ino) – Baue einen Taster ein, um die LED zu schalten.
 
 So wird der Taster angeschlossen:
 <p>
@@ -143,7 +128,6 @@ So wird der Taster angeschlossen:
   <em>Arduino mit Taster und LED</em>
 </p>
 
-[07_LED_Taster_Schaltplan.png](zusatzmaterial/07_LED_Taster_schem.png)
 
 ---
 **🏆 Challenge 08z: "Analog Input - Potentiometer Auslesen und die LED danach dimmen"**
@@ -158,7 +142,6 @@ Der Arduino hat auch analoge Eingänge, die viele Spannungen zwischen 0 und der 
 </p>
 
 
-[08_LED_Poti_Schaltplan.png](zusatzmaterial/08_LED_Poti_schem.png)
 
 ---
 
