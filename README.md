@@ -1,6 +1,8 @@
 # <img src="assets/arduino-logos-512px.png" alt="Arduino IDE Logo" width="38" style="vertical-align:middle;"> Arduino Makerkurs für Einsteiger – In 3 Stunden zum eigenen Mikrocontroller-Projekt
 
-<img src="assets/Arduino Uno mit Potentiometer und LED.png" alt="Arduino Uno mit LED und Potentiometer" width="220" />
+<p>
+  <img src="assets/Arduino Uno mit Potentiometer und LED.png" alt="Arduino Uno mit LED und Potentiometer" width="220" />
+</p>
 
 ---
 
@@ -67,7 +69,7 @@ Der Arduino hat
 **🏆 Challenge 03: "Wie findest du die richtigen Pins an deinem Arduino"**
 - Die Pinbelegung des Arduino findest du im Ordner zusatzmaterial: [00_Arduino UNO Pinout](zusatzmaterial/00_Arduino_UNO-Pinout.jpg)
 
-<p align="center">
+<p>
   <img src="zusatzmaterial/00_Arduino_UNO-Pinout.jpg" alt="Arduino UNO Pinout" width="220" />
   <br/>
   <em>Arduino UNO Pinout</em>
@@ -91,7 +93,11 @@ Wir dürfen die LED nicht direkt am Arduino anschliessen. Sie könnte durchbrenn
 
 Wie das aussieht findest du hier:
 
-<p><img src="zusatzmaterial/04_LED_bb.png" alt="LED Steckplatine" width="220" style="margin-right:12px;" /></p>
+<p>
+  <img src="zusatzmaterial/04_LED_bb.png" alt="LED Steckplatine" width="220" />
+  <br/>
+  <em>Arduino mit LED und Vorwiderstand</em>
+</p>
 
 [04_LED_Schaltplan.png](zusatzmaterial/04_LED_schem.png)
 
@@ -131,7 +137,11 @@ Der Arduino hat auch Eingänge. Damit kann er sehen, ob eine Spannung anliegt od
  - **Digital Input (Taster):** [challenge_07_taster_led.ino](challenge_07_taster_led.ino) – Baue einen Taster ein, um die LED zu schalten.
 
 So wird der Taster angeschlossen:
-<p><img src="zusatzmaterial/07_LED_Taster_bb.png" alt="Taster Steckplatine" width="200" /></p>
+<p>
+  <img src="zusatzmaterial/07_LED_Taster_bb.png" alt="Taster Steckplatine" width="200" />
+  <br/>
+  <em>Arduino mit Taster und LED</em>
+</p>
 
 [07_LED_Taster_Schaltplan.png](zusatzmaterial/07_LED_Taster_schem.png)
 
@@ -141,7 +151,11 @@ Der Arduino hat auch analoge Eingänge, die viele Spannungen zwischen 0 und der 
 - **Analog Input (Potentiometer):** [challenge_08_poti_led.ino](challenge_08_poti_led.ino) – Lese ein Potentiometer ein und steuere damit die Helligkeit einer LED.
 
 
-<p><img src="zusatzmaterial/08_LED_Poti_bb.png" alt="Poti Steckplatine" width="220" style="margin-right:12px;" /></p>
+<p>
+  <img src="zusatzmaterial/08_LED_Poti_bb.png" alt="Poti Steckplatine" width="220" />
+  <br/>
+  <em>Arduino mit Poti und LED</em>
+</p>
 
 
 [08_LED_Poti_Schaltplan.png](zusatzmaterial/08_LED_Poti_schem.png)
