@@ -10,15 +10,11 @@
   - [Inhaltsangabe](#inhaltsangabe)
   - [Was dich erwartet](#was-dich-erwartet)
   - [📋 Kursübersicht](#-kursübersicht)
-  - [🎯 Lernziele](#-lernziele)
   - [🧰 01 Dein Start in die Maker Welt](#-01-dein-start-in-die-maker-welt)
-  - [💡 02 Was ist eine LED? Wie fliesst der Strom?](#-02-was-ist-eine-led-wie-fliesst-der-strom)
-  - [🖥️ 03 Was ist ein Microcontroller](#️-03-was-ist-ein-microcontroller)
-  - [💻 04 Programmiere den Arduino mit der Arduino IDE](#-04-programmiere-den-arduino-mit-der-arduino-ide)
-  - [🔦 05 Digital Output](#-05-digital-output)
-  - [🌈 06 Analog Output](#-06-analog-output)
-  - [🔲 07 Digital Input](#-07-digital-input)
-  - [📈 08 Analog Input](#-08-analog-input)
+  - [💻 02 Die Arduino IDE. Programmiere eine blinkende LED](#-02-die-arduino-ide-programmiere-eine-blinkende-led)
+  - [🖥️ 03 Was kann der Arduino - Arduino Pinout](#️-03-was-kann-der-arduino---arduino-pinout)
+  - [🖥️ 04 Digital Output – Schliesse eine externe LED am Arduino an](#️-04-digital-output--schliesse-eine-externe-led-am-arduino-an)
+  - [Zusatzaufgaben wenn du schon fertig bist oder zu Hause weiter experimentieren willst](#zusatzaufgaben-wenn-du-schon-fertig-bist-oder-zu-hause-weiter-experimentieren-willst)
   - [📞 Kontakt](#-kontakt)
   - [Mehr Projekte und Anleitungen findest du hier](#mehr-projekte-und-anleitungen-findest-du-hier)
 
@@ -26,7 +22,7 @@
 
 ## Was dich erwartet
 
-Du bist 10 Jahre alt oder älter, neugierig auf Mikrocontroller und hast Lust aufs Experimentieren?  
+Du bist 11 Jahre alt oder älter, neugierig auf Mikrocontroller und hast Lust aufs Experimentieren?  
 Dann bist du hier richtig im **Maker Kurs für Einsteiger**!
 
 Tauche ein in die spannende Welt der Mikrocontroller! Mit dem Arduino bringst du LEDs zum Leuchten und baust interaktive Schaltungen. In nur drei Stunden lernst du die Basics der Programmierung und Elektronik – und nimmst dein eigenes funktionierendes Gadget mit nach Hause!
@@ -36,27 +32,16 @@ Tauche ein in die spannende Welt der Mikrocontroller! Mit dem Arduino bringst du
 ## 📋 Kursübersicht
 
 - **Gesamtdauer:** 3 Stunden
-- **Zielgruppe:** Jugendliche ab 10 Jahren ohne Programmiererfahrung
-- **Format:** Interaktiver Freizeitkurs – 100% praktisches Lernen
+- **Zielgruppe:** Jugendliche ab 11 Jahren ohne Programmiererfahrung
+- **Ort:** MINT-Labs Regensburg
 
 ---
 
-## 🎯 Lernziele
 
-Am Ende des Kurses kannst du:
-
-- einen Arduino anschließen und die Arduino IDE bedienen
-- einfache Programme (Sketches) schreiben und auf den Arduino laden
-- LEDs zum Leuchten bringen und blinken lassen
-- digitale und analoge Eingaben (z.B. Taster, Potentiometer) auslesen
-- die Helligkeit einer LED mit einem Potentiometer steuern
-- eigene kleine Schaltungen auf dem Breadboard aufbauen
-
----
 
 ## 🧰 01 Dein Start in die Maker Welt
 
-**🏆 Challenge 01: "Lerne dein Makerkit kennen – was ist was?"**  
+**🏆 Challenge 01: "Lerne dein Arduino-Makerkit kennen – Was ist was?"**
 
 Du bekommst ein Arduino Maker Kit. Es enthält neben dem Arduino viele elektronische Bauelemente und Material für verschiedene Experimente.
 
@@ -70,104 +55,101 @@ Du bekommst ein Arduino Maker Kit. Es enthält neben dem Arduino viele elektroni
 - was noch?
 
 ---
-## 💡 02 Was ist eine LED? Wie fliesst der Strom?
 
-Eine LED (Licht-Emittierende Diode) ist ein kleines Bauteil, das leuchtet, wenn Strom hindurchfließt.  
-Sie hat zwei Beine:  
-- Das **lange Bein** ist die **Anode** (+), hier kommt der Pluspol hin.
-- Das **kurze Bein** ist die **Kathode** (–), hier kommt der Minuspol (GND) hin.
 
-**Wichtig:**  
-Eine LED braucht immer einen Vorwiderstand (z.B. 220 Ω), damit sie nicht durch zu viel Strom kaputt geht.
+## 💻 02 Die Arduino IDE. Programmiere eine blinkende LED
 
-**So wird eine LED an eine Batterie angeschlossen:**  
-- [02_LED5VBatterie_Schaltplan.png](zusatzmaterial/02_LED5VBatterie_schem.png)  
-- [02_LED5VBatterie_Steckplatine.png](zusatzmaterial/02_LED5VBatterie_bb.png)
+Jetzt geht es ans Programmieren! Du verwendest die Arduino IDE als Programmierzentrale. In der IDE öffnen wir den Blink‑Sketch, laden ihn auf den Arduino und beobachten die blinkende LED — so siehst du Upload und Ergebnis sofort.
 
----
-## 🖥️ 03 Was ist ein Microcontroller
+**🏆 Challenge 02: "Programmiere Blink auf dem Arduino"**  [challenge_02_ide_blink.ino](challenge_02_ide_blink.ino) 
 
-Der Arduino ist ein Mikrocontroller mit vielen Anschlüssen (Pins). Du lernst, welche Arten von Pins es gibt und wie du sie identifizierst:
-- Stromversorgungs-Pins: 5V, 3V3 (kennst du ja schon) und  
-- Inputs, Outputs
 
-**🏆 Challenge 03: "Identifiziere die Pins deines Arduino"**
-- Die Pinbelegung des Arduino findest du im Ordner zusatzmaterial:  
-  [Arduino UNO Pinout](zusatzmaterial/00_Arduino_UNO-Pinout.jpg)  
-- Suche die Powerpins
-- Suche einen digitalen Output
-- Suche einen analogen Output
-- Suche einen digitalen Input
-- Suche einen analogen Input
 
 ---
 
-## 💻 04 Programmiere den Arduino mit der Arduino IDE
+## 🖥️ 03 Was kann der Arduino - Arduino Pinout
 
-Jetzt geht es ans Programmieren!  
-Du verwendest die Arduino IDE als Programmierzentrale. In der IDE erstellst du einen einfachen Sketch (Programm), lädst den Code in den Arduino und startest deinen Sketch.
+Der Arduino ist ein Mikrocontroller mit vielen Anschlüssen (Pins).   
+Der Arduino hat
+- Stromversorgungs-Pins: 5V, 3V3, GND
+- Inputs, Outputs (Eingänge / Ausgänge) 
 
-**🏆 Challenge 04: "Erstelle dein erstes Programm: 'Hello World'"**
-- [challenge_04_hello_world.ino](challenge_04_hello_world.ino)
+**🏆 Challenge 03: "Wie findest du die richtigen Pins an deinem Arduino"**
+- Die Pinbelegung des Arduino findest du im Ordner zusatzmaterial: [00_Arduino UNO Pinout](zusatzmaterial/00_Arduino_UNO-Pinout.jpg)
 
-**Hinweis:** Ein praktisches Arduino-Cheatsheet findest du im Ordner zusatzmaterial:  
-[00_Arduino_Cheatsheet.pdf](zusatzmaterial/00_Arduino_Cheatsheet.pdf)
+<p><img src="zusatzmaterial/00_Arduino_UNO-Pinout.jpg" alt="Arduino UNO Pinout" width="300" /></p>
+- Suche die Powerpins 5V, 3V3 und GND
+- Suche einen digitalen Output `Digital`
+
+  
+Es gibt auch noch analoge Ein/Ausgänge. Brauchen wir später
+- Suche einen digitalen Input  `Digital`
+- Suche einen analogen Output  `Digital mit PWM`
+- Suche einen analogen Input  `Analog`
+
 
 ---
 
-## 🔦 05 Digital Output
+## 🖥️ 04 Digital Output – Schliesse eine externe LED am Arduino an
+Bisher haben wir nur die eingebaute LED am Arduino verwendet. (Sie ist als BUILTIN_LED übrigens an Pin 13 fest angeschlossen.)  
+Jetzt wollen wir eine externe LED über einen digitalen Output des Arduino ansteuern. 
+Wir dürfen die LED nicht direkt am Arduino anschliessen. Sie könnte durchbrennen. Um den Strom zu begrenzen, verwenden wir einen Vorwiderstand von 220 Ohm. 
 
-Jetzt wollen wir die LED mit dem Arduino ansteuern und sie blinken lassen. Dazu benutzten wir einen digitalen Output des Arduino. 
+Wie das aussieht findest du hier:
+- [04_LED_Steckplatine.png](zusatzmaterial/04_LED_bb.png)
+- [04_LED_Schaltplan.png](zusatzmaterial/04_LED_schem.png)
 
-**🏆 Challenge 05: "Digital Output – Lass eine LED blinken"**
-
-- [05_LED_Schaltplan.png](zusatzmaterial/05_LED_schem.png)
-- [05_LED_Steckplatine.png](zusatzmaterial/05_LED_bb.png)
-- [challenge_05_led_blinken.ino](challenge_05_led_blinken.ino)
+<p><img src="zusatzmaterial/04_LED_bb.png" alt="LED Steckplatine" width="220" style="margin-right:12px;" /></p>
 
 
-**🏆 Zusatz Challenge 05z für Fortgeschrittene: "Lass die LED im Morsecode SOS blinken"**
-- [challenge_05z_morsecode_sos.ino](challenge_05z_morsecode_sos.ino)
+**🏆 Challenge 04: "Digital Output – Schliesse eine eigene LED am Arduino an und lass sie blinken"** [challenge_04_led_blinken.ino](challenge_04_led_blinken.ino)
 
----
-
-## 🌈 06 Analog Output
-
-Der Arduino hat nicht nur Ausgänge, die nur "AN" (5 Volt) und "AUS" (0 Volt) können. Es gibt auch "Analog Outputs", sogenannte PWM-Outputs, die viele Spannungen zwischen 0 und 5 Volt erzeugen können. Nutze einen analogen Output, um eine LED sanft hell und wieder dunkel werden zu lassen (Dimmen).
-
-**🏆 Challenge 06: "LED Dimmen"**
-- Wähle einen Ausgang, der Analog Output (PWM) kann (z.B. Pin 11, erkennbar an der ~).
-- [challenge_06_led_dimmen.ino](challenge_06_led_dimmen.ino)
+**🏆 Zusatz Challenge 04z für Fortgeschrittene: "Lass die LED im Morsecode SOS blinken"**
+- [challenge_04z_morsecode_sos.ino](challenge_04z_morsecode_sos.ino)
 
 ---
 
-## 🔲 07 Digital Input
 
-Der Arduino hat auch Eingangspins. Digital Inputs erkennen, ob am Eingang 0 V oder 5 V anliegen.
 
-**🏆 Challenge 07: "Mit Taster LED schalten"**
 
-- [07_LED_Taster_Schaltplan.png](zusatzmaterial/07_LED_Taster_schem.png)
-- [07_LED_Taster_Steckplatine.png](zusatzmaterial/07_LED_Taster_bb.png)
-- [challenge_07_taster_led.ino](challenge_07_taster_led.ino)
+## Zusatzaufgaben wenn du schon fertig bist oder zu Hause weiter experimentieren willst
 
-**🏆 Zusatz Challenge 07z: "Mit Taster LED toggeln"**
-- Schalte die LED abwechselnd ein und aus mit jedem Tastendruck.
-- [challenge_07z_taster_toggle_led.ino](challenge_07z_taster_toggle_led.ino)
+
+
+**🏆Challenge 05z: "Hello World auf dem Seriellen Monitor ausgeben"**   
+Du kannst Messages von deinem Arduino an den Computer schicken. Dazu verwendest du den `Seriellen Monitor` der Arduino IDE.
+
+- [challenge_05z_hello_world.ino](challenge_05z_hello_world.ino) — Kurzes Beispiel: Schreibe "Hello World" in den Seriellen Monitor und teste die Verbindung zur IDE.
 
 ---
 
-## 📈 08 Analog Input
+**🏆 Challenge 06z: " Eine LED am Analogen Ausgang dimmen"**   
+Der Arduino hat auch analoge Ausgänge. Die kennen nicht nur ein und aus, sondern auch viele Schritte dazwischen.
+- **Analog Output (LED dimmen):** [challenge_06_led_dimmen.ino](challenge_06_led_dimmen.ino) – Nutze PWM-Ausgänge, um die Helligkeit einer LED zu steuern.
+  
+---
 
-Der Arduino hat auch "Analog Inputs". Das sind Eingangspins, die nicht nur AN oder AUS kennen, sondern viele Werte dazwischen.  
-Mit einem Analog Input kannst du z.B. einen Drehregler (Potentiometer) auslesen und damit die Helligkeit einer LED an einem analog output stufenlos steuern.
+**🏆 Challenge 07z: "Digital Input - LED mit einem Taster schalten"**
+Der Arduino hat auch Eingänge. Damit kann er sehen, ob eine Spannung anliegt oder 0 Volt.
 
-**🏆 Challenge 08: "Poti auslesen und LED ansteuern"**
-- [08_LED_Poti_Schaltplan.png](zusatzmaterial/08_LED_Poti_schem.png)
-- [08_LED_Poti_Steckplatine.png](zusatzmaterial/08_LED_Poti_bb.png)
-- [challenge_08_poti_led.ino](challenge_08_poti_led.ino)
+
+- **Digital Input (Taster):** [challenge_07_taster_led.ino](challenge_07_taster_led.ino) – Baue einen Taster ein, um die LED zu schalten. (Siehe [07_LED_Taster_Schaltplan.png](zusatzmaterial/07_LED_Taster_schem.png))
+ - **Digital Input (Taster):** [challenge_07_taster_led.ino](challenge_07_taster_led.ino) – Baue einen Taster ein, um die LED zu schalten. (Siehe [07_LED_Taster_Schaltplan.png](zusatzmaterial/07_LED_Taster_schem.png))
+
+So wird der Taster angeschlossen:
+<p><img src="zusatzmaterial/07_LED_Taster_schem.png" alt="Taster Schaltplan" width="200" style="margin-right:12px;" /><img src="zusatzmaterial/07_LED_Taster_bb.png" alt="Taster Steckplatine" width="200" /></p>
 
 ---
+**🏆 Challenge 08z: "Analog Input - Potentiometer Auslesen und die LED danach dimmen"**
+Der Arduino hat auch analoge Eingänge, die viele Spannungen zwischen 0 und der Versorgungsspannung messen können.
+- **Analog Input (Potentiometer):** [challenge_08_poti_led.ino](challenge_08_poti_led.ino) – Lese ein Potentiometer ein und steuere damit die Helligkeit einer LED.
+
+<p><img src="zusatzmaterial/08_LED_Poti_bb.png" alt="Poti Steckplatine" width="220" style="margin-right:12px;" /><img src="zusatzmaterial/08_LED_Poti_schem.png" alt="Poti Schaltplan" width="220" /></p>
+
+
+---
+
+**Hinweis:** Ein praktisches Arduino‑Cheatsheet findest du im Ordner zusatzmaterial [00_Arduino_Cheatsheet.pdf](zusatzmaterial/00_Arduino_Cheatsheet.pdf)
 
 ## 📞 Kontakt
 
