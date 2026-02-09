@@ -1,6 +1,6 @@
 # <img src="assets/arduino-logos-512px.png" alt="Arduino IDE Logo" width="38" style="vertical-align:middle;"> Arduino Makerkurs für Einsteiger – In 3 Stunden zum eigenen Mikrocontroller-Projekt
 
-<img src="assets/Arduino Uno mit Potentiometer und LED.png" alt="Arduino Uno mit LED und Potentiometer" width="420" />
+<img src="assets/Arduino Uno mit Potentiometer und LED.png" alt="Arduino Uno mit LED und Potentiometer" width="220" />
 
 ---
 
@@ -9,7 +9,6 @@
 - [ Arduino Makerkurs für Einsteiger – In 3 Stunden zum eigenen Mikrocontroller-Projekt](#-arduino-makerkurs-für-einsteiger--in-3-stunden-zum-eigenen-mikrocontroller-projekt)
   - [Inhaltsangabe](#inhaltsangabe)
   - [Was dich erwartet](#was-dich-erwartet)
-  - [📋 Kursübersicht](#-kursübersicht)
   - [🧰 01 Dein Start in die Maker Welt](#-01-dein-start-in-die-maker-welt)
   - [💻 02 Die Arduino IDE. Programmiere eine blinkende LED](#-02-die-arduino-ide-programmiere-eine-blinkende-led)
   - [🖥️ 03 Was kann der Arduino - Arduino Pinout](#️-03-was-kann-der-arduino---arduino-pinout)
@@ -28,15 +27,6 @@ Dann bist du hier richtig im **Maker Kurs für Einsteiger**!
 Tauche ein in die spannende Welt der Mikrocontroller! Mit dem Arduino bringst du LEDs zum Leuchten und baust interaktive Schaltungen. In nur drei Stunden lernst du die Basics der Programmierung und Elektronik – und nimmst dein eigenes funktionierendes Gadget mit nach Hause!
 
 ---
-
-## 📋 Kursübersicht
-
-- **Gesamtdauer:** 3 Stunden
-- **Zielgruppe:** Jugendliche ab 11 Jahren ohne Programmiererfahrung
-- **Ort:** MINT-Labs Regensburg
-
----
-
 
 
 ## 🧰 01 Dein Start in die Maker Welt
@@ -77,7 +67,10 @@ Der Arduino hat
 **🏆 Challenge 03: "Wie findest du die richtigen Pins an deinem Arduino"**
 - Die Pinbelegung des Arduino findest du im Ordner zusatzmaterial: [00_Arduino UNO Pinout](zusatzmaterial/00_Arduino_UNO-Pinout.jpg)
 
-<p><img src="zusatzmaterial/00_Arduino_UNO-Pinout.jpg" alt="Arduino UNO Pinout" width="300" /></p>
+<figure style="text-align:center;">
+  <img src="zusatzmaterial/00_Arduino_UNO-Pinout.jpg" alt="Arduino UNO Pinout" width="220" />
+  <figcaption style="font-size:0.9em;color:#555;">Arduino UNO Pinout</figcaption>
+</figure>
 - Suche die Powerpins 5V, 3V3 und GND
 - Suche einen digitalen Output `Digital`
 
@@ -96,10 +89,10 @@ Jetzt wollen wir eine externe LED über einen digitalen Output des Arduino anste
 Wir dürfen die LED nicht direkt am Arduino anschliessen. Sie könnte durchbrennen. Um den Strom zu begrenzen, verwenden wir einen Vorwiderstand von 220 Ohm. 
 
 Wie das aussieht findest du hier:
-- [04_LED_Steckplatine.png](zusatzmaterial/04_LED_bb.png)
-- [04_LED_Schaltplan.png](zusatzmaterial/04_LED_schem.png)
 
 <p><img src="zusatzmaterial/04_LED_bb.png" alt="LED Steckplatine" width="220" style="margin-right:12px;" /></p>
+
+[04_LED_Schaltplan.png](zusatzmaterial/04_LED_schem.png)
 
 
 **🏆 Challenge 04: "Digital Output – Schliesse eine eigene LED am Arduino an und lass sie blinken"** [challenge_04_led_blinken.ino](challenge_04_led_blinken.ino)
@@ -133,19 +126,24 @@ Der Arduino hat auch analoge Ausgänge. Die kennen nicht nur ein und aus, sonder
 Der Arduino hat auch Eingänge. Damit kann er sehen, ob eine Spannung anliegt oder 0 Volt.
 
 
-- **Digital Input (Taster):** [challenge_07_taster_led.ino](challenge_07_taster_led.ino) – Baue einen Taster ein, um die LED zu schalten. (Siehe [07_LED_Taster_Schaltplan.png](zusatzmaterial/07_LED_Taster_schem.png))
- - **Digital Input (Taster):** [challenge_07_taster_led.ino](challenge_07_taster_led.ino) – Baue einen Taster ein, um die LED zu schalten. (Siehe [07_LED_Taster_Schaltplan.png](zusatzmaterial/07_LED_Taster_schem.png))
+
+ - **Digital Input (Taster):** [challenge_07_taster_led.ino](challenge_07_taster_led.ino) – Baue einen Taster ein, um die LED zu schalten.
 
 So wird der Taster angeschlossen:
-<p><img src="zusatzmaterial/07_LED_Taster_schem.png" alt="Taster Schaltplan" width="200" style="margin-right:12px;" /><img src="zusatzmaterial/07_LED_Taster_bb.png" alt="Taster Steckplatine" width="200" /></p>
+<p><img src="zusatzmaterial/07_LED_Taster_bb.png" alt="Taster Steckplatine" width="200" /></p>
+
+[07_LED_Taster_Schaltplan.png](zusatzmaterial/07_LED_Taster_schem.png)
 
 ---
 **🏆 Challenge 08z: "Analog Input - Potentiometer Auslesen und die LED danach dimmen"**
 Der Arduino hat auch analoge Eingänge, die viele Spannungen zwischen 0 und der Versorgungsspannung messen können.
 - **Analog Input (Potentiometer):** [challenge_08_poti_led.ino](challenge_08_poti_led.ino) – Lese ein Potentiometer ein und steuere damit die Helligkeit einer LED.
 
-<p><img src="zusatzmaterial/08_LED_Poti_bb.png" alt="Poti Steckplatine" width="220" style="margin-right:12px;" /><img src="zusatzmaterial/08_LED_Poti_schem.png" alt="Poti Schaltplan" width="220" /></p>
 
+<p><img src="zusatzmaterial/08_LED_Poti_bb.png" alt="Poti Steckplatine" width="220" style="margin-right:12px;" /></p>
+
+
+[08_LED_Poti_Schaltplan.png](zusatzmaterial/08_LED_Poti_schem.png)
 
 ---
 
