@@ -1,20 +1,17 @@
 /*
 Challenge 05: "Digital Output - Lass eine LED blinken"
 ===================================================
-Wähle im Pinout den Digital Output Pin aus, den du verwenden möchtest.
+Wähle im Pinout den Digital Output Pin aus, den du verwenden möchtest. 
+Suche auch einen GND Pin aus.
+Siehe: zusatzmaterial/00_Arduino_UNO-Pinout.jpg
 
 Aufbau:
 - Stecke eine LED ins Breadboard (langes Bein = Plus, kurzes = Minus).
 - Verbinde das lange Bein über einen Widerstand (z.B. 220Ω) mit dem Digital Output des Arduino.
 - Warum brauchst du den Widerstand? (Schutz der LED vor zu viel Strom)
 - Das kurze Bein verbindest du mit GND (Masse) am Arduino.
- - Den Schaltplan mit der LED an Pin 7 findest du in 'Zusatzmaterial/05_LED_Schaltplan.png'
- - Den Aufbau mit Steckplatine findest du in 'Zusatzmaterial/05_LED_Steckplatine.png'
-
-Was du lernen wirst:
-- Einen digitalen Ausgang am Arduino nutzen
-- Eine LED mit digitalWrite() ansteuern
-- Die Bedeutung des Vorwiderstands verstehen
+- Den Schaltplan mit der LED an Pin 7 findest du in 'Zusatzmaterial/05_LED_schem.png'
+- Den Aufbau mit Steckplatine findest du in 'Zusatzmaterial/05_LED_bb.png'
 
 Aufgaben:
 1. Baue die Schaltung wie oben beschrieben auf.
@@ -29,5 +26,15 @@ Hinweis:
 
 Zusatzaufgabe:
 Lass auch mal die auf dem Arduino fest eingebaute LED blinken. 
-Findest du die eingebaute LED im Pinout unter 'zusatzmaterial/03_Arduino-UNO-pinout.jpg'
+Findest du die eingebaute LED im Pinout unter 'zusatzmaterial/00_Arduino_UNO-Pinout.jpg'
 */
+
+void setup() {
+  // put your setup code here, to run once:
+
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+
+}

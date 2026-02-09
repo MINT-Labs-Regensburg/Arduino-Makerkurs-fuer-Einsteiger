@@ -20,6 +20,7 @@
   - [🔲 07 Digital Input](#-07-digital-input)
   - [📈 08 Analog Input](#-08-analog-input)
   - [📞 Kontakt](#-kontakt)
+  - [Mehr Projekte und Anleitungen findest du hier](#mehr-projekte-und-anleitungen-findest-du-hier)
 
 ---
 
@@ -80,17 +81,8 @@ Sie hat zwei Beine:
 Eine LED braucht immer einen Vorwiderstand (z.B. 220 Ω), damit sie nicht durch zu viel Strom kaputt geht.
 
 **So wird eine LED an eine Batterie angeschlossen:**  
-- [01_LED5VBatterie_Schaltplan.png](zusatzmaterial/01_LED5VBatterie_schem.png)  
-- [01_LED5VBatterie_Steckplatine.png](zusatzmaterial/01_LED5VBatterie_bb.png)
-
-
-**🏆 Challenge 02: "Bringe eine LED zum Leuchten"**  
-- Wir verwenden den Arduino anstatt einer Batterie als 5Volt Stromquelle
-- Wir verwenden das Breadboard. Damit sparen wir und das umständliche Löten
-- Wir vewenden einen 220 Ω Vorwiderstand. Du erkennst ihn an der Markierung rot-rot-braun.
-- Das sieht dann so aus:  
-  - [02_LED5VArduino_Schaltplan.png](zusatzmaterial/02_LED5VArduino_schem.png)  
-  - [02_LED5VArduino_Steckplatine.png](zusatzmaterial/02_LED5VArduino_bb.png)
+- [02_LED5VBatterie_Schaltplan.png](zusatzmaterial/02_LED5VBatterie_schem.png)  
+- [02_LED5VBatterie_Steckplatine.png](zusatzmaterial/02_LED5VBatterie_bb.png)
 
 ---
 ## 🖥️ 03 Was ist ein Microcontroller
@@ -101,7 +93,7 @@ Der Arduino ist ein Mikrocontroller mit vielen Anschlüssen (Pins). Du lernst, w
 
 **🏆 Challenge 03: "Identifiziere die Pins deines Arduino"**
 - Die Pinbelegung des Arduino findest du im Ordner zusatzmaterial:  
-  [03_Arduino UNO Pinout](zusatzmaterial/03_Arduino-UNO-pinout.jpg)  
+  [Arduino UNO Pinout](zusatzmaterial/00_Arduino_UNO-Pinout.jpg)  
 - Suche die Powerpins
 - Suche einen digitalen Output
 - Suche einen analogen Output
@@ -119,14 +111,13 @@ Du verwendest die Arduino IDE als Programmierzentrale. In der IDE erstellst du e
 - [challenge_04_hello_world.ino](challenge_04_hello_world.ino)
 
 **Hinweis:** Ein praktisches Arduino-Cheatsheet findest du im Ordner zusatzmaterial:  
-[04_arduino-cheatsheet-deutsch.pdf](zusatzmaterial/04_arduino-cheatsheet-deutsch.pdf)
+[00_Arduino_Cheatsheet.pdf](zusatzmaterial/00_Arduino_Cheatsheet.pdf)
 
 ---
 
 ## 🔦 05 Digital Output
 
-Bisher haben wir den Arduino nur als "Batterieersatz" der 5 Volt liefert verwendet, um die LED zum Leuchten zu bringen.
-Jetzt wollen wir die LED ansteuern und sie blinken lassen. Dazu benutzten wir einen digitalen Output des Arduino.
+Jetzt wollen wir die LED mit dem Arduino ansteuern und sie blinken lassen. Dazu benutzten wir einen digitalen Output des Arduino. 
 
 **🏆 Challenge 05: "Digital Output – Lass eine LED blinken"**
 
