@@ -1,6 +1,11 @@
 # <img src="assets/arduino-logos-512px.png" alt="Arduino IDE Logo" width="38" style="vertical-align:middle;"> Arduino Makerkurs für Einsteiger – In 3 Stunden zum eigenen Mikrocontroller-Projekt
 
 
+<p>
+  <img src="assets/Arduino Uno mit Potentiometer und LED.png" alt="Arduino Uno mit LED und Potentiometer" width="400" />
+</p>
+
+
 ## Was dich erwartet
 
 Du bist 11 Jahre alt oder älter, neugierig auf Mikrocontroller und hast Lust aufs Experimentieren?  
@@ -48,7 +53,6 @@ Der Arduino hat
 - Inputs, Outputs (Eingänge / Ausgänge) 
 
 **🏆 Challenge 03: "Wie findest du die richtigen Pins an deinem Arduino"**
-- Die Pinbelegung des Arduino findest du im Ordner zusatzmaterial: [00_Arduino UNO Pinout](zusatzmaterial/00_Arduino_UNO-Pinout.jpg)
 
 <p>
   <img src="zusatzmaterial/00_Arduino_UNO-Pinout.jpg" alt="Arduino UNO Pinout" width="220" />
@@ -72,7 +76,7 @@ Bisher haben wir nur die eingebaute LED am Arduino verwendet. (Sie ist als BUILT
 Jetzt wollen wir eine externe LED über einen digitalen Output des Arduino ansteuern. 
 Wir dürfen die LED nicht direkt am Arduino anschliessen. Sie könnte durchbrennen. Um den Strom zu begrenzen, verwenden wir einen Vorwiderstand von 220 Ohm. 
 
-Wie das aussieht findest du hier:
+
 
 <p>
   <img src="zusatzmaterial/04_LED_bb.png" alt="LED Steckplatine" width="220" />
@@ -91,11 +95,7 @@ Wie das aussieht findest du hier:
 ---
 
 
-
-
 ## Zusatzaufgaben wenn du schon fertig bist oder zu Hause weiter experimentieren willst
-
-
 
 **🏆Challenge 05z: "Hello World auf dem Seriellen Monitor ausgeben"**   
 Du kannst Messages von deinem Arduino an den Computer schicken. Dazu verwendest du den `Seriellen Monitor` der Arduino IDE.
@@ -145,7 +145,10 @@ Der Arduino hat auch analoge Eingänge, die viele Spannungen zwischen 0 und der 
 
 ---
 
-**Hinweis:** Ein praktisches Arduino‑Cheatsheet findest du im Ordner zusatzmaterial [00_Arduino_Cheatsheet.pdf](zusatzmaterial/00_Arduino_Cheatsheet.pdf)
+**Hinweis:** 
+
+Ein praktisches Arduino‑Cheatsheet findest du im Ordner zusatzmaterial 
+
 
 ## 📞 Kontakt
 
