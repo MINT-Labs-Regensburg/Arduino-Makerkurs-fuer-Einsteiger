@@ -67,10 +67,11 @@ Der Arduino hat
 **🏆 Challenge 03: "Wie findest du die richtigen Pins an deinem Arduino"**
 - Die Pinbelegung des Arduino findest du im Ordner zusatzmaterial: [00_Arduino UNO Pinout](zusatzmaterial/00_Arduino_UNO-Pinout.jpg)
 
-<figure style="text-align:center;">
+<p align="center">
   <img src="zusatzmaterial/00_Arduino_UNO-Pinout.jpg" alt="Arduino UNO Pinout" width="220" />
-  <figcaption style="font-size:0.9em;color:#555;">Arduino UNO Pinout</figcaption>
-</figure>
+  <br/>
+  <em>Arduino UNO Pinout</em>
+</p>
 - Suche die Powerpins 5V, 3V3 und GND
 - Suche einen digitalen Output `Digital`
 
