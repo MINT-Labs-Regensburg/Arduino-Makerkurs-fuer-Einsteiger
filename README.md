@@ -1,6 +1,6 @@
-# <img src="zusatzmaterial/arduino-logos-512px.png" alt="Arduino IDE Logo" width="38" style="vertical-align:middle;"> Arduino Makerkurs für Einsteiger – In 3 Stunden zum eigenen Mikrocontroller-Projekt
+# <img src="assets/arduino-logos-512px.png" alt="Arduino IDE Logo" width="38" style="vertical-align:middle;"> Arduino Makerkurs für Einsteiger – In 3 Stunden zum eigenen Mikrocontroller-Projekt
 
-<img src="zusatzmaterial/Arduino Uno mit Potentiometer und LED.png" alt="Arduino Uno mit LED und Potentiometer" width="420" />
+<img src="assets/Arduino Uno mit Potentiometer und LED.png" alt="Arduino Uno mit LED und Potentiometer" width="420" />
 
 ---
 
@@ -80,8 +80,8 @@ Sie hat zwei Beine:
 Eine LED braucht immer einen Vorwiderstand (z.B. 220 Ω), damit sie nicht durch zu viel Strom kaputt geht.
 
 **So wird eine LED an eine Batterie angeschlossen:**  
-- [LED5VBatterie_Schaltplan.png](zusatzmaterial/LED5VBatterie_schem.png)  
-- [LED5VBatterie_Steckplatine.png](zusatzmaterial/LED5VBatterie_bb.png)
+- [01_LED5VBatterie_Schaltplan.png](zusatzmaterial/01_LED5VBatterie_schem.png)  
+- [01_LED5VBatterie_Steckplatine.png](zusatzmaterial/01_LED5VBatterie_bb.png)
 
 
 **🏆 Challenge 02: "Bringe eine LED zum Leuchten"**  
@@ -89,8 +89,8 @@ Eine LED braucht immer einen Vorwiderstand (z.B. 220 Ω), damit sie nicht durch 
 - Wir verwenden das Breadboard. Damit sparen wir und das umständliche Löten
 - Wir vewenden einen 220 Ω Vorwiderstand. Du erkennst ihn an der Markierung rot-rot-braun.
 - Das sieht dann so aus:  
-  - [LED5VArduino_Schaltplan.png](zusatzmaterial/LED5VArduino_schem.png)  
-  - [LED5VArduino_Steckplatine.png](zusatzmaterial/LED5VArduino_bb.png)
+  - [02_LED5VArduino_Schaltplan.png](zusatzmaterial/02_LED5VArduino_schem.png)  
+  - [02_LED5VArduino_Steckplatine.png](zusatzmaterial/02_LED5VArduino_bb.png)
 
 ---
 ## 🖥️ 03 Was ist ein Microcontroller
@@ -101,7 +101,7 @@ Der Arduino ist ein Mikrocontroller mit vielen Anschlüssen (Pins). Du lernst, w
 
 **🏆 Challenge 03: "Identifiziere die Pins deines Arduino"**
 - Die Pinbelegung des Arduino findest du im Ordner zusatzmaterial:  
-  [Arduino UNO Pinout](zusatzmaterial/Arduino-UNO-pinout.jpg)  
+  [03_Arduino UNO Pinout](zusatzmaterial/03_Arduino-UNO-pinout.jpg)  
 - Suche die Powerpins
 - Suche einen digitalen Output
 - Suche einen analogen Output
@@ -119,7 +119,7 @@ Du verwendest die Arduino IDE als Programmierzentrale. In der IDE erstellst du e
 - [challenge_04_hello_world.ino](challenge_04_hello_world.ino)
 
 **Hinweis:** Ein praktisches Arduino-Cheatsheet findest du im Ordner zusatzmaterial:  
-[arduino-cheatsheet-deutsch.pdf](zusatzmaterial/arduino-cheatsheet-deutsch.pdf)
+[04_arduino-cheatsheet-deutsch.pdf](zusatzmaterial/04_arduino-cheatsheet-deutsch.pdf)
 
 ---
 
@@ -130,8 +130,8 @@ Jetzt wollen wir die LED ansteuern und sie blinken lassen. Dazu benutzten wir ei
 
 **🏆 Challenge 05: "Digital Output – Lass eine LED blinken"**
 
-- [LED_Schaltplan.png](zusatzmaterial/LED_schem.png)
-- [LED_Steckplatine.png](zusatzmaterial/LED_bb.png)
+- [05_LED_Schaltplan.png](zusatzmaterial/05_LED_schem.png)
+- [05_LED_Steckplatine.png](zusatzmaterial/05_LED_bb.png)
 - [challenge_05_led_blinken.ino](challenge_05_led_blinken.ino)
 
 
@@ -156,8 +156,8 @@ Der Arduino hat auch Eingangspins. Digital Inputs erkennen, ob am Eingang 0 V od
 
 **🏆 Challenge 07: "Mit Taster LED schalten"**
 
-- [LED_Taster_Schaltplan.png](zusatzmaterial/LED_Taster_schem.png)
-- [LED_Taster_Steckplatine.png](zusatzmaterial/LED_Taster_bb.png)
+- [07_LED_Taster_Schaltplan.png](zusatzmaterial/07_LED_Taster_schem.png)
+- [07_LED_Taster_Steckplatine.png](zusatzmaterial/07_LED_Taster_bb.png)
 - [challenge_07_taster_led.ino](challenge_07_taster_led.ino)
 
 **🏆 Zusatz Challenge 07z: "Mit Taster LED toggeln"**
@@ -172,8 +172,8 @@ Der Arduino hat auch "Analog Inputs". Das sind Eingangspins, die nicht nur AN od
 Mit einem Analog Input kannst du z.B. einen Drehregler (Potentiometer) auslesen und damit die Helligkeit einer LED an einem analog output stufenlos steuern.
 
 **🏆 Challenge 08: "Poti auslesen und LED ansteuern"**
-- [LED_Poti_Schaltplan.png](zusatzmaterial/LED_Poti_schem.png)
-- [LED_Poti_Steckplatine.png](zusatzmaterial/LED_Poti_bb.png)
+- [08_LED_Poti_Schaltplan.png](zusatzmaterial/08_LED_Poti_schem.png)
+- [08_LED_Poti_Steckplatine.png](zusatzmaterial/08_LED_Poti_bb.png)
 - [challenge_08_poti_led.ino](challenge_08_poti_led.ino)
 
 ---

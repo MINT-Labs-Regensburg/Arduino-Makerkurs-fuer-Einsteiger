@@ -8,8 +8,8 @@ Aufbau:
 - Verbinde das lange Bein über einen Widerstand (z.B. 220Ω) mit dem Digital Output des Arduino.
 - Warum brauchst du den Widerstand? (Schutz der LED vor zu viel Strom)
 - Das kurze Bein verbindest du mit GND (Masse) am Arduino.
-- Den Schaltplan mit der LED an Pin 7 findest du in 'Zusatzmaterial/LED_Schaltplan.png'
-- Den Aufbau mit Steckplatine findest du in 'Zusatzmaterial/LED_Steckplatine.png'
+ - Den Schaltplan mit der LED an Pin 7 findest du in 'Zusatzmaterial/05_LED_Schaltplan.png'
+ - Den Aufbau mit Steckplatine findest du in 'Zusatzmaterial/05_LED_Steckplatine.png'
 
 Was du lernen wirst:
 - Einen digitalen Ausgang am Arduino nutzen
@@ -29,5 +29,5 @@ Hinweis:
 
 Zusatzaufgabe:
 Lass auch mal die auf dem Arduino fest eingebaute LED blinken. 
-Findest du die eingebaute LED im Pinout unter 'zusatzmaterial/Arduino-UNO-pinout.jpg'
+Findest du die eingebaute LED im Pinout unter 'zusatzmaterial/03_Arduino-UNO-pinout.jpg'
 */
