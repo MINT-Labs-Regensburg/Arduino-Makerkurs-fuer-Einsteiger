@@ -8,7 +8,7 @@
 ## Was dich erwartet
 
 Du bist 11 Jahre alt oder älter, neugierig auf Mikrocontroller und hast Lust aufs Experimentieren?  
-Dann bist du hier richtig im **Maker Kurs für Einsteiger**!
+Dann bist du hier richtig im **Makerkurs für Einsteiger**!
 
 Tauche ein in die spannende Welt der Mikrocontroller! Mit dem Arduino bringst du LEDs zum Leuchten und baust interaktive Schaltungen. In nur drei Stunden lernst du die Basics der Programmierung und Elektronik – und nimmst dein eigenes funktionierendes Gadget mit nach Hause!
 
@@ -28,7 +28,7 @@ Du bekommst ein Arduino Maker Kit. Es enthält neben dem Arduino viele elektroni
 - Widerstände
 - Jumper-Kabel
 - Taster
-- was noch?
+- Was noch?
 
 ---
 
@@ -39,7 +39,7 @@ Du bekommst ein Arduino Maker Kit. Es enthält neben dem Arduino viele elektroni
 
 Jetzt geht es ans Programmieren! Du verwendest die Arduino IDE als Programmierzentrale. In der IDE öffnen wir den Blink‑Sketch, laden ihn auf den Arduino und beobachten die blinkende LED — so siehst du Upload und Ergebnis sofort.
 
-**Hinweis:** Wie du die Ardiono IDE auf deinem Computer installierst findest du unten in `zusätliche Informationen`
+**Hinweis:** Wie du die Arduino IDE auf deinem Computer installierst, findest du unten in `zusätzliche Informationen`
 
 **🏆 Challenge 02: "Programmiere Blink auf dem Arduino"** 
 - [challenge_02_ide_blink.ino](challenge_02_ide_blink.ino) 
@@ -74,10 +74,10 @@ Es gibt auch noch analoge Ein/Ausgänge. Brauchen wir später
 
 ---
 
-## 🖥️ 04 Digital Output – Schliesse eine externe LED am Arduino an
+## 🖥️ 04 Digital Output – Schließe eine externe LED am Arduino an
 Bisher haben wir nur die eingebaute LED am Arduino verwendet. (Sie ist als BUILTIN_LED übrigens an Pin 13 fest angeschlossen.)  
 Jetzt wollen wir eine externe LED über einen digitalen Output des Arduino ansteuern. 
-Wir dürfen die LED nicht direkt am Arduino anschliessen. Sie könnte durchbrennen. Um den Strom zu begrenzen, verwenden wir einen Vorwiderstand von 220 Ohm. 
+Wir dürfen die LED nicht direkt am Arduino anschließen. Sie könnte durchbrennen. Um den Strom zu begrenzen, verwenden wir einen Vorwiderstand von 220 Ohm. 
 
 
 
@@ -88,7 +88,7 @@ Wir dürfen die LED nicht direkt am Arduino anschliessen. Sie könnte durchbrenn
 </p>
 
 
-**🏆 Challenge 04: "Digital Output – Schliesse eine eigene LED am Arduino an und lass sie blinken"**
+**🏆 Challenge 04: "Digital Output – Schließe eine eigene LED am Arduino an und lass sie blinken"**
 
 - [challenge_04_led_blinken.ino](challenge_04_led_blinken.ino)
 
@@ -98,16 +98,16 @@ Wir dürfen die LED nicht direkt am Arduino anschliessen. Sie könnte durchbrenn
 ---
 
 
-## Zusatzaufgaben wenn du schon fertig bist oder zu Hause weiter experimentieren willst
+## ✨ Zusatzaufgaben — wenn du schon fertig bist oder zu Hause weiter experimentieren willst
 
 **🏆 Challenge 05: "Hello World auf dem Seriellen Monitor ausgeben"**   
-Du kannst Messages von deinem Arduino an den Computer schicken. Dazu verwendest du den `Seriellen Monitor` der Arduino IDE.
+Du kannst Nachrichten von deinem Arduino an den Computer schicken. Dazu verwendest du den `Seriellen Monitor` der Arduino IDE.
 
 - [challenge_05_hello_world.ino](challenge_05_hello_world.ino) — Kurzes Beispiel: Schreibe "Hello World" in den Seriellen Monitor und teste die Verbindung zur IDE.
 
 ---
 
-**🏆 Challenge 06: " Eine LED am Analogen Ausgang dimmen"**   
+**🏆 Challenge 06: "Eine LED am Analogen Ausgang dimmen"**   
 Der Arduino hat auch analoge Ausgänge. Die kennen nicht nur ein und aus, sondern auch viele Schritte dazwischen.
 - **Analog Output (LED dimmen):** 
   
@@ -150,7 +150,7 @@ Der Arduino hat auch analoge Eingänge, die viele Spannungen zwischen 0 und der 
 ## ℹ️ Zusätzliche Informationen
 
 - **Arduino IDE installieren:** Besuche https://www.arduino.cc, wähle "Products" → "Arduino IDE installieren" und lade die passende IDE für dein Betriebssystem herunter
-- **Pinout Arduino R3** Die Pinbelegung deines Arduino UNO R3 findest du im Ordner zusatzmaterial
+- **Pinout Arduino R3:** Die Pinbelegung deines Arduino UNO R3 findest du im Ordner zusatzmaterial
 - **Cheatsheet** Ein praktisches Arduino‑Cheatsheet findest du im Ordner zusatzmaterial 
 
 --- 
