@@ -1,5 +1,5 @@
 /*
-Challenge 05z: "Lass die LED im Morsecode SOS blinken"
+Challenge 04: "Lass die LED im Morsecode SOS blinken"
 =====================================================
 Schreibe ein Programm, das die LED das Morsezeichen SOS blinken lässt:
 

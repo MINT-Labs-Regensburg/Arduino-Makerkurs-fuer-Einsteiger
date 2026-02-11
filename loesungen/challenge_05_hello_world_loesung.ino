@@ -1,5 +1,5 @@
 /*
-  Lösung: Challenge 05z - "Hello World auf dem Seriellen Monitor ausgeben"
+  Lösung: Challenge 05 - "Hello World auf dem Seriellen Monitor ausgeben"
 
   Beschreibung:
   - Öffne die Arduino IDE und wähle das richtige Board und den COM-Port.

@@ -89,22 +89,22 @@ Wir dürfen die LED nicht direkt am Arduino anschliessen. Sie könnte durchbrenn
 
 - [challenge_04_led_blinken.ino](challenge_04_led_blinken.ino)
 
-**🏆 Zusatz Challenge 04z für Fortgeschrittene: "Lass die LED im Morsecode SOS blinken"**
-- [challenge_04z_morsecode_sos.ino](challenge_04z_morsecode_sos.ino)
+**🏆 Zusatz Challenge 04 für Fortgeschrittene: "Lass die LED im Morsecode SOS blinken"**
+- [challenge_04_morsecode_sos.ino](challenge_04_morsecode_sos.ino)
 
 ---
 
 
 ## Zusatzaufgaben wenn du schon fertig bist oder zu Hause weiter experimentieren willst
 
-**🏆Challenge 05z: "Hello World auf dem Seriellen Monitor ausgeben"**   
+**🏆 Challenge 05: "Hello World auf dem Seriellen Monitor ausgeben"**   
 Du kannst Messages von deinem Arduino an den Computer schicken. Dazu verwendest du den `Seriellen Monitor` der Arduino IDE.
 
-- [challenge_05z_hello_world.ino](challenge_05z_hello_world.ino) — Kurzes Beispiel: Schreibe "Hello World" in den Seriellen Monitor und teste die Verbindung zur IDE.
+- [challenge_05_hello_world.ino](challenge_05_hello_world.ino) — Kurzes Beispiel: Schreibe "Hello World" in den Seriellen Monitor und teste die Verbindung zur IDE.
 
 ---
 
-**🏆 Challenge 06z: " Eine LED am Analogen Ausgang dimmen"**   
+**🏆 Challenge 06: " Eine LED am Analogen Ausgang dimmen"**   
 Der Arduino hat auch analoge Ausgänge. Die kennen nicht nur ein und aus, sondern auch viele Schritte dazwischen.
 - **Analog Output (LED dimmen):** 
   
@@ -112,7 +112,7 @@ Der Arduino hat auch analoge Ausgänge. Die kennen nicht nur ein und aus, sonder
   
 ---
 
-**🏆 Challenge 07z: "Digital Input - LED mit einem Taster schalten"**
+**🏆 Challenge 07: "Digital Input - LED mit einem Taster schalten"**
 Der Arduino hat auch Eingänge. Damit kann er sehen, ob eine Spannung anliegt oder 0 Volt.
 
 
@@ -130,7 +130,7 @@ So wird der Taster angeschlossen:
 
 
 ---
-**🏆 Challenge 08z: "Analog Input - Potentiometer Auslesen und die LED danach dimmen"**
+**🏆 Challenge 08: "Analog Input - Potentiometer Auslesen und die LED danach dimmen"**
 Der Arduino hat auch analoge Eingänge, die viele Spannungen zwischen 0 und der Versorgungsspannung messen können.
 - **Analog Input (Potentiometer):** [challenge_08_poti_led.ino](challenge_08_poti_led.ino) – Lese ein Potentiometer ein und steuere damit die Helligkeit einer LED.
 

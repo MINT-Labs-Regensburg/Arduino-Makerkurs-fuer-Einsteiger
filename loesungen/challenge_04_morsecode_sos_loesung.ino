@@ -1,5 +1,5 @@
 /*
-Challenge 05z: "Lass die LED im Morsecode SOS blinken" - MUSTERLÖSUNG
+Challenge 04: "Lass die LED im Morsecode SOS blinken" - MUSTERLÖSUNG
 ====================================================================
 */
 
