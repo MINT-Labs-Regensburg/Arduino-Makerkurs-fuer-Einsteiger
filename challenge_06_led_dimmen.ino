@@ -11,6 +11,9 @@ Was du lernen wirst:
 
 Aufgaben:
 1. Wähle einen Ausgang, der Analog Output (PWM) kann (z.B. Pin 11, erkennbar an der ~).
+   
+   DER BISHER VERWENDETE Pin 9 KANN NUR DIGITAL und KEIN PWM
+
 2. Baue die LED-Schaltung mit Vorwiderstand an diesen PWM-Pin.
 3. Schreibe einen Sketch, der die LED langsam heller und dunkler werden lässt.
    - Nutze analogWrite(PIN, Wert) für die Helligkeit (Wert von 0 bis 255).

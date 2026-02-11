@@ -35,7 +35,11 @@ Du bekommst ein Arduino Maker Kit. Es enthält neben dem Arduino viele elektroni
 
 ## 💻 02 Die Arduino IDE. Programmiere eine blinkende LED
 
+
+
 Jetzt geht es ans Programmieren! Du verwendest die Arduino IDE als Programmierzentrale. In der IDE öffnen wir den Blink‑Sketch, laden ihn auf den Arduino und beobachten die blinkende LED — so siehst du Upload und Ergebnis sofort.
+
+**Hinweis:** Wie du die Ardiono IDE auf deinem Computer installierst findest du unten in `zusätliche Informationen`
 
 **🏆 Challenge 02: "Programmiere Blink auf dem Arduino"** 
 - [challenge_02_ide_blink.ino](challenge_02_ide_blink.ino) 
@@ -154,6 +158,12 @@ Ein praktisches Arduino‑Cheatsheet findest du im Ordner zusatzmaterial
 Bei Fragen zum Kurs oder Material:  
 **MINT-Labs Regensburg**  
 🌐 [https://www.mint-labs-regensburg.de/](https://www.mint-labs-regensburg.de/)
+
+
+## **Zusätzliche Informationen**
+
+- **Arduino IDE installieren:** Besuche https://www.arduino.cc, wähle "Products" → "Arduino IDE installieren" und lade die passende IDE für dein Betriebssystem herunter.
+
 
 
 ## Mehr Projekte und Anleitungen findest du [hier](https://wiki.mint-labs.de/)
