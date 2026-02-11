@@ -144,14 +144,16 @@ Der Arduino hat auch analoge Eingänge, die viele Spannungen zwischen 0 und der 
   <em>Arduino mit Poti und LED</em>
 </p>
 
-
-
 ---
 
-**Hinweis:** 
 
-Ein praktisches Arduino‑Cheatsheet findest du im Ordner zusatzmaterial 
+## ℹ️ Zusätzliche Informationen
 
+- **Arduino IDE installieren:** Besuche https://www.arduino.cc, wähle "Products" → "Arduino IDE installieren" und lade die passende IDE für dein Betriebssystem herunter
+- **Pinout Arduino R3** Die Pinbelegung deines Arduino UNO R3 findest du im Ordner zusatzmaterial
+- **Cheatsheet** Ein praktisches Arduino‑Cheatsheet findest du im Ordner zusatzmaterial 
+
+--- 
 
 ## 📞 Kontakt
 
@@ -159,11 +161,7 @@ Bei Fragen zum Kurs oder Material:
 **MINT-Labs Regensburg**  
 🌐 [https://www.mint-labs-regensburg.de/](https://www.mint-labs-regensburg.de/)
 
-
-## **Zusätzliche Informationen**
-
-- **Arduino IDE installieren:** Besuche https://www.arduino.cc, wähle "Products" → "Arduino IDE installieren" und lade die passende IDE für dein Betriebssystem herunter.
-
+--- 
 
 
 ## Mehr Projekte und Anleitungen findest du [hier](https://wiki.mint-labs.de/)
