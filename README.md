@@ -71,6 +71,7 @@ Es gibt auch noch analoge Ein/Ausgänge. Brauchen wir später
 - Suche einen analogen Output  `Digital mit PWM`
 - Suche einen analogen Input  `Analog`
  
+---
 
 ## 🖥️ 04 Digital Output – Schließe eine externe LED am Arduino an
 Bisher haben wir nur die eingebaute LED am Arduino verwendet. (Sie ist als BUILTIN_LED übrigens an Pin 13 fest angeschlossen.)  
@@ -110,6 +111,7 @@ Baue eine Mini-Verkehrsampel mit drei LEDs (Rot, Gelb, Grün). Verwende drei dig
 - [challenge_04_plus_verkehrsampel.ino](challenge_04_plus_verkehrsampel.ino)
 
 
+--- 
 
 ## ✨ Zusatzaufgaben — wenn du schon fertig bist oder zu Hause weiter experimentieren willst
 
