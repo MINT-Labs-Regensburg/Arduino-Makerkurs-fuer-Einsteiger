@@ -1,5 +1,7 @@
 # <img src="assets/arduino-logos-512px.png" alt="Arduino IDE Logo" width="38" style="vertical-align:middle;"> Arduino Makerkurs für Einsteiger – In 3 Stunden zum eigenen Mikrocontroller-Projekt
 
+[![GitHub](https://img.shields.io/badge/GitHub-MINT--Labs-181717?style=flat&logo=github)](https://github.com/MINT-Labs-Regensburg/Arduino-Makerkurs-fuer-Einsteiger)
+
 <p>
   <img src="assets/Arduino Uno mit Potentiometer und LED.png" alt="Arduino Uno mit LED und Potentiometer" width="400" />
 </p>
@@ -168,12 +170,15 @@ Der Arduino hat auch analoge Eingänge, die viele Spannungen zwischen 0 und der 
 - **Pinout Arduino R3:** Die Pinbelegung deines Arduino UNO R3 findest du im Ordner zusatzmaterial
 - **Cheatsheet** Ein praktisches Arduino‑Cheatsheet findest du im Ordner zusatzmaterial 
 
+
 --- 
 
 ## 📞 Kontakt
 
 Bei Fragen zum Kurs oder Material:  
 **MINT-Labs Regensburg**  
+
+
 🌐 [https://www.mint-labs-regensburg.de/](https://www.mint-labs-regensburg.de/)
 
 --- 
