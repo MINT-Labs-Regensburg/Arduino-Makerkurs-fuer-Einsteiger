@@ -182,6 +182,8 @@ Bei Fragen zum Kurs oder Material:
 
 🌐 [https://www.mint-labs-regensburg.de/](https://www.mint-labs-regensburg.de/)
 
+E-Mail: peter.dirnhofer@t-online.de
+
 --- 
 
 
