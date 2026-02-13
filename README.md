@@ -70,9 +70,7 @@ Es gibt auch noch analoge Ein/Ausgänge. Brauchen wir später
 - Suche einen digitalen Input  `Digital`
 - Suche einen analogen Output  `Digital mit PWM`
 - Suche einen analogen Input  `Analog`
-
-
----
+ 
 
 ## 🖥️ 04 Digital Output – Schließe eine externe LED am Arduino an
 Bisher haben wir nur die eingebaute LED am Arduino verwendet. (Sie ist als BUILTIN_LED übrigens an Pin 13 fest angeschlossen.)  
@@ -92,10 +90,25 @@ Wir dürfen die LED nicht direkt am Arduino anschließen. Sie könnte durchbrenn
 
 - [challenge_04_led_blinken.ino](challenge_04_led_blinken.ino)
 
+---
+
 **🏆 Zusatz Challenge 04 für Fortgeschrittene: "Lass die LED im Morsecode SOS blinken"**
 - [challenge_04_morsecode_sos.ino](challenge_04_morsecode_sos.ino)
 
 ---
+
+**🏆 Zusatz Challenge 04 für Fortgeschrittene: "Verkehrsampel"**
+
+Baue eine Mini-Verkehrsampel mit drei LEDs (Rot, Gelb, Grün). Verwende drei digitale Pins am Arduino und programmiere die Ampel so, dass sie in einer Schleife wechselt: Grün → Gelb → Rot → Grün.
+
+<p>
+  <img src="zusatzmaterial/04_Verkehrsampel.png" alt="Verkehrsampel Steckplatine" width="320" />
+  <br/>
+  <em>Beispielaufbau: Mini-Verkehrsampel (Rot: D8, Gelb: D9, Grün: D10)</em>
+</p>
+
+- [challenge_04_plus_verkehrsampel.ino](challenge_04_plus_verkehrsampel.ino)
+
 
 
 ## ✨ Zusatzaufgaben — wenn du schon fertig bist oder zu Hause weiter experimentieren willst
