@@ -1,3 +1,4 @@
+#include <Adafruit_neoPixel.h>
 const int ledPin = 6;
 const int anzahlLeds = 10;
 
